@@ -113,11 +113,35 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &148076756 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1902993281454404, guid: 70051bec3b5a190418fcf07a1a18e8c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1731315814}
+--- !u!108 &148076757 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 108824635557183712, guid: 70051bec3b5a190418fcf07a1a18e8c2,
+    type: 2}
+  m_PrefabInternal: {fileID: 1731315814}
 --- !u!4 &148076758 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4704527028104334, guid: 70051bec3b5a190418fcf07a1a18e8c2,
     type: 2}
   m_PrefabInternal: {fileID: 1731315814}
+--- !u!114 &148076760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148076756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a2c7cb08a85d94b9b9c769c4e6d7cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dX: 0.5
+  dY: 0.5
+  controlledLight: {fileID: 148076757}
 --- !u!1 &272463567
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,37 +413,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!84 &939484325
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1125
-  m_Height: 633
-  m_AntiAliasing: 1
-  m_DepthFormat: 2
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &983660301
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +546,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &1296330552
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1125
+  m_Height: 633
+  m_AntiAliasing: 1
+  m_DepthFormat: 2
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1374683059
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,7 +697,7 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 939484325}
+      objectReference: {fileID: 1296330552}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50bd65e0d37256045a25448a59d10b30, type: 2}
   m_IsPrefabAsset: 0
