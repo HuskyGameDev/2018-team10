@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LightFlicker : MonoBehaviour {
+public class LightVaryColor : MonoBehaviour {
 	private float curX = 0f;
 	[SerializeField] private float speed;
 	[SerializeField] private float sequence;
-	[SerializeField] private float minIntensity;
-	[SerializeField] private float variance;
-
-	[SerializeField] private Light lightToFlicker;
+	[SerializeField] private Color color1;
+	[SerializeField] private Color color2;
+	[SerializeField] private Light variedLight;
 	// Use this for initialization
 	void Start () {
 		
@@ -18,6 +17,6 @@ public class LightFlicker : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		curX += speed;
-		lightToFlicker.intensity = minIntensity + Mathf.PerlinNoise(curX, sequence) * variance;
+		variedLight.color = Color.Lerp(color1, color2, Mathf.PerlinNoise(curX, sequence));
 	}
 }
