@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3488622657	Penguin_Flipper_Slap			\Default Work Unit\Penguin_Flipper_Slap	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	45058216	Flipper Sound 1	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\Assets\Sound and Music\Dungeon_Manager\.cache\Linux\SFX\Flipper Sound 1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flipper Sounds\Flipper Sound 1		132444
+	282204932	Flipper Sound 3	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\Assets\Sound and Music\Dungeon_Manager\.cache\Linux\SFX\Flipper Sound 3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flipper Sounds\Flipper Sound 3		110396
+	775076739	Flipper Sound 2	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\Assets\Sound and Music\Dungeon_Manager\.cache\Linux\SFX\Flipper Sound 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flipper Sounds\Flipper Sound 2		110396
+	966640822	Flipper Sound 4	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\Assets\Sound and Music\Dungeon_Manager\.cache\Linux\SFX\Flipper Sound 4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Flipper Sounds\Flipper Sound 4		176544
+

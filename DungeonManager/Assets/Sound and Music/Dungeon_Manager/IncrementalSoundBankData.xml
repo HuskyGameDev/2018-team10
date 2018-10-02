@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IncrementalBankBuild Version="6" Flags="601859981">
+	<Platform GUID="{0A7A2EE9-26A8-438F-9564-7EA6A291EF9A}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Dungeon_Manager" Hash="121469408" Timestamp="1538501399"/>
+				<File Name="Init" Hash="2202935048" Timestamp="1538501399"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="3684304548" Timestamp="1538501399"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{886C7F34-A97F-45DA-945E-A6983042056E}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Dungeon_Manager" Hash="121469408" Timestamp="1538501399"/>
+				<File Name="Init" Hash="4221927926" Timestamp="1538501399"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="1429867630" Timestamp="1538501399"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+	<Platform GUID="{E7F1F9A1-8F4D-4934-BDF8-D43724DEA10B}">
+		<Banks>
+			<Language ID="393239870">
+				<File Name="Dungeon_Manager" Hash="121469408" Timestamp="1538501399"/>
+				<File Name="Init" Hash="4138667527" Timestamp="1538501399"/>
+			</Language>
+		</Banks>
+		<XMLInfo>
+			<Language ID="-1">
+				<File Name="" Hash="2612838243" Timestamp="1538501399"/>
+			</Language>
+		</XMLInfo>
+	</Platform>
+</IncrementalBankBuild>
