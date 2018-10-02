@@ -21,6 +21,7 @@
 			<ShortName>Dungeon_Manager</ShortName>
 			<Path>Dungeon_Manager.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1093438888" Name="Denis_Sigh" ObjectPath="\Events\Default Work Unit\Denis_Sigh"/>
 				<Event Id="3488622657" Name="Penguin_Flipper_Slap" ObjectPath="\Events\Default Work Unit\Penguin_Flipper_Slap"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -28,17 +29,37 @@
 					<ShortName>Flipper Sound 1.wav</ShortName>
 					<Path>SFX\Flipper Sound 1_1C9C67B2.wem</Path>
 				</File>
+				<File Id="99306121" Language="SFX">
+					<ShortName>Sigh 2.wav</ShortName>
+					<Path>SFX\Sigh 2_1C9C67B2.wem</Path>
+				</File>
 				<File Id="282204932" Language="SFX">
 					<ShortName>Flipper Sound 3.wav</ShortName>
 					<Path>SFX\Flipper Sound 3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="413196925" Language="SFX">
+					<ShortName>Sigh 1.wav</ShortName>
+					<Path>SFX\Sigh 1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="640320309" Language="SFX">
+					<ShortName>Sigh 5.wav</ShortName>
+					<Path>SFX\Sigh 5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="775076739" Language="SFX">
 					<ShortName>Flipper Sound 2.wav</ShortName>
 					<Path>SFX\Flipper Sound 2_1C9C67B2.wem</Path>
 				</File>
+				<File Id="869254853" Language="SFX">
+					<ShortName>Sigh 3.wav</ShortName>
+					<Path>SFX\Sigh 3_1C9C67B2.wem</Path>
+				</File>
 				<File Id="966640822" Language="SFX">
 					<ShortName>Flipper Sound 4.wav</ShortName>
 					<Path>SFX\Flipper Sound 4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1039039546" Language="SFX">
+					<ShortName>Sigh 4.wav</ShortName>
+					<Path>SFX\Sigh 4_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
