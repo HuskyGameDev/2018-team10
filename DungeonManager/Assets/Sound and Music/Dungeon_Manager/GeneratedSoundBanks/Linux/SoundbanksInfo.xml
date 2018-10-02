@@ -23,6 +23,7 @@
 			<IncludedEvents>
 				<Event Id="1093438888" Name="Denis_Sigh" ObjectPath="\Events\Default Work Unit\Denis_Sigh"/>
 				<Event Id="3488622657" Name="Penguin_Flipper_Slap" ObjectPath="\Events\Default Work Unit\Penguin_Flipper_Slap"/>
+				<Event Id="2087106032" Name="Penguin_Guts_Smush" ObjectPath="\Events\Default Work Unit\Penguin_Guts_Smush"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="45058216" Language="SFX">
@@ -41,6 +42,14 @@
 					<ShortName>Sigh 1.wav</ShortName>
 					<Path>SFX\Sigh 1_1C9C67B2.wem</Path>
 				</File>
+				<File Id="477533400" Language="SFX">
+					<ShortName>Guts Squish 2.wav</ShortName>
+					<Path>SFX\Guts Squish 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="532498280" Language="SFX">
+					<ShortName>Guts Squish 3.wav</ShortName>
+					<Path>SFX\Guts Squish 3_1C9C67B2.wem</Path>
+				</File>
 				<File Id="640320309" Language="SFX">
 					<ShortName>Sigh 5.wav</ShortName>
 					<Path>SFX\Sigh 5_1C9C67B2.wem</Path>
@@ -52,6 +61,10 @@
 				<File Id="869254853" Language="SFX">
 					<ShortName>Sigh 3.wav</ShortName>
 					<Path>SFX\Sigh 3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="890492412" Language="SFX">
+					<ShortName>Guts Squish 1.wav</ShortName>
+					<Path>SFX\Guts Squish 1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="966640822" Language="SFX">
 					<ShortName>Flipper Sound 4.wav</ShortName>
