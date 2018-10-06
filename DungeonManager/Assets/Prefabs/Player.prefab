@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212481382717868860}
   - component: {fileID: 50950299530701206}
   - component: {fileID: 61978474331495662}
-  - component: {fileID: 114484848399390612}
+  - component: {fileID: 114920292070700226}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -55,7 +55,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -88,7 +88,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5}
   m_EdgeRadius: 0
---- !u!114 &114484848399390612
+--- !u!114 &114920292070700226
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -96,9 +96,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1457952383182474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cbedda273761484a99da469c11415c4, type: 3}
+  m_Script: {fileID: 11500000, guid: a40dbee71b0b4a2469d3fa1fd7112a2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerSpeed: 5
+  facingRight: 1
+  playerJumpPower: 800
+  moveX: 0
+  inAir: 0
 --- !u!212 &212481382717868860
 SpriteRenderer:
   m_ObjectHideFlags: 1
