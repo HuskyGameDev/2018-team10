@@ -6,9 +6,10 @@ public class Move_Main : MonoBehaviour {
 
     public int playerSpeed = 5;
     public bool facingRight = true;
-    public int playerJumpPower = 800;
+    public int playerJumpPower = 400;
     public float moveX;
-    public bool inAir;
+    public bool isGrounded = true;
+    public int YMoveDirection = 1;
 
 
     // Update is called once per frame
@@ -47,10 +48,11 @@ public class Move_Main : MonoBehaviour {
     //Add force to player to jump
     void Jump()
     {
-        if(inAir == false)
+
+        if(isGrounded == true)
         {
             GetComponent<Rigidbody2D>().AddForce(Vector2.up * playerJumpPower);
-            inAir = true;
+            //isGrounded = false;
         }
     }
 
@@ -63,11 +65,14 @@ public class Move_Main : MonoBehaviour {
         transform.localScale = localScale;
     }
 
-    void OnCollisionEnter2D (Collision2D col)
+
+    /*void OnCollisionEnter2D (Collision2D col)
     {
         if (col.gameObject.tag == "Floor")
         {
-            inAir = false;
+            isGrounded = true;
         }
-    }
+    }*/
+
+    
 }
