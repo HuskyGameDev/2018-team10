@@ -8,11 +8,10 @@ public class LightFlicker : MonoBehaviour {
 	[SerializeField] private float sequence;
 	[SerializeField] private float minIntensity;
 	[SerializeField] private float variance;
-
-	[SerializeField] private Light lightToFlicker;
+	private Light lightToFlicker;
 	// Use this for initialization
 	void Start () {
-		
+		lightToFlicker = GetComponent<Light>();	
 	}
 	
 	// Update is called once per frame

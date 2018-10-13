@@ -8,10 +8,10 @@ public class LightVaryColor : MonoBehaviour {
 	[SerializeField] private float sequence;
 	[SerializeField] private Color color1;
 	[SerializeField] private Color color2;
-	[SerializeField] private Light variedLight;
+	private Light variedLight;
 	// Use this for initialization
 	void Start () {
-		
+		variedLight = GetComponent<Light>();	
 	}
 	
 	// Update is called once per frame
