@@ -595,6 +595,16 @@ Prefab:
       propertyPath: isGrounded
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 61978474331495662, guid: 4cfba9f48e75f6a408c88fd256dc334b,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: e557efc62f8b33c458812970d3055b93, type: 2}
+    - target: {fileID: 114920292070700226, guid: 4cfba9f48e75f6a408c88fd256dc334b,
+        type: 2}
+      propertyPath: playerSpeed
+      value: 3.6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cfba9f48e75f6a408c88fd256dc334b, type: 2}
   m_IsPrefabAsset: 0
