@@ -8,11 +8,17 @@ public class jumpCollider : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        move.isGrounded = true;
+        if (other.gameObject.tag == "Floor")
+        {
+            move.isGrounded = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        move.isGrounded = false;
+        if (other.gameObject.tag == "Floor")
+        {
+            move.isGrounded = false;
+        }
     }
 }
