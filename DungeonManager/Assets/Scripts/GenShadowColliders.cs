@@ -59,8 +59,8 @@ public class GenShadowColliders : EditorWindow {
 				if(CanAddShadowCaster(boxCollider)){
 					GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
 					cube.name = "ShadowCaster";
-					Destroy(cube.GetComponent<BoxCollider2D>());
-					
+					DestroyImmediate(cube.GetComponent<BoxCollider>());
+
 					//Parent object will be the object with the box collider
 					Undo.RegisterCreatedObjectUndo(cube, "Created ShadowCaster");
 					//Undo.SetTransformParent(cube.transform, boxCollider.gameObject.transform, "Set Shadow Caster Parent");
