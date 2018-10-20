@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 148076757}
   - component: {fileID: 148076761}
   - component: {fileID: 148076759}
+  - component: {fileID: 148076760}
   m_Layer: 9
   m_Name: TorchLight
   m_TagString: Untagged
@@ -182,6 +183,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 467310765}
+  - {fileID: 1803174902}
   m_Father: {fileID: 829978027}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -201,6 +203,20 @@ MonoBehaviour:
   sequence: 10
   color1: {r: 1, g: 0.52359486, b: 0, a: 1}
   color2: {r: 1, g: 0, b: 0, a: 1}
+--- !u!114 &148076760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148076756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a2c7cb08a85d94b9b9c769c4e6d7cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dX: 0.5
+  dY: 0.5
+  controlledLight: {fileID: 148076757}
 --- !u!114 &148076761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,6 +233,37 @@ MonoBehaviour:
   sequence: 1
   minIntensity: 2
   variance: 1
+--- !u!84 &172207638
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 958
+  m_Height: 539
+  m_AntiAliasing: 1
+  m_DepthFormat: 2
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &272463567
 GameObject:
   m_ObjectHideFlags: 0
@@ -5025,6 +5072,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 742333091}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &775829683
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 148076758}
+    m_Modifications:
+    - target: {fileID: 4066231860924432, guid: 3ea0621b6c40f3a418e9845d01d3d0c9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066231860924432, guid: 3ea0621b6c40f3a418e9845d01d3d0c9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066231860924432, guid: 3ea0621b6c40f3a418e9845d01d3d0c9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066231860924432, guid: 3ea0621b6c40f3a418e9845d01d3d0c9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066231860924432, guid: 3ea0621b6c40f3a418e9845d01d3d0c9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066231860924432, guid: 3ea0621b6c40f3a418e9845d01d3d0c9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066231860924432, guid: 3ea0621b6c40f3a418e9845d01d3d0c9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066231860924432, guid: 3ea0621b6c40f3a418e9845d01d3d0c9, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3ea0621b6c40f3a418e9845d01d3d0c9, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &779048273
 GameObject:
   m_ObjectHideFlags: 0
@@ -9812,37 +9901,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!84 &863014426
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 479
-  m_Height: 269
-  m_AntiAliasing: 1
-  m_DepthFormat: 2
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &983660301
 GameObject:
   m_ObjectHideFlags: 0
@@ -9945,6 +10003,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 9.17, y: 9.75}
   m_EdgeRadius: 0
+--- !u!84 &1073782956
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 958
+  m_Height: 539
+  m_AntiAliasing: 1
+  m_DepthFormat: 2
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1168629446
 GameObject:
   m_ObjectHideFlags: 0
@@ -10096,7 +10185,7 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 863014426}
+      objectReference: {fileID: 172207638}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50bd65e0d37256045a25448a59d10b30, type: 2}
   m_IsPrefabAsset: 0
@@ -10351,3 +10440,8 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb51dd84037c1f6429675f70fa343639, type: 2}
   m_IsPrefabAsset: 0
+--- !u!4 &1803174902 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4066231860924432, guid: 3ea0621b6c40f3a418e9845d01d3d0c9,
+    type: 2}
+  m_PrefabInternal: {fileID: 775829683}
