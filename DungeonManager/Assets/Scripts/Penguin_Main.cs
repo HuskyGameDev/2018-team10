@@ -31,7 +31,7 @@ public class Penguin_Main : MonoBehaviour {
     void FlipPlayer()
     {
         facingRight = !facingRight;
-        Vector2 localScale = gameObject.transform.localScale;
+        Vector3 localScale = gameObject.transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
     }
@@ -39,7 +39,7 @@ public class Penguin_Main : MonoBehaviour {
     //Check for a trigger and do correct action
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if(col.gameObject.tag == "Trap")
+        if(col.gameObject.tag == "Trap" && col.gameObject.GetComponentInParent<Trap_Trigger>().isLit)
         {
             Jump();
         }

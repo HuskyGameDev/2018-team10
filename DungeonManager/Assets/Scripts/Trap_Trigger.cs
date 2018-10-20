@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Trap_Trigger : MonoBehaviour {
 
-    bool isLit = true;
+    public bool isLit = true;
+    public Torch_Toggle torch;
 
     void Update()
     {
@@ -14,7 +15,7 @@ public class Trap_Trigger : MonoBehaviour {
     //check to see if nearby light is on
     void LightCheck()
     {
-
+        isLit = torch.isLit;
     }
 
 
