@@ -5,6 +5,7 @@ using UnityEngine;
 public class LightCollider : MonoBehaviour {
 	[SerializeField] private int numVertices; 
 	[SerializeField] private int[] avoidLayers;
+	[SerializeField] private float maxDistance;
 	private LineRenderer lines;
 	private PolygonCollider2D polyCollider;
 	private Vector2[] directions;
@@ -52,9 +53,9 @@ public class LightCollider : MonoBehaviour {
 			if(hit.collider != null){
 				vecs[i] = transform.worldToLocalMatrix.MultiplyPoint(hit.point);
 			}else{
-				vecs[i] = MaxDistance() * directions[i];
+				vecs[i] = maxDistance * directions[i];
 			}
-			vecs[i] = Vector3.ClampMagnitude(vecs[i], MaxDistance());
+			vecs[i] = Vector3.ClampMagnitude(vecs[i], maxDistance);
 		}
 
 		lines.SetPositions(vecs);
@@ -66,9 +67,5 @@ public class LightCollider : MonoBehaviour {
 		}
 
 		polyCollider.SetPath(0, vecs2D);
-	}
-
-	float MaxDistance () {
-		return 2f;
 	}
 }

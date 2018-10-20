@@ -79,6 +79,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numVertices: 50
   avoidLayers: 08000000
+  maxDistance: 20
 --- !u!120 &120406125020154874
 LineRenderer:
   m_ObjectHideFlags: 1

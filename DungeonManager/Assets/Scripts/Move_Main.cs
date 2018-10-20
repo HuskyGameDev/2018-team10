@@ -10,7 +10,7 @@ public class Move_Main : MonoBehaviour {
     public float moveX;
     public bool isGrounded = true;
     public int YMoveDirection = 1;
-
+    //private SpriteRenderer renderer;
 
     // Update is called once per frame
     void Update()
@@ -59,8 +59,12 @@ public class Move_Main : MonoBehaviour {
     //Flip the character sprite to match movement
     void FlipPlayer()
     {
+        /* 
         facingRight = !facingRight;
-        Vector2 localScale = gameObject.transform.localScale;
+        GetComponent<SpriteRenderer>().flipX = !facingRight;
+        */
+        facingRight = !facingRight;
+        Vector3 localScale = gameObject.transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
     }
