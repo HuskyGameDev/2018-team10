@@ -56,7 +56,6 @@ GameObject:
   - component: {fileID: 108228375776334904}
   - component: {fileID: 114060195723401378}
   - component: {fileID: 114443748290175078}
-  - component: {fileID: 114899145457958910}
   m_Layer: 10
   m_Name: TorchLight
   m_TagString: Untagged
@@ -172,18 +171,6 @@ MonoBehaviour:
   sequence: 10
   color1: {r: 1, g: 0.52359486, b: 0, a: 1}
   color2: {r: 1, g: 0, b: 0, a: 1}
---- !u!114 &114899145457958910
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1935420469197194}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b9bfe9357fee0c4988a355b4058217e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  follow: {fileID: 0}
 --- !u!198 &198614410276177426
 ParticleSystem:
   m_ObjectHideFlags: 1
