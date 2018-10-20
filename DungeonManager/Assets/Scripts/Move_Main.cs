@@ -12,11 +12,13 @@ public class Move_Main : MonoBehaviour {
     private bool isGrounded = true;
     private bool facingRight = true;
     private Rigidbody2D body;
+    private Animator animator;
 
 
     void Start()
     {
         body = gameObject.GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
 
@@ -33,6 +35,9 @@ public class Move_Main : MonoBehaviour {
         //controls
         //Walk
         float moveX = Input.GetAxis("Horizontal");
+
+        animator.SetFloat("Speed", Mathf.Abs(moveX));
+
         //Jump
         Jump();
         //animations
