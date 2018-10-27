@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4212019934022450}
   - component: {fileID: 212921675079511624}
   - component: {fileID: 114538650595872380}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: SpikeTrap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1913007665318636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.96, y: 0.6858451, z: 0}
+  m_LocalPosition: {x: 0.28910005, y: -4.030084, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 4086963083588566}
@@ -140,7 +140,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.03951788, y: -1.520541}
+  m_Offset: {x: 2.132124, y: -1.520541}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -151,7 +151,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.6149054, y: 1.8417811}
+  m_Size: {x: 8.95819, y: 1.8417811}
   m_EdgeRadius: 0
 --- !u!114 &114538650595872380
 MonoBehaviour:
@@ -164,6 +164,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ebeeedc3e9a7c342a390423a701e654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isLit: 1
+  torch: {fileID: 0}
 --- !u!212 &212214119228953064
 SpriteRenderer:
   m_ObjectHideFlags: 1

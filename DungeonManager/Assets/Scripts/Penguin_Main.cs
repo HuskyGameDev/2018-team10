@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 public class Penguin_Main : MonoBehaviour {
 
     public int PenguinSpeed = 5;
-    public int XMoveDirection = 1;
-    public bool facingRight = true;
+    public int XMoveDirection = -1;
+    public bool facingRight = false;
     public int jumpPower;
 	
 	// Update is called once per frame
 	void Update () {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(XMoveDirection, 0));
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(GetComponent<BoxCollider2D>().size.x * 0.09f, GetComponent<BoxCollider2D>().size.y * 0.09f), 0 , new Vector2(XMoveDirection, 0));
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(XMoveDirection * PenguinSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y) ;
         if(hit.distance < 0.3f)
         {
@@ -59,6 +59,6 @@ public class Penguin_Main : MonoBehaviour {
     //Call when penguin dies to relaod scene
     void Die()
     {
-        SceneManager.LoadScene("TheSceneFullOfPengUINZandfun");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

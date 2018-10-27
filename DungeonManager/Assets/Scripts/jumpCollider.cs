@@ -10,7 +10,7 @@ public class jumpCollider : MonoBehaviour {
     {
         if (other.gameObject.tag == "Floor")
         {
-            move.isGrounded = true;
+            move.SetIsGrounded(true);
         }
     }
 
@@ -18,7 +18,7 @@ public class jumpCollider : MonoBehaviour {
     {
         if (other.gameObject.tag == "Floor")
         {
-            move.isGrounded = false;
+            move.SetIsGrounded(false);
         }
     }
 }
