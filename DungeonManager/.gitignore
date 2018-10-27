@@ -34,3 +34,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+#Wwise ignores
+Assets/Sound and Music/SFX/*.akd
+Assets/Sound and Music/.cache/
