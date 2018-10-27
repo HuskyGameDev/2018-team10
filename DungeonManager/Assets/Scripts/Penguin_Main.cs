@@ -9,12 +9,13 @@ public class Penguin_Main : MonoBehaviour {
     public int XMoveDirection = -1;
     public bool facingRight = false;
     public int jumpPower;
+    private bool hasKey = false;
 	
 	// Update is called once per frame
 	void Update () {
         RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(GetComponent<BoxCollider2D>().size.x * 0.09f, GetComponent<BoxCollider2D>().size.y * 0.09f), 0 , new Vector2(XMoveDirection, 0));
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(XMoveDirection * PenguinSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y) ;
-        if(hit.distance < 0.3f)
+        if(hit.distance < 0.15f)
         {
             Flip();
         }
@@ -60,5 +61,15 @@ public class Penguin_Main : MonoBehaviour {
     void Die()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void SetHasKey(bool k)
+    {
+        hasKey = k;
+    }
+
+    public bool GetHasKey()
+    {
+        return hasKey;
     }
 }

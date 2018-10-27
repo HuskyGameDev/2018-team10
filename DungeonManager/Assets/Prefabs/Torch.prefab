@@ -56,9 +56,10 @@ GameObject:
   - component: {fileID: 4512841884743662}
   - component: {fileID: 212790691799471172}
   - component: {fileID: 114556316268269276}
-  m_Layer: 0
+  - component: {fileID: 61745430288135390}
+  m_Layer: 2
   m_Name: Torch
-  m_TagString: Untagged
+  m_TagString: Torch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,7 +88,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1512623581356638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7408998, y: 2.1273212, z: 0}
+  m_LocalPosition: {x: 4.32, y: 2.19, z: 0}
   m_LocalScale: {x: 0.07800523, y: 0.062281378, z: 1}
   m_Children:
   - {fileID: 4864551358686056}
@@ -135,6 +136,31 @@ Transform:
   m_Father: {fileID: 4840943206940428}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61745430288135390
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1512623581356638}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.054467916, y: -3.9736552}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.41, y: 6.12}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.6038957, y: 14.067309}
+  m_EdgeRadius: 0
 --- !u!108 &108497965524115430
 Light:
   m_ObjectHideFlags: 1

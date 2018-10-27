@@ -2,24 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Torch_Toggle : MonoBehaviour {
-
-    public bool isLit;
+public class Pickup : MonoBehaviour
+{
+    
     private bool playerNear = false;
-    public Light toggledLight;
+    public Move_Main dennice;
+    public Penguin_Main pengwin;
 
 
-    void Start()
-    {
-        SetLight(isLit);
-    }
 
     private void Update()
     {
-        if (playerNear && Input.GetButtonDown("Light"))
+        if (playerNear && Input.GetButtonDown("Pickup"))
         {
-            isLit = !isLit;
-            SetLight(isLit);
+            if (dennice.GetHeldItem() == null)
+            {
+                dennice.SetHeldItem(gameObject);
+                gameObject.SetActive(false);
+            }
         }
     }
 
@@ -28,6 +28,11 @@ public class Torch_Toggle : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             playerNear = true;
+        }
+        if (other.gameObject.tag == "Penguin")
+        {
+            pengwin.SetHasKey(true);
+            gameObject.SetActive(false);
         }
     }
 
@@ -38,9 +43,6 @@ public class Torch_Toggle : MonoBehaviour {
             playerNear = false;
         }
     }
-
-    void SetLight(bool state)
-    {
-        toggledLight.gameObject.SetActive(state);
-    }
+    
+    
 }

@@ -13,12 +13,14 @@ public class Move_Main : MonoBehaviour {
     private bool facingRight = true;
     private Rigidbody2D body;
     private Animator animator;
+    private GameObject heldItem;
 
 
     void Start()
     {
         body = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
+        heldItem = null;
     }
 
 
@@ -26,6 +28,7 @@ public class Move_Main : MonoBehaviour {
     void Update()
     {
         PlayerMove();
+        PlaceItem();
     }
 
 
@@ -89,6 +92,20 @@ public class Move_Main : MonoBehaviour {
     }
 
 
+    private void PlaceItem()
+    {
+        if (Input.GetButtonDown("Pickup") && heldItem != null)
+        {
+            float dir = (facingRight ? 0.5f : -0.5f);
+            heldItem.GetComponent<Transform>().position = new Vector3(gameObject.GetComponent<Transform>().position.x + dir,
+                gameObject.GetComponent<Transform>().position.y, gameObject.GetComponent<Transform>().position.z);
+            heldItem.SetActive(true);
+            heldItem = null;
+
+        }
+    }
+
+
     /*void OnCollisionEnter2D (Collision2D col)
     {
         if (col.gameObject.tag == "Floor")
@@ -107,5 +124,15 @@ public class Move_Main : MonoBehaviour {
     public bool GetIsGrounded()
     {
         return isGrounded;
+    }
+
+    public void SetHeldItem(GameObject h)
+    {
+        heldItem = h;
+    }
+
+    public GameObject GetHeldItem()
+    {
+        return heldItem;
     }
 }
