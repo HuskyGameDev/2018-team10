@@ -59,6 +59,7 @@ GameObject:
   - component: {fileID: 114920292070700226}
   - component: {fileID: 61238416271809010}
   - component: {fileID: 95199050500195530}
+  - component: {fileID: 61537033261847202}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -125,12 +126,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1457952383182474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.68, y: 2.761, z: 0}
+  m_LocalPosition: {x: -7.3409, y: 3.4817002, z: 0}
   m_LocalScale: {x: 0.018806564, y: 0.022857256, z: 1}
   m_Children:
-  - {fileID: 4505870922312552}
-  - {fileID: 4476961731718662}
   - {fileID: 4732494186143008}
+  - {fileID: 4476961731718662}
+  - {fileID: 4505870922312552}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -159,7 +160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4363011962778828}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4732494186143008
 Transform:
@@ -172,7 +173,7 @@ Transform:
   m_LocalScale: {x: 53.172928, y: 43.749783, z: 1}
   m_Children: []
   m_Father: {fileID: 4363011962778828}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4921734658729912
 Transform:
@@ -246,6 +247,31 @@ PolygonCollider2D:
   m_Points:
     m_Paths: []
 --- !u!61 &61238416271809010
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1457952383182474}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: e557efc62f8b33c458812970d3055b93, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 3.884266, y: 0.29577446}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 31.16, y: 35.71}
+    newSize: {x: 0.2, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 27.295208, y: 35.11845}
+  m_EdgeRadius: 0
+--- !u!61 &61537033261847202
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}

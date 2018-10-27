@@ -83,7 +83,7 @@ public class Move_Main : MonoBehaviour {
     void FlipPlayer()
     {
         facingRight = !facingRight;
-        Vector2 localScale = gameObject.transform.localScale;
+        Vector3 localScale = gameObject.transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
     }
