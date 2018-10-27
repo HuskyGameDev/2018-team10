@@ -12,7 +12,7 @@ public class Penguin_Main : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, new Vector2(XMoveDirection, 0));
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(GetComponent<BoxCollider2D>().size.x * 0.1f, GetComponent<BoxCollider2D>().size.y * 0.1f), 0 , new Vector2(XMoveDirection, 0));
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(XMoveDirection * PenguinSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y) ;
         if(hit.distance < 0.3f)
         {
