@@ -59,10 +59,10 @@ GameObject:
   - component: {fileID: 114920292070700226}
   - component: {fileID: 61238416271809010}
   - component: {fileID: 95199050500195530}
-  - component: {fileID: 61537033261847202}
+  - component: {fileID: 61572327644463256}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130,8 +130,8 @@ Transform:
   m_LocalScale: {x: 0.018806564, y: 0.022857256, z: 1}
   m_Children:
   - {fileID: 4732494186143008}
-  - {fileID: 4476961731718662}
   - {fileID: 4505870922312552}
+  - {fileID: 4476961731718662}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -147,7 +147,7 @@ Transform:
   m_Children:
   - {fileID: 4951549438230378}
   m_Father: {fileID: 4363011962778828}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4505870922312552
 Transform:
@@ -160,7 +160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4363011962778828}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4732494186143008
 Transform:
@@ -271,7 +271,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 27.295208, y: 35.11845}
   m_EdgeRadius: 0
---- !u!61 &61537033261847202
+--- !u!61 &61572327644463256
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numVertices: 50
-  avoidLayers: 08000000
+  avoidLayers: 0800000002000000
   maxDistance: 80
 --- !u!114 &114851543323090502
 MonoBehaviour:

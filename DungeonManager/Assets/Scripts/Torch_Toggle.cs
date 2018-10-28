@@ -16,14 +16,14 @@ public class Torch_Toggle : MonoBehaviour {
 
     private void Update()
     {
-        if (playerNear && Input.GetButtonDown("E"))
+        if (playerNear && Input.GetButtonDown("Light"))
         {
             isLit = !isLit;
             SetLight(isLit);
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
@@ -31,7 +31,7 @@ public class Torch_Toggle : MonoBehaviour {
         }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {

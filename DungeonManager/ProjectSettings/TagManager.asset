@@ -8,6 +8,7 @@ TagManager:
   - Penguin
   - Trap
   - Death
+  - Torch
   layers:
   - Default
   - TransparentFX
