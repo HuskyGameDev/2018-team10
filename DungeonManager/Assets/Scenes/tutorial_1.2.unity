@@ -2081,11 +2081,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4110520283911938, guid: 407f506edc5e3c14f918c2ab4326edaa, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.38
+      value: -4.99
       objectReference: {fileID: 0}
     - target: {fileID: 4110520283911938, guid: 407f506edc5e3c14f918c2ab4326edaa, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.64
+      value: -4.14
       objectReference: {fileID: 0}
     - target: {fileID: 4110520283911938, guid: 407f506edc5e3c14f918c2ab4326edaa, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2111,6 +2111,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114524813863913444, guid: 407f506edc5e3c14f918c2ab4326edaa,
+        type: 2}
+      propertyPath: dennice
+      value: 
+      objectReference: {fileID: 2040650370}
+    - target: {fileID: 114524813863913444, guid: 407f506edc5e3c14f918c2ab4326edaa,
+        type: 2}
+      propertyPath: pengwin
+      value: 
+      objectReference: {fileID: 1503138492}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 407f506edc5e3c14f918c2ab4326edaa, type: 2}
   m_IsPrefabAsset: 0
@@ -2600,7 +2610,7 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1739696558}
+      objectReference: {fileID: 1906808292}
     - target: {fileID: 114140900084262590, guid: 50bd65e0d37256045a25448a59d10b30,
         type: 2}
       propertyPath: spriteLightRT
@@ -3521,6 +3531,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 92ec175050bfba1438187be07d7bcf63, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1503138492 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114437622988087132, guid: 92ec175050bfba1438187be07d7bcf63,
+    type: 2}
+  m_PrefabInternal: {fileID: 1491661290}
+  m_Script: {fileID: 11500000, guid: 6ef00083b0cdbe341baf8209ecd0b3b8, type: 3}
 --- !u!1 &1504002406
 GameObject:
   m_ObjectHideFlags: 0
@@ -4627,37 +4643,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1721375504}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!84 &1739696558
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1204
-  m_Height: 677
-  m_AntiAliasing: 1
-  m_DepthFormat: 2
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &1740030999
 Prefab:
   m_ObjectHideFlags: 0
@@ -5486,6 +5471,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4228343479956300, guid: 3e12641ba369c8541be9444eef4e980e,
     type: 2}
   m_PrefabInternal: {fileID: 1769142682}
+--- !u!84 &1906808292
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1204
+  m_Height: 677
+  m_AntiAliasing: 1
+  m_DepthFormat: 2
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &2022496436
 Prefab:
   m_ObjectHideFlags: 0
@@ -5730,6 +5746,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e12641ba369c8541be9444eef4e980e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &2040650370 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114920292070700226, guid: 4cfba9f48e75f6a408c88fd256dc334b,
+    type: 2}
+  m_PrefabInternal: {fileID: 924004698}
+  m_Script: {fileID: 11500000, guid: a40dbee71b0b4a2469d3fa1fd7112a2f, type: 3}
 --- !u!1001 &2052309188
 Prefab:
   m_ObjectHideFlags: 0
