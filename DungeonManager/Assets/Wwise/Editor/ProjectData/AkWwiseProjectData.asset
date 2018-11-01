@@ -28,24 +28,47 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{4397AFDB-20B4-498B-842D-1DF92FD0B006}'
-    m_lastTimePart2: -1999224789
-    m_lastTimePsrt1: 1964862976
+    m_lastTimePart2: -1999224787
+    m_lastTimePsrt1: 1338457436
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
-    List: []
+    List:
+    - Guid: 727edbbb09f3fa4f99cf11376de8caf8
+      ID: -1140032751
+      Name: Dungeon_Manager
+      Path: Default Work Unit\Dungeon_Manager
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dungeon_Manager
+        ObjectType: 7
   basePath: Audio\GeneratedSoundBanks
   callbackManagerBufferSize: 4
   CurrentPluginConfig: 
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{9D3AFD7D-486F-4D96-92B0-D045600A021B}'
-    m_lastTimePart2: -1999224789
-    m_lastTimePsrt1: 1964073431
+    m_lastTimePart2: -1999224787
+    m_lastTimePsrt1: 1338457436
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
-    List: []
+    List:
+    - Guid: fad7d10e04aa6e4ba4affec2cc3c7d0a
+      ID: 895256648
+      Name: Penguin_Death
+      Path: Default Work Unit\Penguin_Death
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Penguin_Death
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   ExpandedItems:
   - /DungeonManager_WwiseProject
+  - /DungeonManager_WwiseProject/Events
+  - /DungeonManager_WwiseProject/Events/Default Work Unit
   language: English(US)
   lowerPoolSize: 2048
   m_lastPopulateTimePart2: 0
