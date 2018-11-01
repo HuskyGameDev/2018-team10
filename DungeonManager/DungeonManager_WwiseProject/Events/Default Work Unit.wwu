@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" SchemaVersion="85">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Penguin_Death" ID="{0ED1D7FA-AA04-4B6E-A4AF-FEC2CC3C7D0A}">
+					<ChildrenList>
+						<Action Name="" ID="{7E9C7B3B-06C2-4053-A93B-90397BC7AA60}" ShortID="978561487">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Guts_Penguin" ID="{2922C79A-D082-4518-BE80-81304C27996A}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
