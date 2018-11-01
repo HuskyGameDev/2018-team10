@@ -120,6 +120,25 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="Torch_Ignition" ID="{7D7FC065-2432-4973-8E9F-E17D22AFA85D}" ShortID="28751429">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Torch Ignition" ID="{3DEC9693-DBD5-4D28-B7E0-72D36985FEB6}" ShortID="641449495">
+									<Language>SFX</Language>
+									<AudioFile>Torch Ignition.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Torch Ignition" ID="{3DEC9693-DBD5-4D28-B7E0-72D36985FEB6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Penguin" ID="{9DB767CF-8F6D-4D31-8DED-006DC2ED0E3F}" ShortID="530374116">

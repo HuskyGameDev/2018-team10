@@ -21,6 +21,7 @@
 			<ShortName>Dungeon_Manager</ShortName>
 			<Path>Dungeon_Manager.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1256134173" Name="Denis_Lights_Torch" ObjectPath="\Events\Default Work Unit\Denis_Lights_Torch"/>
 				<Event Id="1092812555" Name="Denis_Sighs" ObjectPath="\Events\Default Work Unit\Denis_Sighs"/>
 				<Event Id="895256648" Name="Penguin_Death" ObjectPath="\Events\Default Work Unit\Penguin_Death"/>
 				<Event Id="1270887217" Name="Penguin_Flipper_Footstep" ObjectPath="\Events\Default Work Unit\Penguin_Flipper_Footstep"/>
@@ -57,6 +58,10 @@
 				<File Id="553551867" Language="SFX">
 					<ShortName>Flipper Sound 1.wav</ShortName>
 					<Path>SFX\Flipper Sound 1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="641449495" Language="SFX">
+					<ShortName>Torch Ignition.wav</ShortName>
+					<Path>SFX\Torch Ignition_1C9C67B2.wem</Path>
 				</File>
 				<File Id="695831362" Language="SFX">
 					<ShortName>Flipper Sound 3.wav</ShortName>

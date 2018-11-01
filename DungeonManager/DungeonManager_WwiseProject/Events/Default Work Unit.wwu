@@ -45,6 +45,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Denis_Lights_Torch" ID="{41B6F002-D406-44C7-A82F-CB7ED2D998D0}">
+					<ChildrenList>
+						<Action Name="" ID="{F2C2B981-37E1-4E8D-A529-635AAB24D601}" ShortID="429299990">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Torch_Ignition" ID="{7D7FC065-2432-4973-8E9F-E17D22AFA85D}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
