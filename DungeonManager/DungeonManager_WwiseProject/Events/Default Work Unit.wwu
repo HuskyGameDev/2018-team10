@@ -59,6 +59,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Denis_Footsteps" ID="{41B96031-F292-4083-8DE7-E7664B6C7353}">
+					<ChildrenList>
+						<Action Name="" ID="{DDBC06A9-41FD-4F11-9F2C-291334702F5A}" ShortID="626943997">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Denis_Footsteps" ID="{697EE4A4-8ADA-4B8F-92A2-156B6E1ECE5B}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

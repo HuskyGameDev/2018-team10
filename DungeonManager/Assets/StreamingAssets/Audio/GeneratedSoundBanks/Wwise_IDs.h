@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DENIS_FOOTSTEPS = 252733814U;
         static const AkUniqueID DENIS_LIGHTS_TORCH = 1256134173U;
         static const AkUniqueID DENIS_SIGHS = 1092812555U;
         static const AkUniqueID PENGUIN_DEATH = 895256648U;

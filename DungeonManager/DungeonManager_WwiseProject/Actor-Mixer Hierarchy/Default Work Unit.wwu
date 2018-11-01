@@ -139,6 +139,75 @@
 								<ActiveSource Name="Torch Ignition" ID="{3DEC9693-DBD5-4D28-B7E0-72D36985FEB6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<RandomSequenceContainer Name="Denis_Footsteps" ID="{697EE4A4-8ADA-4B8F-92A2-156B6E1ECE5B}" ShortID="878760249">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Denis Footstep 1" ID="{92E60129-5C4F-4BF1-A4E4-34E23FE433E3}" ShortID="759147545">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Denis Footstep 1" ID="{62A6DCA9-CD13-4D35-B290-923BF5E1CE12}" ShortID="635082235">
+											<Language>SFX</Language>
+											<AudioFile>Denis Footstep 1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Denis Footstep 1" ID="{62A6DCA9-CD13-4D35-B290-923BF5E1CE12}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Denis Footstep 2" ID="{7FA21B28-1450-4B2B-B89A-6B673E0BB1F1}" ShortID="866209032">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Denis Footstep 2" ID="{7EF543DF-8267-430C-A102-2F8F868F26A5}" ShortID="18944824">
+											<Language>SFX</Language>
+											<AudioFile>Denis Footstep 2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Denis Footstep 2" ID="{7EF543DF-8267-430C-A102-2F8F868F26A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Denis Footstep 3" ID="{7CA01623-DC4F-4FC2-85CB-5C3264E60FC1}" ShortID="429369403">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Denis Footstep 3" ID="{6CEC92CC-2AC5-4B0D-8725-441B24F6585A}" ShortID="106430524">
+											<Language>SFX</Language>
+											<AudioFile>Denis Footstep 3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Denis Footstep 3" ID="{6CEC92CC-2AC5-4B0D-8725-441B24F6585A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Penguin" ID="{9DB767CF-8F6D-4D31-8DED-006DC2ED0E3F}" ShortID="530374116">
