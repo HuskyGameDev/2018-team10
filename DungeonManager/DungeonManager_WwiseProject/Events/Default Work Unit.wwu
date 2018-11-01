@@ -31,6 +31,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Denis_Sighs" ID="{AC60F90B-33D3-42AE-95F8-8424D7F8C77A}">
+					<ChildrenList>
+						<Action Name="" ID="{35B1A97D-7D47-44E6-8589-03CD4B84D538}" ShortID="67095632">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Denis_Sighs" ID="{922D3EF5-3929-46E0-82E4-67339C5EE60A}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

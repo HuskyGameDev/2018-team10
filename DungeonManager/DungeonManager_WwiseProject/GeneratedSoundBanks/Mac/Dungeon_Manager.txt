@@ -1,13 +1,19 @@
 Event	ID	Name			Wwise Object Path	Notes
 	895256648	Penguin_Death			\Default Work Unit\Penguin_Death	
+	1092812555	Denis_Sighs			\Default Work Unit\Denis_Sighs	
 	1270887217	Penguin_Flipper_Footstep			\Default Work Unit\Penguin_Flipper_Footstep	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	36877262	Flipper Sound 4	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Flipper Sound 4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Penguin_Flipper\Flipper Sound 4		176544
+	102586035	Sigh 3	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Sigh 3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Denis_Sighs\Sigh 3		198596
 	111634054	Flipper Sound 2	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Flipper Sound 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Penguin_Flipper\Flipper Sound 2		110396
+	143180353	Sigh 2	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Sigh 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Denis_Sighs\Sigh 2		397044
+	272220080	Sigh 1	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Sigh 1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Denis_Sighs\Sigh 1		463192
 	340389794	Guts Squish 3	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Guts Squish 3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Guts_Penguin\Guts Squish 3		419092
+	538675085	Sigh 4	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Sigh 4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Denis_Sighs\Sigh 4		330892
 	553551867	Flipper Sound 1	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Flipper Sound 1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Penguin_Flipper\Flipper Sound 1		132444
 	695831362	Flipper Sound 3	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Flipper Sound 3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Penguin_Flipper\Flipper Sound 3		110396
 	698686867	Guts Squish 2	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Guts Squish 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Guts_Penguin\Guts Squish 2		176544
+	770526137	Sigh 5	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Sigh 5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Denis_Sighs\Sigh 5		132444
 	905024809	Guts Squish 1	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Guts Squish 1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Guts_Penguin\Guts Squish 1		286792
 

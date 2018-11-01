@@ -21,6 +21,7 @@
 			<ShortName>Dungeon_Manager</ShortName>
 			<Path>Dungeon_Manager.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1092812555" Name="Denis_Sighs" ObjectPath="\Events\Default Work Unit\Denis_Sighs"/>
 				<Event Id="895256648" Name="Penguin_Death" ObjectPath="\Events\Default Work Unit\Penguin_Death"/>
 				<Event Id="1270887217" Name="Penguin_Flipper_Footstep" ObjectPath="\Events\Default Work Unit\Penguin_Flipper_Footstep"/>
 			</IncludedEvents>
@@ -29,13 +30,29 @@
 					<ShortName>Flipper Sound 4.wav</ShortName>
 					<Path>SFX\Flipper Sound 4_1C9C67B2.wem</Path>
 				</File>
+				<File Id="102586035" Language="SFX">
+					<ShortName>Sigh 3.wav</ShortName>
+					<Path>SFX\Sigh 3_1C9C67B2.wem</Path>
+				</File>
 				<File Id="111634054" Language="SFX">
 					<ShortName>Flipper Sound 2.wav</ShortName>
 					<Path>SFX\Flipper Sound 2_1C9C67B2.wem</Path>
 				</File>
+				<File Id="143180353" Language="SFX">
+					<ShortName>Sigh 2.wav</ShortName>
+					<Path>SFX\Sigh 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="272220080" Language="SFX">
+					<ShortName>Sigh 1.wav</ShortName>
+					<Path>SFX\Sigh 1_1C9C67B2.wem</Path>
+				</File>
 				<File Id="340389794" Language="SFX">
 					<ShortName>Guts Squish 3.wav</ShortName>
 					<Path>SFX\Guts Squish 3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="538675085" Language="SFX">
+					<ShortName>Sigh 4.wav</ShortName>
+					<Path>SFX\Sigh 4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="553551867" Language="SFX">
 					<ShortName>Flipper Sound 1.wav</ShortName>
@@ -48,6 +65,10 @@
 				<File Id="698686867" Language="SFX">
 					<ShortName>Guts Squish 2.wav</ShortName>
 					<Path>SFX\Guts Squish 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="770526137" Language="SFX">
+					<ShortName>Sigh 5.wav</ShortName>
+					<Path>SFX\Sigh 5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="905024809" Language="SFX">
 					<ShortName>Guts Squish 1.wav</ShortName>
