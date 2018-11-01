@@ -47,7 +47,7 @@ public class MinMaxEventDuration
 						var events = includedEvents[i].SelectNodes("Event");
 						for (var e = 0; e < events.Count; e++)
 						{
-							if (events[e].Attributes["Id"] != null && uint.Parse(events[e].Attributes["Id"].InnerText) == akEvent.Id)
+							if (events[e].Attributes["Id"] != null && uint.Parse(events[e].Attributes["Id"].InnerText) == (uint) akEvent.ID)
 							{
 								if (events[e].Attributes["DurationType"] != null &&
 								    events[e].Attributes["DurationType"].InnerText == "Infinite")
@@ -83,15 +83,16 @@ public class WwiseEventTracker
 	public uint playingID;
 	public float previousEventStartTime;
 
-	public void CallbackHandler(object in_cookie, AkCallbackType in_type, AkCallbackInfo in_info)
+	public void CallbackHandler(object in_cookie, AkCallbackType in_type, object in_info)
 	{
 		if (in_type == AkCallbackType.AK_EndOfEvent)
 		{
-			eventIsPlaying = fadeoutTriggered = false;
+			eventIsPlaying = false;
+			fadeoutTriggered = false;
 		}
 		else if (in_type == AkCallbackType.AK_Duration)
 		{
-			var estimatedDuration = (in_info as AkDurationCallbackInfo).fEstimatedDuration;
+			var estimatedDuration = ((AkDurationCallbackInfo) in_info).fEstimatedDuration;
 			currentDuration = estimatedDuration * currentDurationProportion / 1000.0f;
 		}
 	}
@@ -121,6 +122,11 @@ public class AkEventPlayable : UnityEngine.Playables.PlayableAsset, UnityEngine.
 	public bool overrideTrackEmitterObject = false;
 
 	private UnityEngine.Timeline.TimelineClip owningClip;
+
+#if UNITY_EDITOR
+	//Used to track when the event has been changed in OnValidate so that the duration can be updated at the correct time.
+	private int previousEventID;
+#endif
 
 	public bool retriggerEvent = false;
 
@@ -212,14 +218,11 @@ public class AkEventPlayable : UnityEngine.Playables.PlayableAsset, UnityEngine.
 		}
 	}
 
-	//Used to track when the event has been changed in OnValidate so that the duration can be updated at the correct time.
-	private uint previousEventID;
-
 	public void OnValidate()
 	{
-		if (previousEventID != akEvent.Id)
+		if (previousEventID != akEvent.ID)
 		{
-			previousEventID = akEvent.Id;
+			previousEventID = akEvent.ID;
 			updateWwiseEventDurations();
 			if (owningClip != null) owningClip.duration = eventDurationMax;
 		}
@@ -553,7 +556,7 @@ public class AkEventPlayableBehavior : UnityEngine.Playables.PlayableBehaviour
 			var proportionalTime = getProportionalTime(playable);
 			if (proportionalTime < 1.0f) // Avoids Wwise "seeking beyond end of event: audio will stop" error.
 			{
-				AkSoundEngine.SeekOnEvent(akEvent.Id, eventObject, proportionalTime);
+				AkSoundEngine.SeekOnEvent((uint) akEvent.ID, eventObject, proportionalTime);
 				return 1.0f - proportionalTime;
 			}
 		}

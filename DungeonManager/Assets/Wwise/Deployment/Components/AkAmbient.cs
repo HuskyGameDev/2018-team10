@@ -34,8 +34,8 @@ public class AkMultiPosEvent
 /// - <a href="https://www.audiokinetic.com/library/edge/?source=SDK&id=soundengine__events.html" target="_blank">Integration Details - Events</a> (Note: This is described in the Wwise SDK documentation.)
 public class AkAmbient : AkEvent
 {
-	public static System.Collections.Generic.Dictionary<uint, AkMultiPosEvent> multiPosEventTree =
-		new System.Collections.Generic.Dictionary<uint, AkMultiPosEvent>();
+	public static System.Collections.Generic.Dictionary<int, AkMultiPosEvent> multiPosEventTree =
+		new System.Collections.Generic.Dictionary<int, AkMultiPosEvent>();
 
 	public System.Collections.Generic.List<UnityEngine.Vector3> multiPositionArray =
 		new System.Collections.Generic.List<UnityEngine.Vector3>();
@@ -69,7 +69,7 @@ public class AkAmbient : AkEvent
 
 			AkMultiPosEvent eventPosList;
 
-			if (multiPosEventTree.TryGetValue(data.Id, out eventPosList))
+			if (multiPosEventTree.TryGetValue(eventID, out eventPosList))
 			{
 				if (!eventPosList.list.Contains(this))
 					eventPosList.list.Add(this);
@@ -78,7 +78,7 @@ public class AkAmbient : AkEvent
 			{
 				eventPosList = new AkMultiPosEvent();
 				eventPosList.list.Add(this);
-				multiPosEventTree.Add(data.Id, eventPosList);
+				multiPosEventTree.Add(eventID, eventPosList);
 			}
 
 			var positionArray = BuildMultiDirectionArray(eventPosList);
@@ -93,10 +93,10 @@ public class AkAmbient : AkEvent
 	{
 		if (multiPositionTypeLabel == MultiPositionTypeLabel.MultiPosition_Mode)
 		{
-			var eventPosList = multiPosEventTree[data.Id];
+			var eventPosList = multiPosEventTree[eventID];
 
 			if (eventPosList.list.Count == 1)
-				multiPosEventTree.Remove(data.Id);
+				multiPosEventTree.Remove(eventID);
 			else
 			{
 				eventPosList.list.Remove(this);
@@ -114,7 +114,7 @@ public class AkAmbient : AkEvent
 			base.HandleEvent(in_gameObject);
 		else
 		{
-			var multiPositionSoundEmitter = multiPosEventTree[data.Id];
+			var multiPositionSoundEmitter = multiPosEventTree[eventID];
 			if (multiPositionSoundEmitter.eventIsPlaying)
 				return;
 
@@ -123,9 +123,16 @@ public class AkAmbient : AkEvent
 			soundEmitterObject = multiPositionSoundEmitter.list[0].gameObject;
 
 			if (enableActionOnEvent)
-				data.ExecuteAction(soundEmitterObject, actionOnEventType, (int)transitionDuration * 1000, curveInterpolation);
+			{
+				AkSoundEngine.ExecuteActionOnEvent((uint) eventID, actionOnEventType, multiPositionSoundEmitter.list[0].gameObject,
+					(int) transitionDuration * 1000, curveInterpolation);
+			}
 			else
-				playingId = data.Post(soundEmitterObject, (uint)AkCallbackType.AK_EndOfEvent, multiPositionSoundEmitter.FinishedPlaying);
+			{
+				playingId = AkSoundEngine.PostEvent((uint) eventID, multiPositionSoundEmitter.list[0].gameObject,
+					(uint) AkCallbackType.AK_EndOfEvent, multiPositionSoundEmitter.FinishedPlaying, null, 0, null,
+					AkSoundEngine.AK_INVALID_PLAYING_ID);
+			}
 		}
 	}
 

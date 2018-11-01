@@ -7,6 +7,8 @@
 
 public class AkWwisePicker : UnityEditor.EditorWindow
 {
+	public static bool WwiseProjectFound = true;
+
 	public static AkWwiseTreeView treeView = new AkWwiseTreeView();
 
 	[UnityEditor.MenuItem("Window/Wwise Picker", false, (int) AkWwiseWindowOrder.WwisePicker)]
@@ -34,7 +36,7 @@ public class AkWwisePicker : UnityEditor.EditorWindow
 			AkWwiseProjectInfo.GetData().autoPopulateEnabled =
 				UnityEngine.GUILayout.Toggle(AkWwiseProjectInfo.GetData().autoPopulateEnabled, "Auto populate");
 
-			if (AkWwiseProjectInfo.GetData().autoPopulateEnabled && AkUtilities.IsWwiseProjectAvailable)
+			if (AkWwiseProjectInfo.GetData().autoPopulateEnabled && WwiseProjectFound)
 				AkWwiseWWUBuilder.StartWWUWatcher();
 			else
 				AkWwiseWWUBuilder.StopWWUWatcher();
@@ -71,15 +73,18 @@ public class AkWwisePicker : UnityEditor.EditorWindow
 
 		treeView.DisplayTreeView(AK.Wwise.TreeView.TreeViewControl.DisplayTypes.USE_SCROLL_VIEW);
 
-		if (UnityEngine.GUI.changed && AkUtilities.IsWwiseProjectAvailable)
+		if (UnityEngine.GUI.changed && WwiseProjectFound)
 			UnityEditor.EditorUtility.SetDirty(AkWwiseProjectInfo.GetData());
 		// TODO: RTP Parameters List
 	}
 
+	//////////////////////////////////////////////////////////
+
 	public static void PopulateTreeview()
 	{
 		treeView.AssignDefaults();
-		treeView.SetRootItem(System.IO.Path.GetFileNameWithoutExtension(WwiseSetupWizard.Settings.WwiseProjectPath), WwiseObjectType.Project);
+		treeView.SetRootItem(System.IO.Path.GetFileNameWithoutExtension(WwiseSetupWizard.Settings.WwiseProjectPath),
+			AkWwiseProjectData.WwiseObjectType.PROJECT);
 		treeView.PopulateItem(treeView.RootItem, "Events", AkWwiseProjectInfo.GetData().EventWwu);
 		treeView.PopulateItem(treeView.RootItem, "Switches", AkWwiseProjectInfo.GetData().SwitchWwu);
 		treeView.PopulateItem(treeView.RootItem, "States", AkWwiseProjectInfo.GetData().StateWwu);

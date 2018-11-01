@@ -8,9 +8,10 @@
 [UnityEngine.AddComponentMenu("Wwise/AkBank")]
 /// @brief Loads and unloads a SoundBank at a specified moment. Vorbis sounds can be decompressed at a specified moment using the decode compressed data option. In that case, the SoundBank will be prepared.
 [UnityEngine.ExecuteInEditMode]
-public class AkBank : AkUnityEventHandler, UnityEngine.ISerializationCallbackReceiver
+public class AkBank : AkUnityEventHandler
 {
-	public AK.Wwise.Bank data = new AK.Wwise.Bank();
+	/// Name of the SoundBank, as specified in the Wwise project.
+	public string bankName = "";
 
 	/// Decode this SoundBank upon load
 	public bool decodeBank = false;
@@ -24,6 +25,9 @@ public class AkBank : AkUnityEventHandler, UnityEngine.ISerializationCallbackRec
 	/// Reserved.
 	public System.Collections.Generic.List<int> unloadTriggerList =
 		new System.Collections.Generic.List<int> { DESTROY_TRIGGER_ID };
+#if UNITY_EDITOR
+	public byte[] valueGuid = new byte[16];
+#endif
 
 	protected override void Awake()
 	{
@@ -31,7 +35,6 @@ public class AkBank : AkUnityEventHandler, UnityEngine.ISerializationCallbackRec
 		if (UnityEditor.BuildPipeline.isBuildingPlayer)
 			return;
 #endif
-
 		base.Awake();
 
 		RegisterTriggers(unloadTriggerList, UnloadBank);
@@ -54,15 +57,15 @@ public class AkBank : AkUnityEventHandler, UnityEngine.ISerializationCallbackRec
 	public override void HandleEvent(UnityEngine.GameObject in_gameObject)
 	{
 		if (!loadAsynchronous)
-			data.Load(decodeBank, saveDecodedBank);
+			AkBankManager.LoadBank(bankName, decodeBank, saveDecodedBank);
 		else
-			data.LoadAsync();
+			AkBankManager.LoadBankAsync(bankName);
 	}
 
 	/// Unloads a SoundBank
 	public void UnloadBank(UnityEngine.GameObject in_gameObject)
 	{
-		data.Unload();
+		AkBankManager.UnloadBank(bankName);
 	}
 
 	protected override void OnDestroy()
@@ -77,31 +80,8 @@ public class AkBank : AkUnityEventHandler, UnityEngine.ISerializationCallbackRec
 #endif
 
 		if (unloadTriggerList.Contains(DESTROY_TRIGGER_ID))
+
 			UnloadBank(null);
 	}
-
-	#region WwiseMigration
-	void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize() { }
-
-	void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()
-	{
-#if UNITY_EDITOR
-		if (!data.IsValid() && AK.Wwise.BaseType.IsByteArrayValidGuid(valueGuid))
-		{
-			data.valueGuid = valueGuid;
-			WwiseObjectReference.migrate += data.MigrateData;
-		}
-
-		valueGuid = null;
-#endif
-	}
-
-#pragma warning disable 0414 // private field assigned but not used.
-	[UnityEngine.HideInInspector]
-	[UnityEngine.SerializeField]
-	private byte[] valueGuid;
-#pragma warning restore 0414 // private field assigned but not used.
-
-	#endregion
 }
 #endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

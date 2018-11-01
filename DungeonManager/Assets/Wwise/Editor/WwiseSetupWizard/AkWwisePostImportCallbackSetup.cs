@@ -165,6 +165,21 @@ public class AkWwisePostImportCallbackSetup
 		AkPluginActivator.ActivatePluginsForEditor();
 	}
 
+	private static void ClearConsole()
+	{
+#if UNITY_2017_1_OR_NEWER
+		var logEntries = System.Type.GetType("UnityEditor.LogEntries,UnityEditor.dll");
+#else
+		var logEntries = System.Type.GetType("UnityEditorInternal.LogEntries,UnityEditor.dll");
+#endif
+		if (logEntries != null)
+		{
+			var clearMethod = logEntries.GetMethod("Clear",
+				System.Reflection.BindingFlags.Static | System.Reflection.BindingFlags.Public);
+			clearMethod.Invoke(null, null);
+		}
+	}
+
 	public static void CheckPicker()
 	{
 		if (UnityEditor.EditorApplication.isPlayingOrWillChangePlaymode || UnityEditor.EditorApplication.isCompiling)
@@ -175,6 +190,7 @@ public class AkWwisePostImportCallbackSetup
 		}
 
 		var settings = WwiseSettings.LoadSettings();
+
 		if (!settings.CreatedPicker)
 		{
 			// Delete all the ghost tabs (Failed to load).
@@ -199,6 +215,8 @@ public class AkWwisePostImportCallbackSetup
 					}
 				}
 			}
+
+			ClearConsole();
 
 			// TODO: If no scene is loaded and we are using the demo scene, automatically load it to display it.
 
@@ -285,11 +303,17 @@ public class AkWwisePostImportCallbackSetup
 					var objWwise = new UnityEngine.GameObject("WwiseGlobal");
 
 					//Attach initializer and terminator components
-					UnityEditor.Undo.AddComponent<AkInitializer>(objWwise);
+					var init = UnityEditor.Undo.AddComponent<AkInitializer>(objWwise);
+					AkWwiseProjectInfo.GetData().CopyInitSettings(init);
 				}
 			}
-			else if (settings.CreateWwiseGlobal == false && AkInitializers[0].gameObject.name == "WwiseGlobal")
+			else
+			{
+				if (settings.CreateWwiseGlobal == false && AkInitializers[0].gameObject.name == "WwiseGlobal")
 					UnityEditor.Undo.DestroyObjectImmediate(AkInitializers[0].gameObject);
+				//All scenes will share the same initializer.  So expose the init settings consistently across scenes.
+				AkWwiseProjectInfo.GetData().CopyInitSettings(AkInitializers[0]);
+			}
 
 			if (settings.CreateWwiseListener)
 			{

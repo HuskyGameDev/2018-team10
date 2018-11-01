@@ -29,7 +29,7 @@ public class AkEventCallbackMsg
 /// - \ref sect_edit_mode
 /// - \ref unity_use_AkEvent_AkAmbient
 /// - <a href="https://www.audiokinetic.com/library/edge/?source=SDK&id=soundengine__events.html" target="_blank">Integration Details - Events</a> (Note: This is described in the Wwise SDK documentation.)
-public class AkEvent : AkUnityEventHandler, UnityEngine.ISerializationCallbackReceiver
+public class AkEvent : AkUnityEventHandler
 {
 	/// Replacement action.  See AK::SoundEngine::ExecuteEventOnAction()
 	public AkActionOnEventType actionOnEventType = AkActionOnEventType.AkActionOnEventType_Stop;
@@ -40,11 +40,10 @@ public class AkEvent : AkUnityEventHandler, UnityEngine.ISerializationCallbackRe
 	/// Enables additional options to reuse existing events.  Use it to transform a Play event into a Stop event without having to define one in the Wwise Project.
 	public bool enableActionOnEvent = false;
 
-	[System.Obsolete(AkSoundEngine.Deprecation_2018_1_2)]
-	public int eventID { get { return (int)(data == null ? AkSoundEngine.AK_INVALID_UNIQUE_ID : data.Id); } }
+	/// ID of the Event as found in the WwiseID.cs file
+	public int eventID = 0;
 
-	public AK.Wwise.Event data = new AK.Wwise.Event();
-
+	//
 	public AkEventCallbackData m_callbackData = null;
 	public uint playingId = AkSoundEngine.AK_INVALID_PLAYING_ID;
 
@@ -53,6 +52,9 @@ public class AkEvent : AkUnityEventHandler, UnityEngine.ISerializationCallbackRe
 
 	/// Duration of the fade.  See AK::SoundEngine::ExecuteEventOnAction()
 	public float transitionDuration = 0.0f;
+#if UNITY_EDITOR
+	public byte[] valueGuid = new byte[16];
+#endif
 
 	private void Callback(object in_cookie, AkCallbackType in_type, AkCallbackInfo in_info)
 	{
@@ -60,7 +62,11 @@ public class AkEvent : AkUnityEventHandler, UnityEngine.ISerializationCallbackRe
 		{
 			if (((int) in_type & m_callbackData.callbackFlags[i]) != 0 && m_callbackData.callbackGameObj[i] != null)
 			{
-				var callbackInfo = new AkEventCallbackMsg { type = in_type, sender = gameObject, info = in_info };
+				var callbackInfo = new AkEventCallbackMsg();
+				callbackInfo.type = in_type;
+				callbackInfo.sender = gameObject;
+				callbackInfo.info = in_info;
+
 				m_callbackData.callbackGameObj[i].SendMessage(m_callbackData.callbackFunc[i], callbackInfo);
 			}
 		}
@@ -69,53 +75,36 @@ public class AkEvent : AkUnityEventHandler, UnityEngine.ISerializationCallbackRe
 	public override void HandleEvent(UnityEngine.GameObject in_gameObject)
 	{
 		var gameObj = useOtherObject && in_gameObject != null ? in_gameObject : gameObject;
+
 		soundEmitterObject = gameObj;
 
 		if (enableActionOnEvent)
 		{
-			data.ExecuteAction(gameObj, actionOnEventType, (int) transitionDuration * 1000,
+			AkSoundEngine.ExecuteActionOnEvent((uint) eventID, actionOnEventType, gameObj, (int) transitionDuration * 1000,
 				curveInterpolation);
 			return;
 		}
 
 		if (m_callbackData != null)
-			playingId = data.Post(gameObj, (uint)m_callbackData.uFlags, Callback);
-		else
-			playingId = data.Post(gameObj);
-	}
-
-	public void Stop(int _transitionDuration)
-	{
-		Stop(_transitionDuration, AkCurveInterpolation.AkCurveInterpolation_Linear);
-	}
-
-	public void Stop(int _transitionDuration, AkCurveInterpolation _curveInterpolation)
-	{
-		data.Stop(soundEmitterObject, _transitionDuration, _curveInterpolation);
-	}
-
-	#region WwiseMigration
-	void UnityEngine.ISerializationCallbackReceiver.OnBeforeSerialize() { }
-
-	void UnityEngine.ISerializationCallbackReceiver.OnAfterDeserialize()
-	{
-#if UNITY_EDITOR
-		if (!data.IsValid() && AK.Wwise.BaseType.IsByteArrayValidGuid(valueGuid))
 		{
-			data.valueGuid = valueGuid;
-			WwiseObjectReference.migrate += data.MigrateData;
+			playingId = AkSoundEngine.PostEvent((uint) eventID, gameObj, (uint) m_callbackData.uFlags, Callback, null, 0, null,
+				AkSoundEngine.AK_INVALID_PLAYING_ID);
 		}
+		else
+			playingId = AkSoundEngine.PostEvent((uint) eventID, gameObj);
 
-		valueGuid = null;
-#endif
+		if (playingId == AkSoundEngine.AK_INVALID_PLAYING_ID && AkSoundEngine.IsInitialized())
+		{
+			UnityEngine.Debug.LogError("Could not post event ID \"" + (uint) eventID +
+			                           "\". Did you make sure to load the appropriate SoundBank?");
+		}
 	}
 
-#pragma warning disable 0414 // private field assigned but not used.
-	[UnityEngine.HideInInspector]
-	[UnityEngine.SerializeField]
-	private byte[] valueGuid;
-#pragma warning restore 0414 // private field assigned but not used.
-
-	#endregion
+	public void Stop(int _transitionDuration,
+		AkCurveInterpolation _curveInterpolation = AkCurveInterpolation.AkCurveInterpolation_Linear)
+	{
+		AkSoundEngine.ExecuteActionOnEvent((uint) eventID, AkActionOnEventType.AkActionOnEventType_Stop, soundEmitterObject,
+			_transitionDuration, _curveInterpolation);
+	}
 }
 #endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
