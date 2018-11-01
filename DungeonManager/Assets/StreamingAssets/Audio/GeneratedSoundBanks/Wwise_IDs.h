@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PENGUIN_DEATH = 895256648U;
+        static const AkUniqueID PENGUIN_FLIPPER_FOOTSTEP = 1270887217U;
     } // namespace EVENTS
 
     namespace BANKS
