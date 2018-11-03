@@ -19,6 +19,15 @@ public class Penguin_Main : MonoBehaviour {
         {
             Flip();
         }
+
+        if (gameObject.GetComponent<Rigidbody2D>().velocity.y == 0)
+        {
+            gameObject.GetComponentInChildren<Animator>().SetBool("Idle", false);
+        }
+        else
+        {
+            gameObject.GetComponentInChildren<Animator>().SetBool("Idle", true);
+        }
 	}
 
     //
@@ -60,7 +69,8 @@ public class Penguin_Main : MonoBehaviour {
     //Call when penguin dies to relaod scene
     void Die()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        gameObject.GetComponentInChildren<Animator>().SetBool("Die_Dennise", true);
     }
 
     public void SetHasKey(bool k)
