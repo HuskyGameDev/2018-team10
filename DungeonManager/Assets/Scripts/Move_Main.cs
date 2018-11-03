@@ -43,7 +43,6 @@ public class Move_Main : MonoBehaviour {
 
         //Jump
         Jump();
-        //animations
         //player direction
         if (moveX < 0.0f && facingRight == true)
         {
@@ -91,7 +90,8 @@ public class Move_Main : MonoBehaviour {
         transform.localScale = localScale;
     }
 
-
+    //check if player has an item and places it if they do
+    //translates item to be next to player frfom where it became inactive
     private void PlaceItem()
     {
         if (Input.GetButtonDown("Pickup") && heldItem != null)
@@ -104,16 +104,6 @@ public class Move_Main : MonoBehaviour {
 
         }
     }
-
-
-    /*void OnCollisionEnter2D (Collision2D col)
-    {
-        if (col.gameObject.tag == "Floor")
-        {
-            isGrounded = true;
-        }
-    }*/
-
 
     public void SetIsGrounded(bool b)
     {
