@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3154934545" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Dungeon_Manager</ObjectPath>
+			<ShortName>Dungeon_Manager</ShortName>
+			<Path>Dungeon_Manager.bnk</Path>
+			<IncludedEvents>
+				<Event Id="252733814" Name="Denis_Footsteps" ObjectPath="\Events\Default Work Unit\Denis_Footsteps"/>
+				<Event Id="1256134173" Name="Denis_Lights_Torch" ObjectPath="\Events\Default Work Unit\Denis_Lights_Torch"/>
+				<Event Id="1092812555" Name="Denis_Sighs" ObjectPath="\Events\Default Work Unit\Denis_Sighs"/>
+				<Event Id="895256648" Name="Penguin_Death" ObjectPath="\Events\Default Work Unit\Penguin_Death"/>
+				<Event Id="1270887217" Name="Penguin_Flipper_Footstep" ObjectPath="\Events\Default Work Unit\Penguin_Flipper_Footstep"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="18944824" Language="SFX">
+					<ShortName>Denis Footstep 2.wav</ShortName>
+					<Path>SFX\Denis Footstep 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="36877262" Language="SFX">
+					<ShortName>Flipper Sound 4.wav</ShortName>
+					<Path>SFX\Flipper Sound 4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="102586035" Language="SFX">
+					<ShortName>Sigh 3.wav</ShortName>
+					<Path>SFX\Sigh 3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="106430524" Language="SFX">
+					<ShortName>Denis Footstep 3.wav</ShortName>
+					<Path>SFX\Denis Footstep 3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="111634054" Language="SFX">
+					<ShortName>Flipper Sound 2.wav</ShortName>
+					<Path>SFX\Flipper Sound 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="143180353" Language="SFX">
+					<ShortName>Sigh 2.wav</ShortName>
+					<Path>SFX\Sigh 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="272220080" Language="SFX">
+					<ShortName>Sigh 1.wav</ShortName>
+					<Path>SFX\Sigh 1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="340389794" Language="SFX">
+					<ShortName>Guts Squish 3.wav</ShortName>
+					<Path>SFX\Guts Squish 3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="538675085" Language="SFX">
+					<ShortName>Sigh 4.wav</ShortName>
+					<Path>SFX\Sigh 4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="553551867" Language="SFX">
+					<ShortName>Flipper Sound 1.wav</ShortName>
+					<Path>SFX\Flipper Sound 1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="635082235" Language="SFX">
+					<ShortName>Denis Footstep 1.wav</ShortName>
+					<Path>SFX\Denis Footstep 1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="641449495" Language="SFX">
+					<ShortName>Torch Ignition.wav</ShortName>
+					<Path>SFX\Torch Ignition_1C9C67B2.wem</Path>
+				</File>
+				<File Id="695831362" Language="SFX">
+					<ShortName>Flipper Sound 3.wav</ShortName>
+					<Path>SFX\Flipper Sound 3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="698686867" Language="SFX">
+					<ShortName>Guts Squish 2.wav</ShortName>
+					<Path>SFX\Guts Squish 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="770526137" Language="SFX">
+					<ShortName>Sigh 5.wav</ShortName>
+					<Path>SFX\Sigh 5_1C9C67B2.wem</Path>
+				</File>
+				<File Id="905024809" Language="SFX">
+					<ShortName>Guts Squish 1.wav</ShortName>
+					<Path>SFX\Guts Squish 1_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

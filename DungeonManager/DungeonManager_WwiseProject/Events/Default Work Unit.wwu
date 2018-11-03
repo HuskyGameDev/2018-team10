@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Penguin_Death" ID="{0ED1D7FA-AA04-4B6E-A4AF-FEC2CC3C7D0A}">
+					<ChildrenList>
+						<Action Name="" ID="{7E9C7B3B-06C2-4053-A93B-90397BC7AA60}" ShortID="978561487">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Guts_Penguin" ID="{2922C79A-D082-4518-BE80-81304C27996A}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Penguin_Flipper_Footstep" ID="{6CDF8323-C6F4-4A23-9CDD-A1012D4E2082}">
+					<ChildrenList>
+						<Action Name="" ID="{C1FEFAEB-171E-4B6D-8CF0-68592D727AFE}" ShortID="496507190">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Penguin_Flipper" ID="{83C2445B-F34D-49CD-AD66-4D5813020E91}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Denis_Sighs" ID="{AC60F90B-33D3-42AE-95F8-8424D7F8C77A}">
+					<ChildrenList>
+						<Action Name="" ID="{35B1A97D-7D47-44E6-8589-03CD4B84D538}" ShortID="67095632">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Denis_Sighs" ID="{922D3EF5-3929-46E0-82E4-67339C5EE60A}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Denis_Lights_Torch" ID="{41B6F002-D406-44C7-A82F-CB7ED2D998D0}">
+					<ChildrenList>
+						<Action Name="" ID="{F2C2B981-37E1-4E8D-A529-635AAB24D601}" ShortID="429299990">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Torch_Ignition" ID="{7D7FC065-2432-4973-8E9F-E17D22AFA85D}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Denis_Footsteps" ID="{41B96031-F292-4083-8DE7-E7664B6C7353}">
+					<ChildrenList>
+						<Action Name="" ID="{DDBC06A9-41FD-4F11-9F2C-291334702F5A}" ShortID="626943997">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Denis_Footsteps" ID="{697EE4A4-8ADA-4B8F-92A2-156B6E1ECE5B}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

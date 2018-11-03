@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4397AFDB-20B4-498B-842D-1DF92FD0B006}" SchemaVersion="85">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{4397AFDB-20B4-498B-842D-1DF92FD0B006}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Dungeon_Manager" ID="{BBDB7E72-F309-4FFA-99CF-11376DE8CAF8}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Denis_Footsteps" ID="{41B96031-F292-4083-8DE7-E7664B6C7353}" WorkUnitID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Denis_Sighs" ID="{AC60F90B-33D3-42AE-95F8-8424D7F8C77A}" WorkUnitID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Denis_Lights_Torch" ID="{41B6F002-D406-44C7-A82F-CB7ED2D998D0}" WorkUnitID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Penguin_Flipper_Footstep" ID="{6CDF8323-C6F4-4A23-9CDD-A1012D4E2082}" WorkUnitID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Penguin_Death" ID="{0ED1D7FA-AA04-4B6E-A4AF-FEC2CC3C7D0A}" WorkUnitID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

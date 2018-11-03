@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e17554b917fc34fb8f82bc284e6c5b, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - Guid: '{7F76A19A-76DA-4687-9F57-81506D054DF7}'
+    m_lastTimePart2: -1999224789
+    m_lastTimePsrt1: 1965012894
+    ParentPhysicalPath: 
+    PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    List: []
+  autoPopulateEnabled: 1
+  AuxBusWwu:
+  - Guid: '{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}'
+    m_lastTimePart2: -1999224789
+    m_lastTimePsrt1: 1964483197
+    ParentPhysicalPath: 
+    PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    List: []
+  BankWwu:
+  - Guid: '{4397AFDB-20B4-498B-842D-1DF92FD0B006}'
+    m_lastTimePart2: -1999224787
+    m_lastTimePsrt1: 1338457436
+    ParentPhysicalPath: 
+    PhysicalPath: SoundBanks\Default Work Unit.wwu
+    List:
+    - Guid: 727edbbb09f3fa4f99cf11376de8caf8
+      ID: -1140032751
+      Name: Dungeon_Manager
+      Path: Default Work Unit\Dungeon_Manager
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dungeon_Manager
+        ObjectType: 7
+  basePath: Audio\GeneratedSoundBanks
+  callbackManagerBufferSize: 4
+  CurrentPluginConfig: 
+  defaultPoolSize: 4096
+  EventWwu:
+  - Guid: '{9D3AFD7D-486F-4D96-92B0-D045600A021B}'
+    m_lastTimePart2: -1999224787
+    m_lastTimePsrt1: 1338457436
+    ParentPhysicalPath: 
+    PhysicalPath: Events\Default Work Unit.wwu
+    List:
+    - Guid: fad7d10e04aa6e4ba4affec2cc3c7d0a
+      ID: 895256648
+      Name: Penguin_Death
+      Path: Default Work Unit\Penguin_Death
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Penguin_Death
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  ExpandedItems:
+  - /DungeonManager_WwiseProject
+  - /DungeonManager_WwiseProject/Events
+  - /DungeonManager_WwiseProject/Events/Default Work Unit
+  language: English(US)
+  lowerPoolSize: 2048
+  m_lastPopulateTimePart2: 0
+  m_lastPopulateTimePsrt1: 0
+  memoryCutoffThreshold: 0.95
+  preparePoolSize: 0
+  RtpcWwu:
+  - Guid: '{FC8A0D9D-1A8C-4E50-B18C-8374343B6B48}'
+    m_lastTimePart2: -1999224789
+    m_lastTimePsrt1: 1964123399
+    ParentPhysicalPath: 
+    PhysicalPath: Game Parameters\Default Work Unit.wwu
+    List: []
+  StateWwu:
+  - Guid: '{DADF20DF-AA50-4DDD-8BC0-2E9D2D369D53}'
+    m_lastTimePart2: -1999224789
+    m_lastTimePsrt1: 1964952935
+    ParentPhysicalPath: 
+    PhysicalPath: States\Default Work Unit.wwu
+    List: []
+  streamingPoolSize: 1024
+  SwitchWwu:
+  - Guid: '{8973DCE1-5C2B-40D3-A697-259AE5223F72}'
+    m_lastTimePart2: -1999224789
+    m_lastTimePsrt1: 1964033454
+    ParentPhysicalPath: 
+    PhysicalPath: Switches\Default Work Unit.wwu
+    List: []
+  TriggerWwu:
+  - Guid: '{9C6FED4F-1DB6-4B98-BE70-F06134C58311}'
+    m_lastTimePart2: -1999224789
+    m_lastTimePsrt1: 1963783600
+    ParentPhysicalPath: 
+    PhysicalPath: Triggers\Default Work Unit.wwu
+    List: []

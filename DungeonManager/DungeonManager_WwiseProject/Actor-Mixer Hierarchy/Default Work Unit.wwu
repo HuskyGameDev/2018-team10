@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FD1E7635-6A9C-46CF-A340-55D417911414}" SchemaVersion="85">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{FD1E7635-6A9C-46CF-A340-55D417911414}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Player" ID="{CB0A4FDA-11D9-4532-9938-B22CC912D5AB}" ShortID="38862128">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Denis_Sighs" ID="{922D3EF5-3929-46E0-82E4-67339C5EE60A}" ShortID="227403183">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Sigh 1" ID="{2099DD4F-C876-4B00-A312-9E0E57CA9313}" ShortID="397425441">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sigh 1" ID="{F728E22F-30A7-414B-9341-2A9E2F8DB960}" ShortID="272220080">
+											<Language>SFX</Language>
+											<AudioFile>Sigh 1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sigh 1" ID="{F728E22F-30A7-414B-9341-2A9E2F8DB960}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sigh 2" ID="{5B25D9DB-D066-4C5F-BE4C-05CA5C3BD48F}" ShortID="863415984">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sigh 2" ID="{8113EAF5-F5F6-458C-8532-D0C40A827DB9}" ShortID="143180353">
+											<Language>SFX</Language>
+											<AudioFile>Sigh 2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sigh 2" ID="{8113EAF5-F5F6-458C-8532-D0C40A827DB9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sigh 3" ID="{9BC24161-C131-4752-8294-ED280C4A9547}" ShortID="634120319">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sigh 3" ID="{CCC89CC2-7401-4E6C-BDAB-DEBB37A81DE8}" ShortID="102586035">
+											<Language>SFX</Language>
+											<AudioFile>Sigh 3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sigh 3" ID="{CCC89CC2-7401-4E6C-BDAB-DEBB37A81DE8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sigh 4" ID="{C14DDE20-DC48-4110-8D9C-CD18CB395641}" ShortID="872841844">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sigh 4" ID="{65159D7E-A16C-4733-9EDE-EAEBBB952391}" ShortID="538675085">
+											<Language>SFX</Language>
+											<AudioFile>Sigh 4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sigh 4" ID="{65159D7E-A16C-4733-9EDE-EAEBBB952391}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Sigh 5" ID="{38D92809-F94D-4A42-BAC1-B68D6CC6FD63}" ShortID="492757506">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Sigh 5" ID="{5BCC6238-C779-4081-A61E-02920CB4D74F}" ShortID="770526137">
+											<Language>SFX</Language>
+											<AudioFile>Sigh 5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Sigh 5" ID="{5BCC6238-C779-4081-A61E-02920CB4D74F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="Torch_Ignition" ID="{7D7FC065-2432-4973-8E9F-E17D22AFA85D}" ShortID="28751429">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Torch Ignition" ID="{3DEC9693-DBD5-4D28-B7E0-72D36985FEB6}" ShortID="641449495">
+									<Language>SFX</Language>
+									<AudioFile>Torch Ignition.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Torch Ignition" ID="{3DEC9693-DBD5-4D28-B7E0-72D36985FEB6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Denis_Footsteps" ID="{697EE4A4-8ADA-4B8F-92A2-156B6E1ECE5B}" ShortID="878760249">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Denis Footstep 1" ID="{92E60129-5C4F-4BF1-A4E4-34E23FE433E3}" ShortID="759147545">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Denis Footstep 1" ID="{62A6DCA9-CD13-4D35-B290-923BF5E1CE12}" ShortID="635082235">
+											<Language>SFX</Language>
+											<AudioFile>Denis Footstep 1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Denis Footstep 1" ID="{62A6DCA9-CD13-4D35-B290-923BF5E1CE12}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Denis Footstep 2" ID="{7FA21B28-1450-4B2B-B89A-6B673E0BB1F1}" ShortID="866209032">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Denis Footstep 2" ID="{7EF543DF-8267-430C-A102-2F8F868F26A5}" ShortID="18944824">
+											<Language>SFX</Language>
+											<AudioFile>Denis Footstep 2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Denis Footstep 2" ID="{7EF543DF-8267-430C-A102-2F8F868F26A5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Denis Footstep 3" ID="{7CA01623-DC4F-4FC2-85CB-5C3264E60FC1}" ShortID="429369403">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Denis Footstep 3" ID="{6CEC92CC-2AC5-4B0D-8725-441B24F6585A}" ShortID="106430524">
+											<Language>SFX</Language>
+											<AudioFile>Denis Footstep 3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Denis Footstep 3" ID="{6CEC92CC-2AC5-4B0D-8725-441B24F6585A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Penguin" ID="{9DB767CF-8F6D-4D31-8DED-006DC2ED0E3F}" ShortID="530374116">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="Guts_Penguin" ID="{2922C79A-D082-4518-BE80-81304C27996A}" ShortID="801583098">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Guts Squish 1" ID="{EB9CE9DF-DD23-45A0-8A80-1E9A355E6B2A}" ShortID="858561560">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Guts Squish 1" ID="{3E162BE7-61CC-41D8-85A9-E4A7FE2397C0}" ShortID="905024809">
+											<Language>SFX</Language>
+											<AudioFile>Guts Squish 1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Guts Squish 1" ID="{3E162BE7-61CC-41D8-85A9-E4A7FE2397C0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Guts Squish 2" ID="{8E83F5F2-7A31-443F-8801-5AA31C62E49D}" ShortID="575653637">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Guts Squish 2" ID="{D4280935-11CB-4A2D-898B-E6FC5D0783BB}" ShortID="698686867">
+											<Language>SFX</Language>
+											<AudioFile>Guts Squish 2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Guts Squish 2" ID="{D4280935-11CB-4A2D-898B-E6FC5D0783BB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Guts Squish 3" ID="{9F837874-54F5-487A-9C17-EE77B69CB328}" ShortID="494504385">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Guts Squish 3" ID="{07F49C5F-C039-47C9-AE4E-D2FA18EBC792}" ShortID="340389794">
+											<Language>SFX</Language>
+											<AudioFile>Guts Squish 3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Guts Squish 3" ID="{07F49C5F-C039-47C9-AE4E-D2FA18EBC792}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Penguin_Flipper" ID="{83C2445B-F34D-49CD-AD66-4D5813020E91}" ShortID="290150638">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Flipper Sound 1" ID="{B3E9F7E3-54CE-4BC4-AB20-F16FE2B545FA}" ShortID="550747143">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Flipper Sound 1" ID="{7C3A0622-4A4B-42AD-819B-A0444B4C395A}" ShortID="553551867">
+											<Language>SFX</Language>
+											<AudioFile>Flipper Sound 1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Flipper Sound 1" ID="{7C3A0622-4A4B-42AD-819B-A0444B4C395A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Flipper Sound 2" ID="{6C0E7EFF-AC26-4EDD-9314-F3858347BBEC}" ShortID="105541839">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Flipper Sound 2" ID="{93CED01F-9995-4704-9A18-7B17622DAE3E}" ShortID="111634054">
+											<Language>SFX</Language>
+											<AudioFile>Flipper Sound 2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Flipper Sound 2" ID="{93CED01F-9995-4704-9A18-7B17622DAE3E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Flipper Sound 3" ID="{93777486-0C31-471A-9954-41C349C7A385}" ShortID="204301970">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Flipper Sound 3" ID="{EB70983B-754A-4CF6-A1AD-C214B8754A51}" ShortID="695831362">
+											<Language>SFX</Language>
+											<AudioFile>Flipper Sound 3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Flipper Sound 3" ID="{EB70983B-754A-4CF6-A1AD-C214B8754A51}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Flipper Sound 4" ID="{319879BB-E976-4725-B57A-B1FBFD74B057}" ShortID="825211382">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Flipper Sound 4" ID="{34C88AC4-6D60-4226-8820-CDDB0573EDAE}" ShortID="36877262">
+											<Language>SFX</Language>
+											<AudioFile>Flipper Sound 4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Flipper Sound 4" ID="{34C88AC4-6D60-4226-8820-CDDB0573EDAE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Environment" ID="{2C1DF955-7BCC-4C8D-960D-6AA199720E92}" ShortID="882446832">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
