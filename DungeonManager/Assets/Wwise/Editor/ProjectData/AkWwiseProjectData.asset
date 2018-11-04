@@ -13,23 +13,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
   - Guid: '{7F76A19A-76DA-4687-9F57-81506D054DF7}'
-    m_lastTimePart2: -1999224789
-    m_lastTimePsrt1: 1965012894
+    m_lastTimePart2: -1999224378
+    m_lastTimePsrt1: -538799634
     ParentPhysicalPath: 
     PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     List: []
   autoPopulateEnabled: 1
   AuxBusWwu:
   - Guid: '{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}'
-    m_lastTimePart2: -1999224789
-    m_lastTimePsrt1: 1964483197
+    m_lastTimePart2: -1999224378
+    m_lastTimePsrt1: -539738743
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     List: []
   BankWwu:
   - Guid: '{4397AFDB-20B4-498B-842D-1DF92FD0B006}'
-    m_lastTimePart2: -1999224787
-    m_lastTimePsrt1: 1338457436
+    m_lastTimePart2: -1999224378
+    m_lastTimePsrt1: -538956162
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -48,11 +48,47 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{9D3AFD7D-486F-4D96-92B0-D045600A021B}'
-    m_lastTimePart2: -1999224787
-    m_lastTimePsrt1: 1338457436
+    m_lastTimePart2: -1999224378
+    m_lastTimePsrt1: -540677972
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
+    - Guid: 3160b94192f283408de7e7664b6c7353
+      ID: 252733814
+      Name: Denis_Footsteps
+      Path: Default Work Unit\Denis_Footsteps
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Denis_Footsteps
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 02f0b64106d4c744a82fcb7ed2d998d0
+      ID: 1256134173
+      Name: Denis_Lights_Torch
+      Path: Default Work Unit\Denis_Lights_Torch
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Denis_Lights_Torch
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 0bf960acd333ae4295f88424d7f8c77a
+      ID: 1092812555
+      Name: Denis_Sighs
+      Path: Default Work Unit\Denis_Sighs
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Denis_Sighs
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: fad7d10e04aa6e4ba4affec2cc3c7d0a
       ID: 895256648
       Name: Penguin_Death
@@ -61,6 +97,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Penguin_Death
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 2383df6cf4c6234a9cdda1012d4e2082
+      ID: 1270887217
+      Name: Penguin_Flipper_Footstep
+      Path: Default Work Unit\Penguin_Flipper_Footstep
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Penguin_Flipper_Footstep
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -77,30 +125,30 @@ MonoBehaviour:
   preparePoolSize: 0
   RtpcWwu:
   - Guid: '{FC8A0D9D-1A8C-4E50-B18C-8374343B6B48}'
-    m_lastTimePart2: -1999224789
-    m_lastTimePsrt1: 1964123399
+    m_lastTimePart2: -1999224378
+    m_lastTimePsrt1: -540677972
     ParentPhysicalPath: 
     PhysicalPath: Game Parameters\Default Work Unit.wwu
     List: []
   StateWwu:
   - Guid: '{DADF20DF-AA50-4DDD-8BC0-2E9D2D369D53}'
-    m_lastTimePart2: -1999224789
-    m_lastTimePsrt1: 1964952935
+    m_lastTimePart2: -1999224378
+    m_lastTimePsrt1: -538799634
     ParentPhysicalPath: 
     PhysicalPath: States\Default Work Unit.wwu
     List: []
   streamingPoolSize: 1024
   SwitchWwu:
   - Guid: '{8973DCE1-5C2B-40D3-A697-259AE5223F72}'
-    m_lastTimePart2: -1999224789
-    m_lastTimePsrt1: 1964033454
+    m_lastTimePart2: -1999224378
+    m_lastTimePsrt1: -538799634
     ParentPhysicalPath: 
     PhysicalPath: Switches\Default Work Unit.wwu
     List: []
   TriggerWwu:
   - Guid: '{9C6FED4F-1DB6-4B98-BE70-F06134C58311}'
-    m_lastTimePart2: -1999224789
-    m_lastTimePsrt1: 1963783600
+    m_lastTimePart2: -1999224378
+    m_lastTimePsrt1: -538799634
     ParentPhysicalPath: 
     PhysicalPath: Triggers\Default Work Unit.wwu
     List: []

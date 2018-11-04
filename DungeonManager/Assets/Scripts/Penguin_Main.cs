@@ -13,6 +13,8 @@ public class Penguin_Main : MonoBehaviour {
     private int layerMask;
     public int[] avoidLayers;
 
+    private Animator anim;
+
     private void Start()
     {
         layerMask = (int)0x7FFFFFFF;
@@ -21,6 +23,8 @@ public class Penguin_Main : MonoBehaviour {
         {
             layerMask ^= (1 << avoidLayers[i]);
         }
+
+        anim = gameObject.GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -30,6 +34,15 @@ public class Penguin_Main : MonoBehaviour {
         if(hit.distance < 0.15f)
         {
             Flip();
+        }
+
+        if (gameObject.GetComponent<Rigidbody2D>().velocity.y == 0)
+        {
+            anim.SetBool("Idle", false);
+        }
+        else
+        {
+            anim.SetBool("Idle", true);
         }
 	}
 
@@ -78,7 +91,10 @@ public class Penguin_Main : MonoBehaviour {
     //Call when penguin dies to relaod scene
     void Die()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        anim.SetBool("Die_Dennise", true);
+        //XMoveDirection = 0;
+        GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
+        StartCoroutine(ReloadScene(1f));
     }
 
     public void SetHasKey(bool k)
@@ -89,5 +105,12 @@ public class Penguin_Main : MonoBehaviour {
     public bool GetHasKey()
     {
         return hasKey;
+    }
+
+    IEnumerator ReloadScene(float time)
+    {
+        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Pengwin_explode") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+        //yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
