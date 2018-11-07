@@ -48,6 +48,10 @@
 					<ShortName>Flipper Sound 2.wav</ShortName>
 					<Path>SFX\Flipper Sound 2_1C9C67B2.wem</Path>
 				</File>
+				<File Id="135698400" Language="SFX">
+					<ShortName>Squish.wav</ShortName>
+					<Path>SFX\Squish_1C9C67B2.wem</Path>
+				</File>
 				<File Id="143180353" Language="SFX">
 					<ShortName>Sigh 2.wav</ShortName>
 					<Path>SFX\Sigh 2_1C9C67B2.wem</Path>

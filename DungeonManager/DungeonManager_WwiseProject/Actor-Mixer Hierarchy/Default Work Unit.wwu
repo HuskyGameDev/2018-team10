@@ -263,6 +263,10 @@
 											<Language>SFX</Language>
 											<AudioFile>Guts Squish 2.wav</AudioFile>
 										</AudioFileSource>
+										<AudioFileSource Name="Squish" ID="{BBA4F4A0-3B02-420C-A77C-67420EDF7C15}" ShortID="135698400">
+											<Language>SFX</Language>
+											<AudioFile>Squish.wav</AudioFile>
+										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Guts Squish 2" ID="{D4280935-11CB-4A2D-898B-E6FC5D0783BB}" Platform="Linked"/>
@@ -285,6 +289,28 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Guts Squish 3" ID="{07F49C5F-C039-47C9-AE4E-D2FA18EBC792}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Guts Squish 4" ID="{E0DE657C-D1F3-4E77-802D-D468774A01E5}" ShortID="794153620">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Squish" ID="{90693EE5-7849-4169-BBE0-8CECF01BBD2A}" ShortID="456046512">
+											<Language>SFX</Language>
+											<AudioFile>Squish.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="135698400"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Squish" ID="{90693EE5-7849-4169-BBE0-8CECF01BBD2A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

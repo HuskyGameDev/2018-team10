@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="85">
-	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1541100889" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1541099267" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1541098471" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\DungeonManager_WwiseProject.sjcalver.wsettings" DateLow="1541098496" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\DungeonManager_WwiseProject.sjcalver.wsettings" DateLow="1541100967" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\DungeonManager_WwiseProject.wproj" DateLow="1541098471" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Effects\Factory Effects.wwu" DateLow="1541098471" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Events\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Events\Default Work Unit.wwu" DateLow="1541100889" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
@@ -20,7 +20,7 @@
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Queries\Factory Queries.wwu" DateLow="1541098471" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1541100889" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\States\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1541098471" DateHigh="0"/>
