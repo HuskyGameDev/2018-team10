@@ -10,14 +10,39 @@ public class Penguin_Main : MonoBehaviour {
     public bool facingRight = false;
     public int jumpPower;
     private bool hasKey = false;
-	
-	// Update is called once per frame
-	void Update () {
-        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(GetComponent<BoxCollider2D>().size.x * 0.09f, GetComponent<BoxCollider2D>().size.y * 0.09f), 0 , new Vector2(XMoveDirection, 0));
-        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(XMoveDirection * PenguinSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y) ;
+    private int layerMask;
+    public int[] avoidLayers;
+
+    private Animator anim;
+
+    private void Start()
+    {
+        layerMask = (int)0x7FFFFFFF;
+
+        for (int i = 0; i < avoidLayers.Length; i++)
+        {
+            layerMask ^= (1 << avoidLayers[i]);
+        }
+
+        anim = gameObject.GetComponentInChildren<Animator>();
+    }
+
+    // Update is called once per frame
+    void Update () {
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(GetComponent<BoxCollider2D>().size.x * 0.09f, GetComponent<BoxCollider2D>().size.y * 0.09f), 0 , new Vector2(XMoveDirection, 0), Mathf.Infinity, layerMask);
+        gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(XMoveDirection * PenguinSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
         if(hit.distance < 0.15f)
         {
             Flip();
+        }
+
+        if (gameObject.GetComponent<Rigidbody2D>().velocity.y == 0)
+        {
+            anim.SetBool("Idle", false);
+        }
+        else
+        {
+            anim.SetBool("Idle", true);
         }
 	}
 
@@ -40,13 +65,20 @@ public class Penguin_Main : MonoBehaviour {
     //Check for a trigger and do correct action
     private void OnTriggerEnter2D(Collider2D col)
     {
+        //Check for trap and jump if found
         if(col.gameObject.tag == "Trap" && col.gameObject.GetComponentInParent<Trap_Trigger>().isLit)
         {
             Jump();
         }
+        //Check for death and die if true
         if(col.gameObject.tag == "Death")
         {
             Die();
+        }
+        //Check for door and key then load next level if true
+        if(col.gameObject.tag == "Door" && hasKey == true)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
@@ -54,13 +86,15 @@ public class Penguin_Main : MonoBehaviour {
     void Jump()
     {
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpPower);
-        //gameObject.GetComponent<Rigidbody2D>().velocity += Vector2.up * jumpPower;
     }
 
     //Call when penguin dies to relaod scene
     void Die()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        anim.SetBool("Die_Dennise", true);
+        //XMoveDirection = 0;
+        GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
+        StartCoroutine(ReloadScene(1f));
     }
 
     public void SetHasKey(bool k)
@@ -71,5 +105,12 @@ public class Penguin_Main : MonoBehaviour {
     public bool GetHasKey()
     {
         return hasKey;
+    }
+
+    IEnumerator ReloadScene(float time)
+    {
+        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Pengwin_explode") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+        //yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

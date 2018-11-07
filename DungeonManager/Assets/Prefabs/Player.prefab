@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 114731590321397404}
   m_Layer: 8
   m_Name: LightCollision
-  m_TagString: Untagged
+  m_TagString: Death
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1457952383182474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.3409, y: 3.4817002, z: 0}
+  m_LocalPosition: {x: -7.11, y: 3.46, z: 0}
   m_LocalScale: {x: 0.018806564, y: 0.022857256, z: 1}
   m_Children:
   - {fileID: 4732494186143008}

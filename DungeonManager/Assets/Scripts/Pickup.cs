@@ -8,6 +8,7 @@ public class Pickup : MonoBehaviour
     private bool playerNear = false;
     public Move_Main dennice;
     public Penguin_Main pengwin;
+    public bool penguinCanPickup;
 
 
 
@@ -29,7 +30,7 @@ public class Pickup : MonoBehaviour
         {
             playerNear = true;
         }
-        if (other.gameObject.tag == "Penguin")
+        if (other.gameObject.tag == "Penguin" && penguinCanPickup == false)
         {
             pengwin.SetHasKey(true);
             gameObject.SetActive(false);
@@ -43,6 +44,5 @@ public class Pickup : MonoBehaviour
             playerNear = false;
         }
     }
-    
     
 }

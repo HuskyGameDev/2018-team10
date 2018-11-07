@@ -6,8 +6,6 @@
   <CreateWwiseListener>true</CreateWwiseListener>
   <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
-  <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
-  <WwiseInstallationPathMac />
-  <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2017.2.6.6636</WwiseInstallationPathWindows>
+  <SoundbankPath>Audio\GeneratedSoundBanks</SoundbankPath>
   <WwiseProjectPath>../DungeonManager_WwiseProject/DungeonManager_WwiseProject.wproj</WwiseProjectPath>
 </WwiseSettings>
