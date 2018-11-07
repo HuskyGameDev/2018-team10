@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID DENIS_SIGHS = 1092812555U;
         static const AkUniqueID PENGUIN_DEATH = 895256648U;
         static const AkUniqueID PENGUIN_FLIPPER_FOOTSTEP = 1270887217U;
+        static const AkUniqueID PENGUIN_MEEPS = 4147243150U;
     } // namespace EVENTS
 
     namespace BANKS

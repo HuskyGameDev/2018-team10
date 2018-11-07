@@ -403,6 +403,113 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Penguin_Meep" ID="{B684F1D7-BB2A-45BE-BE9A-3C57AC3A07A0}" ShortID="347285665">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Meep 1" ID="{B9C30455-B527-4595-9AE8-857017A9AA9B}" ShortID="330168956">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Meep 1" ID="{42019ED0-5BFC-4242-BA46-F6C1907C73C5}" ShortID="432169992">
+											<Language>SFX</Language>
+											<AudioFile>Meep 1.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Meep 1" ID="{42019ED0-5BFC-4242-BA46-F6C1907C73C5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Meep 2" ID="{608EB3D9-CABE-4765-9390-59D8A5A43727}" ShortID="962572417">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Meep 2" ID="{2736FCCA-2D3B-447B-84D3-64C3186E5620}" ShortID="661290520">
+											<Language>SFX</Language>
+											<AudioFile>Meep 2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Meep 2" ID="{2736FCCA-2D3B-447B-84D3-64C3186E5620}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Meep 3" ID="{234F556D-9615-4FEC-A565-3643F129496F}" ShortID="911767403">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Meep 3" ID="{F90E295B-86DE-402B-8152-B33CF6867E4F}" ShortID="754020562">
+											<Language>SFX</Language>
+											<AudioFile>Meep 3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Meep 3" ID="{F90E295B-86DE-402B-8152-B33CF6867E4F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Meep 4" ID="{B2CF17BF-F3E0-4E6E-9A79-15EABBEDB36B}" ShortID="254818108">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Meep 4" ID="{3FBF44B1-1547-40E6-8110-CB8CA64C8D06}" ShortID="272240259">
+											<Language>SFX</Language>
+											<AudioFile>Meep 4.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Meep 4" ID="{3FBF44B1-1547-40E6-8110-CB8CA64C8D06}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Meep 5" ID="{231C1758-30B1-4EFA-A186-050CDA5E4C4D}" ShortID="645617739">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Meep 5" ID="{A3455894-CBE5-414D-AFF9-DDF0152CAD8A}" ShortID="35623641">
+											<Language>SFX</Language>
+											<AudioFile>Meep 5.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Meep 5" ID="{A3455894-CBE5-414D-AFF9-DDF0152CAD8A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Environment" ID="{2C1DF955-7BCC-4C8D-960D-6AA199720E92}" ShortID="882446832">

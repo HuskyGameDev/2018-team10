@@ -73,6 +73,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Penguin_Meeps" ID="{38BEB3EC-EE95-439B-87C1-7067FDBA8C24}">
+					<ChildrenList>
+						<Action Name="" ID="{DD76DCD6-B575-4FEC-93F8-2E488330BF28}" ShortID="513260944">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Penguin_Meep" ID="{B684F1D7-BB2A-45BE-BE9A-3C57AC3A07A0}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

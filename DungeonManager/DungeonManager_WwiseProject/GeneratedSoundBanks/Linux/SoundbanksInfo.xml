@@ -26,11 +26,16 @@
 				<Event Id="1092812555" Name="Denis_Sighs" ObjectPath="\Events\Default Work Unit\Denis_Sighs"/>
 				<Event Id="895256648" Name="Penguin_Death" ObjectPath="\Events\Default Work Unit\Penguin_Death"/>
 				<Event Id="1270887217" Name="Penguin_Flipper_Footstep" ObjectPath="\Events\Default Work Unit\Penguin_Flipper_Footstep"/>
+				<Event Id="4147243150" Name="Penguin_Meeps" ObjectPath="\Events\Default Work Unit\Penguin_Meeps"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="18944824" Language="SFX">
 					<ShortName>Denis Footstep 2.wav</ShortName>
 					<Path>SFX\Denis Footstep 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="35623641" Language="SFX">
+					<ShortName>Meep 5.wav</ShortName>
+					<Path>SFX\Meep 5_1C9C67B2.wem</Path>
 				</File>
 				<File Id="36877262" Language="SFX">
 					<ShortName>Flipper Sound 4.wav</ShortName>
@@ -60,9 +65,17 @@
 					<ShortName>Sigh 1.wav</ShortName>
 					<Path>SFX\Sigh 1_1C9C67B2.wem</Path>
 				</File>
+				<File Id="272240259" Language="SFX">
+					<ShortName>Meep 4.wav</ShortName>
+					<Path>SFX\Meep 4_1C9C67B2.wem</Path>
+				</File>
 				<File Id="340389794" Language="SFX">
 					<ShortName>Guts Squish 3.wav</ShortName>
 					<Path>SFX\Guts Squish 3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="432169992" Language="SFX">
+					<ShortName>Meep 1.wav</ShortName>
+					<Path>SFX\Meep 1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="538675085" Language="SFX">
 					<ShortName>Sigh 4.wav</ShortName>
@@ -80,6 +93,10 @@
 					<ShortName>Torch Ignition.wav</ShortName>
 					<Path>SFX\Torch Ignition_1C9C67B2.wem</Path>
 				</File>
+				<File Id="661290520" Language="SFX">
+					<ShortName>Meep 2.wav</ShortName>
+					<Path>SFX\Meep 2_1C9C67B2.wem</Path>
+				</File>
 				<File Id="695831362" Language="SFX">
 					<ShortName>Flipper Sound 3.wav</ShortName>
 					<Path>SFX\Flipper Sound 3_1C9C67B2.wem</Path>
@@ -87,6 +104,10 @@
 				<File Id="698686867" Language="SFX">
 					<ShortName>Guts Squish 2.wav</ShortName>
 					<Path>SFX\Guts Squish 2_1C9C67B2.wem</Path>
+				</File>
+				<File Id="754020562" Language="SFX">
+					<ShortName>Meep 3.wav</ShortName>
+					<Path>SFX\Meep 3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="770526137" Language="SFX">
 					<ShortName>Sigh 5.wav</ShortName>
