@@ -16,6 +16,8 @@ namespace AK
         static const AkUniqueID DENIS_FOOTSTEPS = 252733814U;
         static const AkUniqueID DENIS_LIGHTS_TORCH = 1256134173U;
         static const AkUniqueID DENIS_SIGHS = 1092812555U;
+        static const AkUniqueID DUNGEON_BACKGROUND = 2869792536U;
+        static const AkUniqueID DUNGEON_BACKGROUND_LOOP_OFF = 3694683435U;
         static const AkUniqueID PENGUIN_DEATH = 895256648U;
         static const AkUniqueID PENGUIN_FLIPPER_FOOTSTEP = 1270887217U;
         static const AkUniqueID PENGUIN_MEEPS = 4147243150U;
