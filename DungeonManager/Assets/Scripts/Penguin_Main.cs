@@ -14,6 +14,7 @@ public class Penguin_Main : MonoBehaviour {
     public int[] avoidLayers;
 
     private Animator anim;
+    private bool atDoor = false;
 
     private void Start()
     {
@@ -36,7 +37,7 @@ public class Penguin_Main : MonoBehaviour {
             Flip();
         }
 
-        if (gameObject.GetComponent<Rigidbody2D>().velocity.y == 0)
+        if (gameObject.GetComponent<Rigidbody2D>().velocity.y == 0 && !atDoor)
         {
             anim.SetBool("Idle", false);
         }
@@ -78,7 +79,10 @@ public class Penguin_Main : MonoBehaviour {
         //Check for door and key then load next level if true
         if(col.gameObject.tag == "Door" && hasKey == true)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            atDoor = true;
+            GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
+            StartCoroutine(LoadNextScene(col.gameObject.GetComponent<Animator>()));
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
@@ -91,6 +95,7 @@ public class Penguin_Main : MonoBehaviour {
     //Call when penguin dies to relaod scene
     void Die()
     {
+        //anim.SetBool("Die_Spikes", true);
         anim.SetBool("Die_Dennise", true);
         //XMoveDirection = 0;
         GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
@@ -107,10 +112,36 @@ public class Penguin_Main : MonoBehaviour {
         return hasKey;
     }
 
+    // Waits for completed death animation and then for time seconds after
+    // then reloads the scene
     IEnumerator ReloadScene(float time)
     {
-        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Pengwin_explode") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
-        //yield return new WaitForSeconds(2f);
+        yield return new WaitUntil(() => IsDeathAnimation() && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+        yield return new WaitForSeconds(time);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+
+    // Returns true if the current playing animation is a death animation
+    private bool IsDeathAnimation()
+    {
+        return anim.GetCurrentAnimatorStateInfo(0).IsName("Pengwin_explode") || anim.GetCurrentAnimatorStateInfo(0).IsName("Pengwin_spikes");
+    }
+
+
+    // Waits for the completed door animation and then loads the next scene
+    IEnumerator LoadNextScene(Animator doorAnim)
+    {
+        yield return new WaitUntil(() => doorAnim.GetCurrentAnimatorStateInfo(0).IsName("Door_open") && doorAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+
+    // NOT DONE YET -- ACTUALLY ITS NOT REALLY STARTED.....
+    IEnumerator StartPengwin(Animator doorAnim)
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
