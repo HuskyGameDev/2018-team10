@@ -26,6 +26,12 @@ public class Penguin_Main : MonoBehaviour {
         }
 
         anim = gameObject.GetComponentInChildren<Animator>();
+
+        // THIS DOESN'T WORK --- DO NOT TOUCH THIS
+        // Lock movement until entered
+        //GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePosition;
+        //StartCoroutine(FadeIn(gameObject.GetComponentInChildren<SpriteRenderer>(), 1f, 2f));
+
     }
 
     // Update is called once per frame
@@ -77,7 +83,7 @@ public class Penguin_Main : MonoBehaviour {
             Die();
         }
         //Check for door and key then load next level if true
-        if(col.gameObject.tag == "Door" && hasKey == true)
+        if(col.gameObject.tag == "Door" && hasKey == true && col.gameObject.GetComponent<Door>().TorchesLit())
         {
             atDoor = true;
             GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
@@ -138,10 +144,27 @@ public class Penguin_Main : MonoBehaviour {
     }
 
 
-    // NOT DONE YET -- ACTUALLY ITS NOT REALLY STARTED.....
-    IEnumerator StartPengwin(Animator doorAnim)
+    // Inspired by https://gamedev.stackexchange.com/questions/142791/how-can-i-fade-a-game-object-in-and-out-over-a-specified-duration
+    //
+    IEnumerator FadeIn(SpriteRenderer sprite, float target, float duration)
     {
-        yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        float time = 0;
+        Color col = sprite.color;
+        float start = col.a;
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+
+            float blend = Mathf.Clamp01(target / duration);
+
+            col.a = Mathf.Lerp(start, target, blend);
+
+            sprite.color = col;
+
+            yield return null;
+        }
+
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
     }
 }
