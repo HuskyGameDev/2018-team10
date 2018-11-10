@@ -14,6 +14,7 @@ public class Penguin_Main : MonoBehaviour {
     public int[] avoidLayers;
 
     private Animator anim;
+    private bool atDoor = false;
 
     private void Start()
     {
@@ -25,6 +26,11 @@ public class Penguin_Main : MonoBehaviour {
         }
 
         anim = gameObject.GetComponentInChildren<Animator>();
+
+        // Lock movement and fade in
+        StartCoroutine(Fade(gameObject.GetComponentInChildren<SpriteRenderer>(), 1f, 2f));
+        //gameObject.GetComponentInChildren<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
+
     }
 
     // Update is called once per frame
@@ -36,7 +42,7 @@ public class Penguin_Main : MonoBehaviour {
             Flip();
         }
 
-        if (gameObject.GetComponent<Rigidbody2D>().velocity.y == 0)
+        if (gameObject.GetComponent<Rigidbody2D>().velocity.y == 0 && !atDoor)
         {
             anim.SetBool("Idle", false);
         }
@@ -76,9 +82,12 @@ public class Penguin_Main : MonoBehaviour {
             Die();
         }
         //Check for door and key then load next level if true
-        if(col.gameObject.tag == "Door" && hasKey == true)
+        if(col.gameObject.tag == "Door" && hasKey == true && col.gameObject.GetComponent<Door>().TorchesLit())
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            atDoor = true;
+            GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
+            StartCoroutine(LoadNextScene(col.gameObject.GetComponent<Animator>()));
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
@@ -91,6 +100,7 @@ public class Penguin_Main : MonoBehaviour {
     //Call when penguin dies to relaod scene
     void Die()
     {
+        //anim.SetBool("Die_Spikes", true);
         anim.SetBool("Die_Dennise", true);
         //XMoveDirection = 0;
         GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
@@ -107,10 +117,56 @@ public class Penguin_Main : MonoBehaviour {
         return hasKey;
     }
 
+    // Waits for completed death animation and then for time seconds after
+    // then reloads the scene
     IEnumerator ReloadScene(float time)
     {
-        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Pengwin_explode") && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
-        //yield return new WaitForSeconds(2f);
+        yield return new WaitUntil(() => IsDeathAnimation() && anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+        yield return new WaitForSeconds(time);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+
+    // Returns true if the current playing animation is a death animation
+    private bool IsDeathAnimation()
+    {
+        return anim.GetCurrentAnimatorStateInfo(0).IsName("Pengwin_explode") || anim.GetCurrentAnimatorStateInfo(0).IsName("Pengwin_spikes");
+    }
+
+
+    // Waits for the completed door animation and then loads the next scene
+    IEnumerator LoadNextScene(Animator doorAnim)
+    {
+        yield return new WaitUntil(() => doorAnim.GetCurrentAnimatorStateInfo(0).IsName("Door_open") && doorAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+
+    // Inspired by https://gamedev.stackexchange.com/questions/142791/how-can-i-fade-a-game-object-in-and-out-over-a-specified-duration
+    //
+    IEnumerator Fade(SpriteRenderer sprite, float target, float duration)
+    {
+        float time = 0;
+        Color col = sprite.color;
+        float start = col.a;
+
+        RigidbodyConstraints2D original = GetComponent<Rigidbody2D>().constraints;
+        GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+
+            float blend = Mathf.Clamp01(time / duration);
+
+            col.a = Mathf.Lerp(start, blend, duration);
+
+            sprite.color = col;
+
+            yield return null;
+        }
+
+        GetComponent<Rigidbody2D>().constraints = original;
     }
 }

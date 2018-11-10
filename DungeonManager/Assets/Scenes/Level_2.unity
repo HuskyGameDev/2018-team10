@@ -292,6 +292,12 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 15299257}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &27484830 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114556316268269276, guid: 697ea45f486b48d4fb6d89bad327b727,
+    type: 2}
+  m_PrefabInternal: {fileID: 1623051864}
+  m_Script: {fileID: 11500000, guid: 3dfb46e4262d84b458f8e9941260deb0, type: 3}
 --- !u!1001 &47020447
 Prefab:
   m_ObjectHideFlags: 0
@@ -1301,6 +1307,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 421496676}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &448508049 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1399146606249568, guid: 1f85f959003b9594093a4e23a3dfa3a4,
+    type: 2}
+  m_PrefabInternal: {fileID: 47020447}
+--- !u!114 &448508050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 448508049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4107bb5c505b3bf4a89159b8b80b34d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExit: 0
+  torch1: {fileID: 0}
+  torch2: {fileID: 0}
+  pengwin: {fileID: 696597251}
 --- !u!1 &457833333
 GameObject:
   m_ObjectHideFlags: 0
@@ -2823,6 +2849,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88cc44d56b3f6154289ad5d397169a38, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &696597251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1130909692483782, guid: 92ec175050bfba1438187be07d7bcf63,
+    type: 2}
+  m_PrefabInternal: {fileID: 1165965748}
 --- !u!1001 &710237524
 Prefab:
   m_ObjectHideFlags: 0
@@ -3340,6 +3371,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1399146606249568, guid: 1f85f959003b9594093a4e23a3dfa3a4,
     type: 2}
   m_PrefabInternal: {fileID: 1053013593}
+--- !u!114 &822764958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 822764957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4107bb5c505b3bf4a89159b8b80b34d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExit: 1
+  torch1: {fileID: 1560464773}
+  torch2: {fileID: 27484830}
+  pengwin: {fileID: 0}
 --- !u!61 &822764960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3352,7 +3398,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -1.2750442, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3363,7 +3409,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.8, y: 9.75}
+  m_Size: {x: 1.2971683, y: 9.75}
   m_EdgeRadius: 0
 --- !u!1001 &833622843
 Prefab:
@@ -4415,6 +4461,37 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f85f959003b9594093a4e23a3dfa3a4, type: 2}
   m_IsPrefabAsset: 0
+--- !u!84 &1066117876
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1212
+  m_Height: 709
+  m_AntiAliasing: 1
+  m_DepthFormat: 2
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &1093085043
 Prefab:
   m_ObjectHideFlags: 0
@@ -4757,9 +4834,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1119904278971366, guid: 92ec175050bfba1438187be07d7bcf63, type: 2}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130909692483782, guid: 92ec175050bfba1438187be07d7bcf63, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 212122184509747628, guid: 92ec175050bfba1438187be07d7bcf63, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 92ec175050bfba1438187be07d7bcf63, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1001 &1174013729
@@ -6115,37 +6197,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1508642969}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!84 &1524331511
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 920
-  m_Height: 518
-  m_AntiAliasing: 1
-  m_DepthFormat: 2
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &1543597386
 Prefab:
   m_ObjectHideFlags: 0
@@ -6192,6 +6243,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 697ea45f486b48d4fb6d89bad327b727, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1560464773 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114556316268269276, guid: 697ea45f486b48d4fb6d89bad327b727,
+    type: 2}
+  m_PrefabInternal: {fileID: 922853071}
+  m_Script: {fileID: 11500000, guid: 3dfb46e4262d84b458f8e9941260deb0, type: 3}
 --- !u!1 &1563457159
 GameObject:
   m_ObjectHideFlags: 0
@@ -6692,7 +6749,7 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1524331511}
+      objectReference: {fileID: 1066117876}
     - target: {fileID: 114892124853545698, guid: 50bd65e0d37256045a25448a59d10b30,
         type: 2}
       propertyPath: lightLayer.m_Bits
@@ -8058,6 +8115,26 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1872525172}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1907827119 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1399146606249568, guid: 1f85f959003b9594093a4e23a3dfa3a4,
+    type: 2}
+  m_PrefabInternal: {fileID: 2139512962}
+--- !u!114 &1907827120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1907827119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4107bb5c505b3bf4a89159b8b80b34d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExit: 0
+  torch1: {fileID: 0}
+  torch2: {fileID: 0}
+  pengwin: {fileID: 0}
 --- !u!1 &1911009190
 GameObject:
   m_ObjectHideFlags: 0
