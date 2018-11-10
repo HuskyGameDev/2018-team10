@@ -4,6 +4,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	1092812555	Denis_Sighs			\Default Work Unit\Denis_Sighs	
 	1256134173	Denis_Lights_Torch			\Default Work Unit\Denis_Lights_Torch	
 	1270887217	Penguin_Flipper_Footstep			\Default Work Unit\Penguin_Flipper_Footstep	
+	2869792536	Dungeon_Background			\Default Work Unit\Dungeon_Background	
+	3694683435	Dungeon_Background_Loop_Off			\Default Work Unit\Dungeon_Background_Loop_Off	
 	4147243150	Penguin_Meeps			\Default Work Unit\Penguin_Meeps	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -27,6 +29,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	695831362	Flipper Sound 3	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Flipper Sound 3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Penguin_Flipper\Flipper Sound 3		110396
 	698686867	Guts Squish 2	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Guts Squish 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Guts_Penguin\Guts Squish 2		176544
 	754020562	Meep 3	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Meep 3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Penguin_Meep\Meep 3		110392
+	769135310	Dungeon_Background	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Dungeon Background_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Dungeon_Background		10584144
 	770526137	Sigh 5	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Sigh 5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Denis_Sighs\Sigh 5		132444
 	905024809	Guts Squish 1	C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Guts Squish 1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Guts_Penguin\Guts Squish 1		286792
 

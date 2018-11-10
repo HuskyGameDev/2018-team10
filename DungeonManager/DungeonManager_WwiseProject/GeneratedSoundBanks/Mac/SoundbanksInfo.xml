@@ -24,6 +24,8 @@
 				<Event Id="252733814" Name="Denis_Footsteps" ObjectPath="\Events\Default Work Unit\Denis_Footsteps"/>
 				<Event Id="1256134173" Name="Denis_Lights_Torch" ObjectPath="\Events\Default Work Unit\Denis_Lights_Torch"/>
 				<Event Id="1092812555" Name="Denis_Sighs" ObjectPath="\Events\Default Work Unit\Denis_Sighs"/>
+				<Event Id="2869792536" Name="Dungeon_Background" ObjectPath="\Events\Default Work Unit\Dungeon_Background"/>
+				<Event Id="3694683435" Name="Dungeon_Background_Loop_Off" ObjectPath="\Events\Default Work Unit\Dungeon_Background_Loop_Off" MaxAttenuation="0.000000"/>
 				<Event Id="895256648" Name="Penguin_Death" ObjectPath="\Events\Default Work Unit\Penguin_Death"/>
 				<Event Id="1270887217" Name="Penguin_Flipper_Footstep" ObjectPath="\Events\Default Work Unit\Penguin_Flipper_Footstep"/>
 				<Event Id="4147243150" Name="Penguin_Meeps" ObjectPath="\Events\Default Work Unit\Penguin_Meeps"/>
@@ -108,6 +110,10 @@
 				<File Id="754020562" Language="SFX">
 					<ShortName>Meep 3.wav</ShortName>
 					<Path>SFX\Meep 3_1C9C67B2.wem</Path>
+				</File>
+				<File Id="769135310" Language="SFX">
+					<ShortName>Dungeon Background.wav</ShortName>
+					<Path>SFX\Dungeon Background_F17FB28C.wem</Path>
 				</File>
 				<File Id="770526137" Language="SFX">
 					<ShortName>Sigh 5.wav</ShortName>
