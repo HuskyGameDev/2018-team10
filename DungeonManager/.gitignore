@@ -30,11 +30,14 @@ ExportedObj/
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
+*.log
 
 # Builds
 *.apk
 *.unitypackage
 
 #Wwise ignores
-Assets/Sound and Music/SFX/*.akd
-Assets/Sound and Music/.cache/
+DungeonManager_WwiseProject/Originals/SFX/*.akd
+DungeonManager_WwiseProject/.cache/
+DungeonManager_WwiseProject/.backup/
+Assets/Wwise/Resources/

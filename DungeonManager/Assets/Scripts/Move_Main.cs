@@ -105,6 +105,15 @@ public class Move_Main : MonoBehaviour {
         }
     }
 
+
+    /*void OnCollisionEnter2D (Collision2D col)
+    {
+        if (col.gameObject.tag == "Floor")
+        {
+            isGrounded = true;
+        }
+    }*/
+
     public void SetIsGrounded(bool b)
     {
         isGrounded = b;
