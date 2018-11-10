@@ -27,10 +27,9 @@ public class Penguin_Main : MonoBehaviour {
 
         anim = gameObject.GetComponentInChildren<Animator>();
 
-        // THIS DOESN'T WORK --- DO NOT TOUCH THIS
-        // Lock movement until entered
-        //GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePosition;
-        //StartCoroutine(FadeIn(gameObject.GetComponentInChildren<SpriteRenderer>(), 1f, 2f));
+        // Lock movement and fade in
+        StartCoroutine(Fade(gameObject.GetComponentInChildren<SpriteRenderer>(), 1f, 2f));
+        //gameObject.GetComponentInChildren<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
 
     }
 
@@ -146,25 +145,28 @@ public class Penguin_Main : MonoBehaviour {
 
     // Inspired by https://gamedev.stackexchange.com/questions/142791/how-can-i-fade-a-game-object-in-and-out-over-a-specified-duration
     //
-    IEnumerator FadeIn(SpriteRenderer sprite, float target, float duration)
+    IEnumerator Fade(SpriteRenderer sprite, float target, float duration)
     {
         float time = 0;
         Color col = sprite.color;
         float start = col.a;
 
+        RigidbodyConstraints2D original = GetComponent<Rigidbody2D>().constraints;
+        GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
+
         while (time < duration)
         {
             time += Time.deltaTime;
 
-            float blend = Mathf.Clamp01(target / duration);
+            float blend = Mathf.Clamp01(time / duration);
 
-            col.a = Mathf.Lerp(start, target, blend);
+            col.a = Mathf.Lerp(start, blend, duration);
 
             sprite.color = col;
 
             yield return null;
         }
 
-        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+        GetComponent<Rigidbody2D>().constraints = original;
     }
 }
