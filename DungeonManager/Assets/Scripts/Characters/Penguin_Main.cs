@@ -18,13 +18,19 @@ public class Penguin_Main : MonoBehaviour {
 
     private void Start()
     {
+        if(facingRight == true)
+        {
+            XMoveDirection = 1;
+        }
+
         layerMask = (int)0x7FFFFFFF;
 
+        
         for (int i = 0; i < avoidLayers.Length; i++)
         {
             layerMask ^= (1 << avoidLayers[i]);
         }
-
+        
         anim = gameObject.GetComponentInChildren<Animator>();
 
         // Lock movement and fade in
@@ -41,7 +47,7 @@ public class Penguin_Main : MonoBehaviour {
         {
             Flip();
         }
-
+        
         if (gameObject.GetComponent<Rigidbody2D>().velocity.y == 0 && !atDoor)
         {
             anim.SetBool("Idle", false);
@@ -50,6 +56,7 @@ public class Penguin_Main : MonoBehaviour {
         {
             anim.SetBool("Idle", true);
         }
+        
 	}
 
     //
