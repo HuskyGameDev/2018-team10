@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 114697860234545788}
   m_Layer: 8
   m_Name: PlayerCollision
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -447,10 +447,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1457952383182474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a40dbee71b0b4a2469d3fa1fd7112a2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 728751f3ba0b0964892b4d4056e0bf4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 3.6
+  playerSpeed: 5
   playerJumpPower: 10
   fallMult: 2.5
   lowJumpMult: 2

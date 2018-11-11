@@ -21,9 +21,11 @@ GameObject:
   - component: {fileID: 4626112528827590}
   - component: {fileID: 212154375176446306}
   - component: {fileID: 95634958893410182}
-  m_Layer: 0
+  - component: {fileID: 61052996205110104}
+  - component: {fileID: 114294659329762866}
+  m_Layer: 2
   m_Name: Door
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,6 +43,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61052996205110104
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1399146606249568}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.2750442, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 6.8, y: 9.75}
+    newSize: {x: 5.12, y: 5.12}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2971683, y: 9.75}
+  m_EdgeRadius: 0
 --- !u!95 &95634958893410182
 Animator:
   serializedVersion: 3
@@ -59,6 +86,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114294659329762866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1399146606249568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4107bb5c505b3bf4a89159b8b80b34d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isExit: 1
+  torch1: {fileID: 0}
+  torch2: {fileID: 0}
+  pengwin: {fileID: 0}
 --- !u!212 &212154375176446306
 SpriteRenderer:
   m_ObjectHideFlags: 1

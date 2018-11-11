@@ -232,12 +232,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1512623581356638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a7cd560bc46ef54cbc014ee4bdd9438, type: 3}
+  m_Script: {fileID: 11500000, guid: 45699d1b8de864142af3c39fa90bcdc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   numVertices: 50
   avoidLayers: 0800000002000000
-  maxDistance: 10
+  maxDistance: 20
 --- !u!114 &114351411164464106
 MonoBehaviour:
   m_ObjectHideFlags: 1
