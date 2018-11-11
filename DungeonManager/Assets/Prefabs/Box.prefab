@@ -66,7 +66,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1758197904774644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.19, y: 3.4, z: 0}
+  m_LocalPosition: {x: -0.23, y: 3.39, z: 0}
   m_LocalScale: {x: 0.17086227, y: 0.1764832, z: 1}
   m_Children:
   - {fileID: 4041302719163504}
@@ -87,12 +87,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 100
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 1
 --- !u!61 &61466829154276694
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -156,6 +156,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dennice: {fileID: 0}
   pengwin: {fileID: 0}
+  penguinCanPickup: 1
 --- !u!212 &212916433913414170
 SpriteRenderer:
   m_ObjectHideFlags: 1
