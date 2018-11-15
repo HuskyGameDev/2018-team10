@@ -451,7 +451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerSpeed: 5
-  playerJumpPower: 10
+  playerJumpPower: 12
   fallMult: 2.5
   lowJumpMult: 2
 --- !u!114 &114941296048953772
