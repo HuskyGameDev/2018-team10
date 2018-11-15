@@ -10,6 +10,7 @@ TagManager:
   - Death
   - Torch
   - Door
+  - Box
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ public class jumpCollider : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Floor")
+        if (other.gameObject.tag == "Floor" || other.gameObject.tag == "Box")
         {
             move.SetIsGrounded(true);
         }
@@ -16,7 +16,7 @@ public class jumpCollider : MonoBehaviour {
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Floor")
+        if (other.gameObject.tag == "Floor" || other.gameObject.tag == "Box")
         {
             move.SetIsGrounded(false);
         }
