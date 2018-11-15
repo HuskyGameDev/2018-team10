@@ -20,7 +20,7 @@ public class Penguin_Main : MonoBehaviour {
     {
         if(facingRight == true)
         {
-            XMoveDirection = 1;
+            Flip();
         }
 
         layerMask = (int)0x7FFFFFFF;
@@ -159,7 +159,7 @@ public class Penguin_Main : MonoBehaviour {
         float start = col.a;
 
         RigidbodyConstraints2D original = GetComponent<Rigidbody2D>().constraints;
-        GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
+        //GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
 
         while (time < duration)
         {
