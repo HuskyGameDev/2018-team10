@@ -10,11 +10,15 @@ public class Pickup : MonoBehaviour
     public Penguin_Main pengwin;
     public bool penguinCanPickup;
 
+    private InputManager input;
 
+    void Start(){
+        input = GameObject.FindObjectOfType<InputManager>();
+    }
 
     private void Update()
     {
-        if (playerNear && Input.GetButtonDown("Pickup"))
+        if (playerNear && input.GetButtonDownUnpaused("Pickup"))
         {
             if (dennice.GetHeldItem() == null)
             {

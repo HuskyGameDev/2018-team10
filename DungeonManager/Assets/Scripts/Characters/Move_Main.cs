@@ -15,12 +15,14 @@ public class Move_Main : MonoBehaviour {
     private Animator animator;
     private GameObject heldItem;
 
+    private InputManager input;
 
     void Start()
     {
         body = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
         heldItem = null;
+        input = GameObject.FindObjectOfType<InputManager>();
     }
 
 
@@ -37,7 +39,7 @@ public class Move_Main : MonoBehaviour {
     {
         //controls
         //Walk
-        float moveX = Input.GetAxis("Horizontal");
+        float moveX = input.GetAxisUnpaused("Horizontal");
 
         animator.SetFloat("Speed", Mathf.Abs(moveX));
 
@@ -62,7 +64,7 @@ public class Move_Main : MonoBehaviour {
     void Jump()
     {
         // Jump up
-        if (isGrounded == true && Input.GetButtonDown("Jump"))
+        if (isGrounded == true && input.GetButtonDownUnpaused("Jump"))
         {
             body.velocity += Vector2.up * playerJumpPower;
         }
@@ -75,7 +77,7 @@ public class Move_Main : MonoBehaviour {
         {
             body.velocity += Vector2.up * Physics2D.gravity.y * (fallMult - 1) * Time.deltaTime;
         }
-        else if (body.velocity.y > 0 && !Input.GetButton("Jump"))       // Going up but not holding jump
+        else if (body.velocity.y > 0 && !input.GetButtonDownUnpaused("Jump"))       // Going up but not holding jump
         {
             body.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMult - 1) * Time.deltaTime;
         }
@@ -94,7 +96,7 @@ public class Move_Main : MonoBehaviour {
     //translates item to be next to player frfom where it became inactive
     private void PlaceItem()
     {
-        if (Input.GetButtonDown("Pickup") && heldItem != null)
+        if (input.GetButtonDownUnpaused("Pickup") && heldItem != null)
         {
             float dir = (facingRight ? 0.5f : -0.5f);
             heldItem.GetComponent<Transform>().position = new Vector3(gameObject.GetComponent<Transform>().position.x + dir,
