@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="128">
 	<RootPaths>
-		<ProjectRoot>C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -42,6 +42,10 @@
 				<File Id="36877262" Language="SFX">
 					<ShortName>Flipper Sound 4.wav</ShortName>
 					<Path>SFX\Flipper Sound 4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="40465436" Language="SFX">
+					<ShortName>Dungeon Background.wav</ShortName>
+					<Path>SFX\Dungeon Background_1C9C67B2.wem</Path>
 				</File>
 				<File Id="102586035" Language="SFX">
 					<ShortName>Sigh 3.wav</ShortName>
@@ -110,10 +114,6 @@
 				<File Id="754020562" Language="SFX">
 					<ShortName>Meep 3.wav</ShortName>
 					<Path>SFX\Meep 3_1C9C67B2.wem</Path>
-				</File>
-				<File Id="769135310" Language="SFX">
-					<ShortName>Dungeon Background.wav</ShortName>
-					<Path>SFX\Dungeon Background_F17FB28C.wem</Path>
 				</File>
 				<File Id="770526137" Language="SFX">
 					<ShortName>Sigh 5.wav</ShortName>

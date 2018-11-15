@@ -15,6 +15,7 @@ public class Penguin_Main : MonoBehaviour {
 
     private Animator anim;
     private bool atDoor = false;
+    private Coroutine walkingSound = null;
 
     private void Start()
     {
@@ -107,6 +108,7 @@ public class Penguin_Main : MonoBehaviour {
     //Call when penguin dies to relaod scene
     void Die()
     {
+        StopCoroutine(walkingSound);
         //anim.SetBool("Die_Spikes", true);
         anim.SetBool("Die_Dennise", true);
         //XMoveDirection = 0;
@@ -175,5 +177,22 @@ public class Penguin_Main : MonoBehaviour {
         }
 
         GetComponent<Rigidbody2D>().constraints = original;
+        if(walkingSound == null) walkingSound = StartCoroutine(PlayWalkingSoundForever());
     }
+
+    //Walking sound
+    private bool playingWalkingSound = false;
+    /*This coroutine plays the walking sound for as long as it's running*/
+    private IEnumerator PlayWalkingSoundForever(){
+        while(true){
+            AkSoundEngine.PostEvent("Penguin_Flipper_Footstep", gameObject, (uint)AkCallbackType.AK_EndOfEvent, WalkingSoundEndCallback, this);
+            playingWalkingSound = true;
+            yield return new WaitWhile(() => playingWalkingSound);
+        }
+    }
+
+    private void WalkingSoundEndCallback(object in_cookie, AkCallbackType in_type, object in_callbackInfo){
+        playingWalkingSound = false;
+    }
+
 }

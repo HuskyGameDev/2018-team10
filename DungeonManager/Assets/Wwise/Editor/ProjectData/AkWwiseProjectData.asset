@@ -28,8 +28,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{4397AFDB-20B4-498B-842D-1DF92FD0B006}'
-    m_lastTimePart2: -1999224378
-    m_lastTimePsrt1: -538956162
+    m_lastTimePart2: -1999223294
+    m_lastTimePsrt1: -1135465250
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -48,8 +48,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{9D3AFD7D-486F-4D96-92B0-D045600A021B}'
-    m_lastTimePart2: -1999224378
-    m_lastTimePsrt1: -540677972
+    m_lastTimePart2: -1999223294
+    m_lastTimePsrt1: -1138351734
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -89,6 +89,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: be403d9727746a4995565b20b72b367c
+      ID: -1425174760
+      Name: Dungeon_Background
+      Path: Default Work Unit\Dungeon_Background
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dungeon_Background
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 9b5a7cda9efdb34c8e11db12d69cfea3
+      ID: -600283861
+      Name: Dungeon_Background_Loop_Off
+      Path: Default Work Unit\Dungeon_Background_Loop_Off
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Dungeon_Background_Loop_Off
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: fad7d10e04aa6e4ba4affec2cc3c7d0a
       ID: 895256648
       Name: Penguin_Death
@@ -109,6 +133,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Penguin_Flipper_Footstep
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: ecb3be3895ee9b4387c17067fdba8c24
+      ID: -147724146
+      Name: Penguin_Meeps
+      Path: Default Work Unit\Penguin_Meeps
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Penguin_Meeps
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
