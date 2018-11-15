@@ -35,7 +35,12 @@ public class Door : MonoBehaviour {
     // Returns true if both torches are lit
     public bool TorchesLit()
     {
-        return torch1.isLit && torch2.isLit;
+        if (isExit == true)
+        {
+            return torch1.isLit && torch2.isLit;
+        }
+        return false;
+        
     }
 
 
