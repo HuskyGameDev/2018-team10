@@ -34,7 +34,7 @@ public class Pickup : MonoBehaviour
         {
             playerNear = true;
         }
-        if (other.gameObject.tag == "Penguin" && penguinCanPickup == false)
+        if (other.gameObject.tag == "Penguin" && penguinCanPickup == true)
         {
             pengwin.SetHasKey(true);
             gameObject.SetActive(false);

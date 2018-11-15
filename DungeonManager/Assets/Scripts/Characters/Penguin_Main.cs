@@ -20,7 +20,7 @@ public class Penguin_Main : MonoBehaviour {
     {
         if(facingRight == true)
         {
-            XMoveDirection = 1;
+            Flip();
         }
 
         layerMask = (int)0x7FFFFFFF;
