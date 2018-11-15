@@ -5030,6 +5030,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4697313454291698, guid: 88cc44d56b3f6154289ad5d397169a38,
     type: 2}
   m_PrefabInternal: {fileID: 1329716052}
+--- !u!1001 &1336737956
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4342369774256236, guid: 3fadca6fa99c22d44b6d9e5eb1aca8af, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -88
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342369774256236, guid: 3fadca6fa99c22d44b6d9e5eb1aca8af, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.18640572
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342369774256236, guid: 3fadca6fa99c22d44b6d9e5eb1aca8af, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 5.0566406
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342369774256236, guid: 3fadca6fa99c22d44b6d9e5eb1aca8af, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342369774256236, guid: 3fadca6fa99c22d44b6d9e5eb1aca8af, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342369774256236, guid: 3fadca6fa99c22d44b6d9e5eb1aca8af, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342369774256236, guid: 3fadca6fa99c22d44b6d9e5eb1aca8af, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4342369774256236, guid: 3fadca6fa99c22d44b6d9e5eb1aca8af, type: 2}
+      propertyPath: m_RootOrder
+      value: 67
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3fadca6fa99c22d44b6d9e5eb1aca8af, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1001 &1361920339
 Prefab:
   m_ObjectHideFlags: 0
@@ -6521,7 +6563,7 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1662960284}
+      objectReference: {fileID: 1658722988}
     - target: {fileID: 114892124853545698, guid: 50bd65e0d37256045a25448a59d10b30,
         type: 2}
       propertyPath: lightLayer.m_Bits
@@ -6970,7 +7012,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4697313454291698, guid: 88cc44d56b3f6154289ad5d397169a38,
     type: 2}
   m_PrefabInternal: {fileID: 1655166808}
---- !u!84 &1662960284
+--- !u!84 &1658722988
 RenderTexture:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6981,8 +7023,8 @@ RenderTexture:
     Hash: 00000000000000000000000000000000
   m_ForcedFallbackFormat: 4
   m_DownscaleFallback: 0
-  m_Width: 1626
-  m_Height: 915
+  m_Width: 956
+  m_Height: 538
   m_AntiAliasing: 1
   m_DepthFormat: 2
   m_ColorFormat: 7
