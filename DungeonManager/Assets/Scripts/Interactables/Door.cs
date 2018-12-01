@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour {
 
+    public float waitTime;
     public bool isExit;
     public Torch_Toggle torch1, torch2;
     public GameObject pengwin;
@@ -48,6 +49,7 @@ public class Door : MonoBehaviour {
     IEnumerator StartPengwin()
     {
         yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(waitTime);
         gameObject.GetComponent<Animator>().SetBool("OpenDoor", true);
         yield return new WaitUntil(() => gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Door_open") &&
                                          gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
