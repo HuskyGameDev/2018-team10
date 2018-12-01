@@ -41,8 +41,7 @@ public class LightCollider : MonoBehaviour {
 		maxDistance = noTorchMaxDistance;
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void Update() {
 		if(illuminationManager.illuminated){
 			maxDistance = Mathf.Lerp(maxDistance, torchMaxDistance, growShrinkSpeed * Time.deltaTime);
 		}else{
@@ -50,7 +49,10 @@ public class LightCollider : MonoBehaviour {
 		}
 
 		UpdateCollider(lines, polyCollider, transform, directions, layerMask, maxDistance);
+	}
 
+	public void UpdateCollider(){
+		UpdateCollider(lines, polyCollider, transform, directions, layerMask, maxDistance);
 	}
 
 	public static void UpdateCollider(LineRenderer line, PolygonCollider2D poly, Transform transform, Vector2[] directions, int layerMask, float maxDistance){

@@ -18,10 +18,11 @@ public class Pickup : MonoBehaviour
 
     private void Update()
     {
-        if (playerNear && input.GetButtonDownUnpaused("Pickup"))
+        if (playerNear && input.GetButtonDownUnpaused("Pickup") && dennice.canPickupItem)
         {
             if (dennice.GetHeldItem() == null)
             {
+                dennice.StartPickupDelay();
                 dennice.SetHeldItem(gameObject);
                 gameObject.SetActive(false);
             }
