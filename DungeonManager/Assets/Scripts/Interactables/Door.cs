@@ -28,7 +28,7 @@ public class Door : MonoBehaviour {
         if (col.gameObject.tag == "Penguin" && TorchesLit() &&
             col.gameObject.GetComponent<Penguin_Main>().GetHasKey() == true)
         {
-            gameObject.GetComponent<Animator>().SetBool("OpenDoor", true);
+            StartCoroutine(EndPengwin());
         }
     }
 
@@ -54,5 +54,21 @@ public class Door : MonoBehaviour {
         yield return new WaitUntil(() => gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Door_open") &&
                                          gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
         pengwin.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        gameObject.GetComponent<Animator>().SetBool("OpenDoor", false);
+    }
+
+
+    // After a certain amount of time, the door opens and the pengwin is active
+    IEnumerator EndPengwin()
+    {
+        //yield return new WaitForSeconds(1f);
+        //yield return new WaitForSeconds(waitTime);
+        gameObject.GetComponent<Animator>().SetBool("OpenDoor", true);
+        yield return new WaitUntil(() => gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Door_open") &&
+                                         gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+        pengwin.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        gameObject.GetComponent<Animator>().SetBool("OpenDoor", false);
     }
 }
