@@ -83,9 +83,7 @@ public class Move_Main : MonoBehaviour {
         // Jump up
         if (hit.distance < 0.5f && input.GetButtonDownUnpaused("Jump"))
         {
-            Debug.Log("Distance is" + hit.distance + "    " + hit.collider.tag);
-            body.velocity += Vector2.up * playerJumpPower;
-            
+            body.velocity += Vector2.up * playerJumpPower;      
         }
         
         
