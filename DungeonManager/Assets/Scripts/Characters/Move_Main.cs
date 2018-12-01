@@ -17,12 +17,25 @@ public class Move_Main : MonoBehaviour {
 
     private InputManager input;
 
+    private int layerMask;
+    public int[] avoidLayers;
+
+
     void Start()
     {
         body = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
         heldItem = null;
         input = GameObject.FindObjectOfType<InputManager>();
+
+
+        layerMask = (int)0x7FFFFFFF;
+
+
+        for (int i = 0; i < avoidLayers.Length; i++)
+        {
+            layerMask ^= (1 << avoidLayers[i]);
+        }
     }
 
 
@@ -63,12 +76,21 @@ public class Move_Main : MonoBehaviour {
     // feeling fall and low jumping
     void Jump()
     {
-        // Jump up
-        if (isGrounded == true && input.GetButtonDownUnpaused("Jump"))
-        {
-            body.velocity += Vector2.up * playerJumpPower;
-        }
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(GetComponent<BoxCollider2D>().size.x * 0.00009f, GetComponent<BoxCollider2D>().size.y * 0.00009f), 0, Vector2.down, Mathf.Infinity, layerMask);
 
+
+        
+        // Jump up
+        if (hit.distance < 0.5f && input.GetButtonDownUnpaused("Jump"))
+        {
+            Debug.Log("Distance is" + hit.distance + "    " + hit.collider.tag);
+            body.velocity += Vector2.up * playerJumpPower;
+            
+        }
+        
+        
+        
+        
         // Change player gravity for better jumping feel
         // Taken from YouTube:
         // Board To Games - Better Jumping in Unity with Four Lines of Code
@@ -81,6 +103,7 @@ public class Move_Main : MonoBehaviour {
         {
             body.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMult - 1) * Time.deltaTime;
         }
+        
     }
 
     //Flip the character sprite to match movement
