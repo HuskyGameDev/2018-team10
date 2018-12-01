@@ -8,15 +8,18 @@ public class Move_Main : MonoBehaviour {
     public int playerJumpPower = 400;
     public float fallMult = 2.5f;
     public float lowJumpMult = 2f;
+    [SerializeField] float pickupDelayTime;
 
     private bool isGrounded = true;
     private bool facingRight = true;
     private Rigidbody2D body;
     private Animator animator;
     private GameObject heldItem;
-
     private InputManager input;
+    public bool canPickupItem = true;
 
+    [SerializeField] private LightCollider lightCollider;
+    
     void Start()
     {
         body = gameObject.GetComponent<Rigidbody2D>();
@@ -27,7 +30,7 @@ public class Move_Main : MonoBehaviour {
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         PlayerMove();
         PlaceItem();
@@ -90,20 +93,31 @@ public class Move_Main : MonoBehaviour {
         Vector3 localScale = gameObject.transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
+        lightCollider.UpdateCollider();
     }
 
+    private IEnumerator PickupDelay(){
+        yield return new WaitForSeconds(pickupDelayTime);
+        this.canPickupItem = true;
+    }
+
+    public void StartPickupDelay(){
+        canPickupItem = false;
+        StartCoroutine(PickupDelay());
+    }
     //check if player has an item and places it if they do
     //translates item to be next to player frfom where it became inactive
     private void PlaceItem()
     {
-        if (input.GetButtonDownUnpaused("Pickup") && heldItem != null)
-        {
+        if (input.GetButtonDownUnpaused("Pickup") && heldItem != null && canPickupItem)
+        {    
+            StartPickupDelay();
+
             float dir = (facingRight ? 0.5f : -0.5f);
             heldItem.GetComponent<Transform>().position = new Vector3(gameObject.GetComponent<Transform>().position.x + dir,
                 gameObject.GetComponent<Transform>().position.y, gameObject.GetComponent<Transform>().position.z);
             heldItem.SetActive(true);
             heldItem = null;
-
         }
     }
 
