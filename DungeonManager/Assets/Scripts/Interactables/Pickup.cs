@@ -10,14 +10,19 @@ public class Pickup : MonoBehaviour
     public Penguin_Main pengwin;
     public bool penguinCanPickup;
 
+    private InputManager input;
 
+    void Start(){
+        input = GameObject.FindObjectOfType<InputManager>();
+    }
 
     private void Update()
     {
-        if (playerNear && Input.GetButtonDown("Pickup"))
+        if (playerNear && input.GetButtonDownUnpaused("Pickup") && dennice.canPickupItem)
         {
             if (dennice.GetHeldItem() == null)
             {
+                dennice.StartPickupDelay();
                 dennice.SetHeldItem(gameObject);
                 gameObject.SetActive(false);
             }
@@ -30,7 +35,7 @@ public class Pickup : MonoBehaviour
         {
             playerNear = true;
         }
-        if (other.gameObject.tag == "Penguin" && penguinCanPickup == false)
+        if (other.gameObject.tag == "Penguin" && penguinCanPickup == true)
         {
             pengwin.SetHasKey(true);
             gameObject.SetActive(false);

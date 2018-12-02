@@ -21,7 +21,7 @@ public class Penguin_Main : MonoBehaviour {
     {
         if(facingRight == true)
         {
-            XMoveDirection = 1;
+            Flip();
         }
 
         layerMask = (int)0x7FFFFFFF;
@@ -35,7 +35,7 @@ public class Penguin_Main : MonoBehaviour {
         anim = gameObject.GetComponentInChildren<Animator>();
 
         // Lock movement and fade in
-        StartCoroutine(Fade(gameObject.GetComponentInChildren<SpriteRenderer>(), 1f, 2f));
+        StartCoroutine(FadeSprite.Fade(GetComponent<Rigidbody2D>(), gameObject.GetComponentInChildren<SpriteRenderer>(), 0f, 1f, 2f));
         //gameObject.GetComponentInChildren<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
 
     }
@@ -87,7 +87,7 @@ public class Penguin_Main : MonoBehaviour {
         //Check for death and die if true
         if(col.gameObject.tag == "Death")
         {
-            Die();
+            Die(col);
         }
         //Check for door and key then load next level if true
         if(col.gameObject.tag == "Door" && hasKey == true && col.gameObject.GetComponent<Door>().TorchesLit())
@@ -106,11 +106,20 @@ public class Penguin_Main : MonoBehaviour {
     }
 
     //Call when penguin dies to relaod scene
-    void Die()
+    void Die(Collider2D col)
     {
         StopCoroutine(walkingSound);
-        //anim.SetBool("Die_Spikes", true);
-        anim.SetBool("Die_Dennise", true);
+        
+        if (col.gameObject.transform.parent.ToString().Substring(0,5).Equals("Spike"))
+        {
+            col.gameObject.transform.parent.GetComponent<SpriteRenderer>().enabled = false;
+            anim.SetBool("Die_Spikes", true);
+        }
+        else
+        {
+            anim.SetBool("Die_Dennise", true);
+        }
+
         //XMoveDirection = 0;
         GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
         StartCoroutine(ReloadScene(1f));
@@ -147,37 +156,9 @@ public class Penguin_Main : MonoBehaviour {
     IEnumerator LoadNextScene(Animator doorAnim)
     {
         yield return new WaitUntil(() => doorAnim.GetCurrentAnimatorStateInfo(0).IsName("Door_open") && doorAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
-        yield return new WaitForSeconds(0.5f);
+        StartCoroutine(FadeSprite.Fade(GetComponent<Rigidbody2D>(), gameObject.GetComponentInChildren<SpriteRenderer>(), 1f, 0f, 2f));
+        yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-
-    // Inspired by https://gamedev.stackexchange.com/questions/142791/how-can-i-fade-a-game-object-in-and-out-over-a-specified-duration
-    //
-    IEnumerator Fade(SpriteRenderer sprite, float target, float duration)
-    {
-        float time = 0;
-        Color col = sprite.color;
-        float start = col.a;
-
-        RigidbodyConstraints2D original = GetComponent<Rigidbody2D>().constraints;
-        //GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
-
-        while (time < duration)
-        {
-            time += Time.deltaTime;
-
-            float blend = Mathf.Clamp01(time / duration);
-
-            col.a = Mathf.Lerp(start, blend, duration);
-
-            sprite.color = col;
-
-            yield return null;
-        }
-
-        GetComponent<Rigidbody2D>().constraints = original;
-        if(walkingSound == null) walkingSound = StartCoroutine(PlayWalkingSoundForever());
     }
 
     //Walking sound

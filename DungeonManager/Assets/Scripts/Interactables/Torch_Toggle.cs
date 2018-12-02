@@ -8,15 +8,17 @@ public class Torch_Toggle : MonoBehaviour {
     private bool playerNear = false;
     public Light toggledLight;
 
+    private InputManager input;
 
     void Start()
     {
         SetLight(isLit);
+        input = GameObject.FindObjectOfType<InputManager>();
     }
 
     private void Update()
     {
-        if (playerNear && Input.GetButtonDown("Light"))
+        if (playerNear && input.GetButtonDownUnpaused("Light"))
         {
             isLit = !isLit;
             SetLight(isLit);

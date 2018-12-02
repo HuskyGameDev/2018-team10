@@ -14,6 +14,7 @@ public class LightCollider : MonoBehaviour {
 	private Vector2[] directions;
 	private int layerMask;
 	private float maxDistance;
+	private float lastTime = 0;
 
 	void Start () {
 		//Line renderer and polygon collider are our friends
@@ -40,16 +41,18 @@ public class LightCollider : MonoBehaviour {
 		maxDistance = noTorchMaxDistance;
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	void Update() {
 		if(illuminationManager.illuminated){
-			maxDistance = Mathf.Lerp(maxDistance, torchMaxDistance, growShrinkSpeed);
+			maxDistance = Mathf.Lerp(maxDistance, torchMaxDistance, growShrinkSpeed * Time.deltaTime);
 		}else{
-			maxDistance = Mathf.Lerp(maxDistance, noTorchMaxDistance, growShrinkSpeed);
+			maxDistance = Mathf.Lerp(maxDistance, noTorchMaxDistance, growShrinkSpeed * Time.deltaTime);
 		}
 
 		UpdateCollider(lines, polyCollider, transform, directions, layerMask, maxDistance);
+	}
 
+	public void UpdateCollider(){
+		UpdateCollider(lines, polyCollider, transform, directions, layerMask, maxDistance);
 	}
 
 	public static void UpdateCollider(LineRenderer line, PolygonCollider2D poly, Transform transform, Vector2[] directions, int layerMask, float maxDistance){
