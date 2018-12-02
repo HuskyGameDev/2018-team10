@@ -271,37 +271,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 697ea45f486b48d4fb6d89bad327b727, type: 2}
   m_IsPrefabAsset: 0
---- !u!84 &140444126
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1200
-  m_Height: 675
-  m_AntiAliasing: 1
-  m_DepthFormat: 2
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &249984512
 Prefab:
   m_ObjectHideFlags: 0
@@ -404,12 +373,12 @@ Prefab:
     - target: {fileID: 61789406867573172, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
         type: 2}
       propertyPath: m_Offset.x
-      value: 0.007429719
+      value: 0.7968397
       objectReference: {fileID: 0}
     - target: {fileID: 61789406867573172, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
         type: 2}
       propertyPath: m_Size.x
-      value: 4.4346457
+      value: 2.8558254
       objectReference: {fileID: 0}
     - target: {fileID: 114538650595872380, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
         type: 2}
@@ -677,12 +646,12 @@ Prefab:
     - target: {fileID: 61789406867573172, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
         type: 2}
       propertyPath: m_Offset.x
-      value: 0.007429719
+      value: -0.84885216
       objectReference: {fileID: 0}
     - target: {fileID: 61789406867573172, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
         type: 2}
       propertyPath: m_Size.x
-      value: 4.4346457
+      value: 2.7220821
       objectReference: {fileID: 0}
     - target: {fileID: 114538650595872380, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
         type: 2}
@@ -968,6 +937,37 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88cc44d56b3f6154289ad5d397169a38, type: 2}
   m_IsPrefabAsset: 0
+--- !u!84 &787598115
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1069
+  m_Height: 601
+  m_AntiAliasing: 1
+  m_DepthFormat: 2
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &788885099
 Prefab:
   m_ObjectHideFlags: 0
@@ -1581,7 +1581,7 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 140444126}
+      objectReference: {fileID: 787598115}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f3d864b15c7683469b5969875c79e90, type: 2}
   m_IsPrefabAsset: 0
@@ -1656,11 +1656,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4212019934022450, guid: 8d48a5b7a70d5354a9500aeacd1a2c35, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -7.38
+      value: -7.642
       objectReference: {fileID: 0}
     - target: {fileID: 4212019934022450, guid: 8d48a5b7a70d5354a9500aeacd1a2c35, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 2.16
+      value: 2.157
       objectReference: {fileID: 0}
     - target: {fileID: 4212019934022450, guid: 8d48a5b7a70d5354a9500aeacd1a2c35, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1693,12 +1693,12 @@ Prefab:
     - target: {fileID: 61789406867573172, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
         type: 2}
       propertyPath: m_Offset.x
-      value: 0.007429719
+      value: -0.5564046
       objectReference: {fileID: 0}
     - target: {fileID: 61789406867573172, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
         type: 2}
       propertyPath: m_Size.x
-      value: 4.4346457
+      value: 3.3069773
       objectReference: {fileID: 0}
     - target: {fileID: 114538650595872380, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
         type: 2}

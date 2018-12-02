@@ -33,17 +33,9 @@
 				<Event Id="3969109100" Name="Spa_Music_Loop_Off" ObjectPath="\Events\Default Work Unit\Spa_Music_Loop_Off" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="18944824" Language="SFX">
-					<ShortName>Denis Footstep 2.wav</ShortName>
-					<Path>SFX\Denis Footstep 2_1C9C67B2.wem</Path>
-				</File>
 				<File Id="35623641" Language="SFX">
 					<ShortName>Meep 5.wav</ShortName>
 					<Path>SFX\Meep 5_1C9C67B2.wem</Path>
-				</File>
-				<File Id="36877262" Language="SFX">
-					<ShortName>Flipper Sound 4.wav</ShortName>
-					<Path>SFX\Flipper Sound 4_1C9C67B2.wem</Path>
 				</File>
 				<File Id="40465436" Language="SFX">
 					<ShortName>Dungeon Background.wav</ShortName>
@@ -52,10 +44,6 @@
 				<File Id="102586035" Language="SFX">
 					<ShortName>Sigh 3.wav</ShortName>
 					<Path>SFX\Sigh 3_1C9C67B2.wem</Path>
-				</File>
-				<File Id="106430524" Language="SFX">
-					<ShortName>Denis Footstep 3.wav</ShortName>
-					<Path>SFX\Denis Footstep 3_1C9C67B2.wem</Path>
 				</File>
 				<File Id="111634054" Language="SFX">
 					<ShortName>Flipper Sound 2.wav</ShortName>
@@ -92,10 +80,6 @@
 				<File Id="553551867" Language="SFX">
 					<ShortName>Flipper Sound 1.wav</ShortName>
 					<Path>SFX\Flipper Sound 1_1C9C67B2.wem</Path>
-				</File>
-				<File Id="635082235" Language="SFX">
-					<ShortName>Denis Footstep 1.wav</ShortName>
-					<Path>SFX\Denis Footstep 1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="641449495" Language="SFX">
 					<ShortName>Torch Ignition.wav</ShortName>
