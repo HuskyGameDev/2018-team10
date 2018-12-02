@@ -156,19 +156,40 @@ Prefab:
       propertyPath: m_Name
       value: Torch (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 61745430288135390, guid: 697ea45f486b48d4fb6d89bad327b727,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 60171794969215168, guid: 697ea45f486b48d4fb6d89bad327b727,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 697ea45f486b48d4fb6d89bad327b727, type: 2}
   m_IsPrefabAsset: 0
+--- !u!84 &16782861
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1196
+  m_Height: 673
+  m_AntiAliasing: 1
+  m_DepthFormat: 2
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &18928835
 Prefab:
   m_ObjectHideFlags: 0
@@ -1341,6 +1362,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 697ea45f486b48d4fb6d89bad327b727, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &193838525 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114731590321397404, guid: 4cfba9f48e75f6a408c88fd256dc334b,
+    type: 2}
+  m_PrefabInternal: {fileID: 734473117}
+  m_Script: {fileID: 11500000, guid: f1ba17a58ed5b9c49a688ea240cbf9af, type: 3}
 --- !u!1 &223222009
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,37 +2098,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 427662636}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!84 &478711852
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 956
-  m_Height: 538
-  m_AntiAliasing: 1
-  m_DepthFormat: 2
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!4 &553735237 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4697313454291698, guid: 88cc44d56b3f6154289ad5d397169a38,
@@ -2476,7 +2472,7 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 995448863}
+      objectReference: {fileID: 16782861}
     - target: {fileID: 114892124853545698, guid: 50bd65e0d37256045a25448a59d10b30,
         type: 2}
       propertyPath: lightLayer.m_Bits
@@ -2942,14 +2938,24 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114731590321397404, guid: 4cfba9f48e75f6a408c88fd256dc334b,
+    - target: {fileID: 114920292070700226, guid: 4cfba9f48e75f6a408c88fd256dc334b,
         type: 2}
-      propertyPath: growShrinkSpeed
-      value: 1
+      propertyPath: pickupDelayTime
+      value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 114920292070700226, guid: 4cfba9f48e75f6a408c88fd256dc334b,
+        type: 2}
+      propertyPath: lightCollider
+      value: 
+      objectReference: {fileID: 193838525}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cfba9f48e75f6a408c88fd256dc334b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &734473118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1457952383182474, guid: 4cfba9f48e75f6a408c88fd256dc334b,
+    type: 2}
+  m_PrefabInternal: {fileID: 734473117}
 --- !u!1001 &737181877
 Prefab:
   m_ObjectHideFlags: 0
@@ -3724,37 +3730,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1687604230}
   m_Script: {fileID: 11500000, guid: 3dfb46e4262d84b458f8e9941260deb0, type: 3}
---- !u!84 &995448863
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 956
-  m_Height: 538
-  m_AntiAliasing: 1
-  m_DepthFormat: 2
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!4 &996331368 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4697313454291698, guid: 88cc44d56b3f6154289ad5d397169a38,
@@ -4391,8 +4366,13 @@ Prefab:
     - target: {fileID: 114294659329762866, guid: 1f85f959003b9594093a4e23a3dfa3a4,
         type: 2}
       propertyPath: waitTime
-      value: 1
+      value: 3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114294659329762866, guid: 1f85f959003b9594093a4e23a3dfa3a4,
+        type: 2}
+      propertyPath: fadeObj
+      value: 
+      objectReference: {fileID: 1008134317}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f85f959003b9594093a4e23a3dfa3a4, type: 2}
   m_IsPrefabAsset: 0
@@ -8188,6 +8168,16 @@ Prefab:
       propertyPath: m_Name
       value: Door (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114294659329762866, guid: 1f85f959003b9594093a4e23a3dfa3a4,
+        type: 2}
+      propertyPath: waitTime
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114294659329762866, guid: 1f85f959003b9594093a4e23a3dfa3a4,
+        type: 2}
+      propertyPath: fadeObj
+      value: 
+      objectReference: {fileID: 734473118}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f85f959003b9594093a4e23a3dfa3a4, type: 2}
   m_IsPrefabAsset: 0
