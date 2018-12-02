@@ -9,6 +9,7 @@ public class Move_Main : MonoBehaviour {
     public float fallMult = 2.5f;
     public float lowJumpMult = 2f;
     [SerializeField] float pickupDelayTime;
+    [SerializeField] float stepDelayTime;
 
     private bool isGrounded = true;
     private bool facingRight = true;
@@ -20,6 +21,8 @@ public class Move_Main : MonoBehaviour {
     [SerializeField] private LightCollider lightCollider;
     private int layerMask;
     public int[] avoidLayers;
+
+    public bool canPlayFootstep = true;
 
     void Start()
     {
@@ -56,7 +59,7 @@ public class Move_Main : MonoBehaviour {
         //controls
         //Walk
         float moveX = input.GetAxisUnpaused("Horizontal");
-
+        
         animator.SetFloat("Speed", Mathf.Abs(moveX));
 
         //Jump
@@ -72,6 +75,12 @@ public class Move_Main : MonoBehaviour {
         }
         //physics
         body.velocity = new Vector2(moveX * playerSpeed, body.velocity.y);
+
+        //Step sound
+        if(Mathf.Abs(moveX) > 0.1f){
+            Step();
+        }
+
     }
 
     //Let the player jump when player presses jump key
@@ -79,12 +88,8 @@ public class Move_Main : MonoBehaviour {
     // feeling fall and low jumping
     void Jump()
     {
-        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(GetComponent<BoxCollider2D>().size.x * 0.01f, GetComponent<BoxCollider2D>().size.y * 0.00009f), 0, Vector2.down, Mathf.Infinity, layerMask);
-
-
-        
         // Jump up
-        if (hit.distance < 0.65f && input.GetButtonDownUnpaused("Jump"))
+        if (OnGround() && input.GetButtonDownUnpaused("Jump"))
         {
             body.velocity += Vector2.up * playerJumpPower;      
         }
@@ -142,6 +147,23 @@ public class Move_Main : MonoBehaviour {
         }
     }
 
+    //Footstep stuff
+    private IEnumerator StepDelay(){
+        yield return new WaitForSeconds(stepDelayTime);
+        canPlayFootstep = true;
+    }
+
+    private void StartStepDelay(){
+        canPlayFootstep = false;
+        StartCoroutine(StepDelay());
+    }
+
+    private void Step(){
+        if(canPlayFootstep && OnGround()){
+            AkSoundEngine.PostEvent("Denis_Footsteps", this.gameObject);
+            StartStepDelay();
+        }
+    }
 
     /*void OnCollisionEnter2D (Collision2D col)
     {
@@ -150,6 +172,11 @@ public class Move_Main : MonoBehaviour {
             isGrounded = true;
         }
     }*/
+
+    public bool OnGround(){
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(GetComponent<BoxCollider2D>().size.x * 0.01f, GetComponent<BoxCollider2D>().size.y * 0.00009f), 0, Vector2.down, Mathf.Infinity, layerMask);
+        return hit.distance < 0.65f;
+    }
 
     public void SetIsGrounded(bool b)
     {
