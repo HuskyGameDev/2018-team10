@@ -373,7 +373,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1725373110127830}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd9fe6722d7aa0b4c974d94023aaca49, type: 3}
+  m_Script: {fileID: 11500000, guid: 22a2d4d1f6bd6b94aa6706fdec86259f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   illuminated: 0
@@ -392,7 +392,7 @@ MonoBehaviour:
   avoidLayers: 0800000002000000
   torchMaxDistance: 120
   noTorchMaxDistance: 80
-  growShrinkSpeed: 0.01
+  growShrinkSpeed: 1
   illuminationManager: {fileID: 114697860234545788}
 --- !u!114 &114851543323090502
 MonoBehaviour:
