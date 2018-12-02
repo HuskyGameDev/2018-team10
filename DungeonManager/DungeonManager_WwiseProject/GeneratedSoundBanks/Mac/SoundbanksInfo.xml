@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="128">
 	<RootPaths>
-		<ProjectRoot>C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\sjcalver\Documents\GitHub\2018-team10\DungeonManager\DungeonManager_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -29,6 +29,8 @@
 				<Event Id="895256648" Name="Penguin_Death" ObjectPath="\Events\Default Work Unit\Penguin_Death"/>
 				<Event Id="1270887217" Name="Penguin_Flipper_Footstep" ObjectPath="\Events\Default Work Unit\Penguin_Flipper_Footstep"/>
 				<Event Id="4147243150" Name="Penguin_Meeps" ObjectPath="\Events\Default Work Unit\Penguin_Meeps"/>
+				<Event Id="103355865" Name="Spa_Music" ObjectPath="\Events\Default Work Unit\Spa_Music"/>
+				<Event Id="3969109100" Name="Spa_Music_Loop_Off" ObjectPath="\Events\Default Work Unit\Spa_Music_Loop_Off" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="18944824" Language="SFX">
@@ -42,6 +44,10 @@
 				<File Id="36877262" Language="SFX">
 					<ShortName>Flipper Sound 4.wav</ShortName>
 					<Path>SFX\Flipper Sound 4_1C9C67B2.wem</Path>
+				</File>
+				<File Id="40465436" Language="SFX">
+					<ShortName>Dungeon Background.wav</ShortName>
+					<Path>SFX\Dungeon Background_F17FB28C.wem</Path>
 				</File>
 				<File Id="102586035" Language="SFX">
 					<ShortName>Sigh 3.wav</ShortName>
@@ -111,13 +117,13 @@
 					<ShortName>Meep 3.wav</ShortName>
 					<Path>SFX\Meep 3_1C9C67B2.wem</Path>
 				</File>
-				<File Id="769135310" Language="SFX">
-					<ShortName>Dungeon Background.wav</ShortName>
-					<Path>SFX\Dungeon Background_F17FB28C.wem</Path>
-				</File>
 				<File Id="770526137" Language="SFX">
 					<ShortName>Sigh 5.wav</ShortName>
 					<Path>SFX\Sigh 5_1C9C67B2.wem</Path>
+				</File>
+				<File Id="860991440" Language="SFX">
+					<ShortName>Menu Screen Music.wav</ShortName>
+					<Path>SFX\Menu Screen Music_F17FB28C.wem</Path>
 				</File>
 				<File Id="905024809" Language="SFX">
 					<ShortName>Guts Squish 1.wav</ShortName>

@@ -21,6 +21,8 @@ namespace AK
         static const AkUniqueID PENGUIN_DEATH = 895256648U;
         static const AkUniqueID PENGUIN_FLIPPER_FOOTSTEP = 1270887217U;
         static const AkUniqueID PENGUIN_MEEPS = 4147243150U;
+        static const AkUniqueID SPA_MUSIC = 103355865U;
+        static const AkUniqueID SPA_MUSIC_LOOP_OFF = 3969109100U;
     } // namespace EVENTS
 
     namespace BANKS

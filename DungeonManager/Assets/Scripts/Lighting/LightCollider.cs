@@ -50,6 +50,10 @@ public class LightCollider : MonoBehaviour {
 
 		UpdateCollider(lines, polyCollider, transform, directions, layerMask, maxDistance);
 	}
+	
+	void FixedUpdate(){
+		UpdateCollider(lines, polyCollider, transform, directions, layerMask, maxDistance);
+	}
 
 	public void UpdateCollider(){
 		UpdateCollider(lines, polyCollider, transform, directions, layerMask, maxDistance);

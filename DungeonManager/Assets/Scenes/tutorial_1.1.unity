@@ -1268,6 +1268,48 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88cc44d56b3f6154289ad5d397169a38, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &500988152
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.9872379
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.3487786
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 5.6289062
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!4 &525973091 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4697313454291698, guid: 88cc44d56b3f6154289ad5d397169a38,
@@ -3656,10 +3698,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1457952383182474, guid: 4cfba9f48e75f6a408c88fd256dc334b, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4cfba9f48e75f6a408c88fd256dc334b, type: 2}
   m_IsPrefabAsset: 0
@@ -4483,7 +4521,7 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1677757669}
+      objectReference: {fileID: 1966157307}
     - target: {fileID: 114892124853545698, guid: 50bd65e0d37256045a25448a59d10b30,
         type: 2}
       propertyPath: lightLayer.m_Bits
@@ -4522,37 +4560,6 @@ Prefab:
     - {fileID: 81110794352794450, guid: 50bd65e0d37256045a25448a59d10b30, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 50bd65e0d37256045a25448a59d10b30, type: 2}
   m_IsPrefabAsset: 0
---- !u!84 &1677757669
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1196
-  m_Height: 673
-  m_AntiAliasing: 1
-  m_DepthFormat: 2
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1 &1821400556
 GameObject:
   m_ObjectHideFlags: 0
@@ -4993,6 +5000,37 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1931400570}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!84 &1966157307
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 973
+  m_Height: 547
+  m_AntiAliasing: 1
+  m_DepthFormat: 2
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &2013526146
 Prefab:
   m_ObjectHideFlags: 0
