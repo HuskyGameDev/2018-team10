@@ -36,6 +36,9 @@ public class Move_Main : MonoBehaviour {
         {
             layerMask ^= (1 << avoidLayers[i]);
         }
+
+        // Lock movement and fade in
+        StartCoroutine(FadeSprite.Fade(GetComponent<Rigidbody2D>(), gameObject.GetComponentInChildren<SpriteRenderer>(), 0f, 1f, 2f));
     }
 
 
@@ -81,7 +84,7 @@ public class Move_Main : MonoBehaviour {
 
         
         // Jump up
-        if (hit.distance < 0.5f && input.GetButtonDownUnpaused("Jump"))
+        if (hit.distance < 0.65f && input.GetButtonDownUnpaused("Jump"))
         {
             body.velocity += Vector2.up * playerJumpPower;      
         }
