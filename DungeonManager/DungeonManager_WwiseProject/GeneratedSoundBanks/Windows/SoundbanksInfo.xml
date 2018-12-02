@@ -29,6 +29,8 @@
 				<Event Id="895256648" Name="Penguin_Death" ObjectPath="\Events\Default Work Unit\Penguin_Death"/>
 				<Event Id="1270887217" Name="Penguin_Flipper_Footstep" ObjectPath="\Events\Default Work Unit\Penguin_Flipper_Footstep"/>
 				<Event Id="4147243150" Name="Penguin_Meeps" ObjectPath="\Events\Default Work Unit\Penguin_Meeps"/>
+				<Event Id="103355865" Name="Spa_Music" ObjectPath="\Events\Default Work Unit\Spa_Music"/>
+				<Event Id="3969109100" Name="Spa_Music_Loop_Off" ObjectPath="\Events\Default Work Unit\Spa_Music_Loop_Off" MaxAttenuation="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="18944824" Language="SFX">
@@ -45,7 +47,7 @@
 				</File>
 				<File Id="40465436" Language="SFX">
 					<ShortName>Dungeon Background.wav</ShortName>
-					<Path>SFX\Dungeon Background_1C9C67B2.wem</Path>
+					<Path>SFX\Dungeon Background_F17FB28C.wem</Path>
 				</File>
 				<File Id="102586035" Language="SFX">
 					<ShortName>Sigh 3.wav</ShortName>
@@ -118,6 +120,10 @@
 				<File Id="770526137" Language="SFX">
 					<ShortName>Sigh 5.wav</ShortName>
 					<Path>SFX\Sigh 5_1C9C67B2.wem</Path>
+				</File>
+				<File Id="860991440" Language="SFX">
+					<ShortName>Menu Screen Music.wav</ShortName>
+					<Path>SFX\Menu Screen Music_F17FB28C.wem</Path>
 				</File>
 				<File Id="905024809" Language="SFX">
 					<ShortName>Guts Squish 1.wav</ShortName>

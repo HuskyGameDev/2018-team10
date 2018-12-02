@@ -125,7 +125,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1457952383182474}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.6212225, y: 2.7575743, z: 0}
+  m_LocalPosition: {x: 8.62, y: -1.709, z: 0}
   m_LocalScale: {x: 0.018806564, y: 0.022857256, z: 1}
   m_Children:
   - {fileID: 4505870922312552}
@@ -377,6 +377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   illuminated: 0
+  torch: {fileID: 0}
 --- !u!114 &114731590321397404
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -425,9 +426,11 @@ MonoBehaviour:
   fallMult: 2.5
   lowJumpMult: 2
   pickupDelayTime: 0.2
+  stepDelayTime: 0.5
   canPickupItem: 1
   lightCollider: {fileID: 114731590321397404}
   avoidLayers: 0200000008000000
+  canPlayFootstep: 1
 --- !u!120 &120343396476890374
 LineRenderer:
   m_ObjectHideFlags: 1

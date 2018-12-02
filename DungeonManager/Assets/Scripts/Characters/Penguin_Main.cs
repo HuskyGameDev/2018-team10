@@ -37,7 +37,8 @@ public class Penguin_Main : MonoBehaviour {
         // Lock movement and fade in
         StartCoroutine(FadeSprite.Fade(GetComponent<Rigidbody2D>(), gameObject.GetComponentInChildren<SpriteRenderer>(), 0f, 1f, 2f));
         //gameObject.GetComponentInChildren<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
-
+        
+        walkingSound = StartCoroutine(PlayWalkingSoundForever());
     }
 
     // Update is called once per frame
@@ -109,7 +110,7 @@ public class Penguin_Main : MonoBehaviour {
     void Die(Collider2D col)
     {
         StopCoroutine(walkingSound);
-        
+        AkSoundEngine.PostEvent("Penguin_Death", this.gameObject);
         if (col.gameObject.transform.parent.ToString().Substring(0,5).Equals("Spike"))
         {
             col.gameObject.transform.parent.GetComponent<SpriteRenderer>().enabled = false;

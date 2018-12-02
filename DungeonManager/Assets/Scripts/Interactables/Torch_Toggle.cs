@@ -22,6 +22,9 @@ public class Torch_Toggle : MonoBehaviour {
         {
             isLit = !isLit;
             SetLight(isLit);
+            if(isLit){
+                AkSoundEngine.PostEvent("Denis_Lights_Torch", this.gameObject);
+            }
         }
     }
 

@@ -140,6 +140,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<RandomSequenceContainer Name="Denis_Footsteps" ID="{697EE4A4-8ADA-4B8F-92A2-156B6E1ECE5B}" ShortID="878760249">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-19</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
@@ -319,7 +326,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -531,6 +538,7 @@
 					<ChildrenList>
 						<Sound Name="Dungeon_Background" ID="{F58EC39A-021C-44E0-BC88-DB5336C4D38D}" ShortID="751993696">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>20</Value>
@@ -553,6 +561,33 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Dungeon Background" ID="{D52F74B6-7A1F-41FD-8D52-323CFC71CEAB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SpaMusic" ID="{406D05A1-4A20-434B-B291-0E213777A600}" ShortID="639921420">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Menu Screen Music" ID="{219AC858-F5C9-46E4-891A-8A235A32AE7E}" ShortID="860991440">
+									<Language>SFX</Language>
+									<AudioFile>Menu Screen Music.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Menu Screen Music" ID="{219AC858-F5C9-46E4-891A-8A235A32AE7E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
