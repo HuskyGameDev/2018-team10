@@ -114,6 +114,7 @@ public class Penguin_Main : MonoBehaviour {
         if (col.gameObject.transform.parent.ToString().Substring(0,5).Equals("Spike"))
         {
             col.gameObject.transform.parent.GetComponent<SpriteRenderer>().enabled = false;
+            //GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionY;
             anim.SetBool("Die_Spikes", true);
         }
         else
@@ -121,6 +122,7 @@ public class Penguin_Main : MonoBehaviour {
             anim.SetBool("Die_Dennise", true);
         }
 
+        StopAllCoroutines();
         //XMoveDirection = 0;
         GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
         StartCoroutine(ReloadScene(1f));

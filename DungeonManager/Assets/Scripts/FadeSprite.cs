@@ -14,6 +14,7 @@ public static class FadeSprite {
 
         RigidbodyConstraints2D original = constr.constraints;
         constr.constraints |= RigidbodyConstraints2D.FreezePositionX;
+        //constr.constraints |= RigidbodyConstraints2D.FreezePositionY;
 
         while (time < duration)
         {
