@@ -709,6 +709,48 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e12641ba369c8541be9444eef4e980e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1001 &82474384
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.092199504
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.0727126
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 5.6289062
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650722276208260, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6c7f1f34e80d5a24c952c2af37681365, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!4 &88274678 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4228343479956300, guid: 3e12641ba369c8541be9444eef4e980e,
@@ -2765,7 +2807,7 @@ Transform:
   m_LocalScale: {x: 0.690666, y: 0.707168, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 46
+  m_RootOrder: 47
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1012738124
 Prefab:
@@ -3015,7 +3057,7 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1277610753}
+      objectReference: {fileID: 1629888370}
     - target: {fileID: 114140900084262590, guid: 50bd65e0d37256045a25448a59d10b30,
         type: 2}
       propertyPath: spriteLightRT
@@ -3324,37 +3366,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 2101160181}
   m_Script: {fileID: 11500000, guid: 3dfb46e4262d84b458f8e9941260deb0, type: 3}
---- !u!84 &1277610753
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1204
-  m_Height: 677
-  m_AntiAliasing: 1
-  m_DepthFormat: 2
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &1306359273
 Prefab:
   m_ObjectHideFlags: 0
@@ -3553,7 +3564,7 @@ Transform:
   m_LocalScale: {x: 0.8266562, y: 0.42597228, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1369034240
 Prefab:
@@ -3887,7 +3898,7 @@ Transform:
   m_LocalScale: {x: 0.69066596, y: 0.707168, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 44
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1473224576
 Prefab:
@@ -4072,7 +4083,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 42
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1504002406
 GameObject:
@@ -4539,7 +4550,7 @@ Transform:
   m_LocalScale: {x: 0.690666, y: 0.707168, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 45
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1628010744
 GameObject:
@@ -4733,6 +4744,37 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e12641ba369c8541be9444eef4e980e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!84 &1629888370
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1204
+  m_Height: 677
+  m_AntiAliasing: 1
+  m_DepthFormat: 2
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1001 &1634687727
 Prefab:
   m_ObjectHideFlags: 0

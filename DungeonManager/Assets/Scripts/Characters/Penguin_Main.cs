@@ -15,6 +15,7 @@ public class Penguin_Main : MonoBehaviour {
 
     private Animator anim;
     private bool atDoor = false;
+    private Coroutine walkingSound = null;
 
     private void Start()
     {
@@ -36,7 +37,8 @@ public class Penguin_Main : MonoBehaviour {
         // Lock movement and fade in
         StartCoroutine(FadeSprite.Fade(GetComponent<Rigidbody2D>(), gameObject.GetComponentInChildren<SpriteRenderer>(), 0f, 1f, 2f));
         //gameObject.GetComponentInChildren<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
-
+        
+        walkingSound = StartCoroutine(PlayWalkingSoundForever());
     }
 
     // Update is called once per frame
@@ -107,9 +109,12 @@ public class Penguin_Main : MonoBehaviour {
     //Call when penguin dies to relaod scene
     void Die(Collider2D col)
     {
+        StopCoroutine(walkingSound);
+        AkSoundEngine.PostEvent("Penguin_Death", this.gameObject);
         if (col.gameObject.transform.parent.ToString().Substring(0,5).Equals("Spike"))
         {
             col.gameObject.transform.parent.GetComponent<SpriteRenderer>().enabled = false;
+            //GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionY;
             anim.SetBool("Die_Spikes", true);
         }
         else
@@ -117,6 +122,7 @@ public class Penguin_Main : MonoBehaviour {
             anim.SetBool("Die_Dennise", true);
         }
 
+        StopAllCoroutines();
         //XMoveDirection = 0;
         GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
         StartCoroutine(ReloadScene(1f));
@@ -157,4 +163,20 @@ public class Penguin_Main : MonoBehaviour {
         yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    //Walking sound
+    private bool playingWalkingSound = false;
+    /*This coroutine plays the walking sound for as long as it's running*/
+    private IEnumerator PlayWalkingSoundForever(){
+        while(true){
+            AkSoundEngine.PostEvent("Penguin_Flipper_Footstep", gameObject, (uint)AkCallbackType.AK_EndOfEvent, WalkingSoundEndCallback, this);
+            playingWalkingSound = true;
+            yield return new WaitWhile(() => playingWalkingSound);
+        }
+    }
+
+    private void WalkingSoundEndCallback(object in_cookie, AkCallbackType in_type, object in_callbackInfo){
+        playingWalkingSound = false;
+    }
+
 }
