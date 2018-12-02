@@ -88,10 +88,6 @@ public class Move_Main : MonoBehaviour {
     // feeling fall and low jumping
     void Jump()
     {
-        
-
-
-        
         // Jump up
         if (OnGround() && input.GetButtonDownUnpaused("Jump"))
         {
@@ -178,7 +174,7 @@ public class Move_Main : MonoBehaviour {
     }*/
 
     public bool OnGround(){
-        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(GetComponent<BoxCollider2D>().size.x * 0.00009f, GetComponent<BoxCollider2D>().size.y * 0.00009f), 0, Vector2.down, Mathf.Infinity, layerMask);
+        RaycastHit2D hit = Physics2D.BoxCast(transform.position, new Vector2(GetComponent<BoxCollider2D>().size.x * 0.01f, GetComponent<BoxCollider2D>().size.y * 0.00009f), 0, Vector2.down, Mathf.Infinity, layerMask);
         return hit.distance < 0.65f;
     }
 
