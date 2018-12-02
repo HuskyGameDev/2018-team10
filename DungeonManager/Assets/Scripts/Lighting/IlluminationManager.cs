@@ -17,8 +17,10 @@ public class IlluminationManager : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D other){
-		if(other.tag == "Torch" && other.gameObject.GetComponent<Torch_Toggle>().isLit){
-			illuminated = true;
+		if(other.tag == "Torch"){
+			if(other.gameObject.GetComponent<Torch_Toggle>().isLit){
+				illuminated = true;
+			}
 			torch = other.gameObject.GetComponent<Torch_Toggle>();
 		}
 	}
