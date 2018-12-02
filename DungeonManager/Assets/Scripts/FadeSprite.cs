@@ -31,4 +31,26 @@ public static class FadeSprite {
 
         constr.constraints = original;
     }
+
+
+
+    public static IEnumerator FadeImage(SpriteRenderer sprite, float start, float target, float duration)
+    {
+        float time = 0;
+        Color col = sprite.color;
+        //float start = col.a;
+
+        while (time < duration)
+        {
+            time += Time.deltaTime;
+
+            float blend = Mathf.Clamp01(time / duration);
+
+            col.a = Mathf.Lerp(start, target, blend);
+
+            sprite.color = col;
+
+            yield return null;
+        }
+    }
 }
