@@ -80,15 +80,16 @@ public class Penguin_Main : MonoBehaviour {
     //Check for a trigger and do correct action
     private void OnTriggerEnter2D(Collider2D col)
     {
-        //Check for trap and jump if found
-        if(col.gameObject.tag == "Trap" && col.gameObject.GetComponentInParent<Trap_Trigger>().isLit)
-        {
-            Jump();
-        }
         //Check for death and die if true
         if(col.gameObject.tag == "Death")
         {
             Die(col);
+            return;
+        }
+        //Check for trap and jump if found
+        if(col.gameObject.tag == "Trap" && col.gameObject.GetComponentInParent<Trap_Trigger>().isLit)
+        {
+            Jump();
         }
         //Check for door and key then load next level if true
         if(col.gameObject.tag == "Door" && hasKey == true && col.gameObject.GetComponent<Door>().TorchesLit())
@@ -114,7 +115,6 @@ public class Penguin_Main : MonoBehaviour {
         if (col.gameObject.transform.parent.ToString().Substring(0,5).Equals("Spike"))
         {
             col.gameObject.transform.parent.GetComponent<SpriteRenderer>().enabled = false;
-            //GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionY;
             anim.SetBool("Die_Spikes", true);
         }
         else
