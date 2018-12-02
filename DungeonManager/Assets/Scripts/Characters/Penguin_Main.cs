@@ -117,6 +117,7 @@ public class Penguin_Main : MonoBehaviour {
             anim.SetBool("Die_Dennise", true);
         }
 
+        StopAllCoroutines();
         //XMoveDirection = 0;
         GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
         StartCoroutine(ReloadScene(1f));
