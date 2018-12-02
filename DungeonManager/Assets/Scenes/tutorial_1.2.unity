@@ -2807,7 +2807,7 @@ Transform:
   m_LocalScale: {x: 0.690666, y: 0.707168, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1012738124
 Prefab:
@@ -3057,7 +3057,7 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 1629888370}
+      objectReference: {fileID: 1501797671}
     - target: {fileID: 114140900084262590, guid: 50bd65e0d37256045a25448a59d10b30,
         type: 2}
       propertyPath: spriteLightRT
@@ -3564,7 +3564,7 @@ Transform:
   m_LocalScale: {x: 0.8266562, y: 0.42597228, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1369034240
 Prefab:
@@ -4083,8 +4083,39 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 43
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!84 &1501797671
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1069
+  m_Height: 601
+  m_AntiAliasing: 1
+  m_DepthFormat: 2
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &1504002406
 GameObject:
   m_ObjectHideFlags: 0
@@ -4744,37 +4775,6 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e12641ba369c8541be9444eef4e980e, type: 2}
   m_IsPrefabAsset: 0
---- !u!84 &1629888370
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1204
-  m_Height: 677
-  m_AntiAliasing: 1
-  m_DepthFormat: 2
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &1634687727
 Prefab:
   m_ObjectHideFlags: 0
@@ -4821,12 +4821,12 @@ Prefab:
     - target: {fileID: 61789406867573172, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
         type: 2}
       propertyPath: m_Offset.x
-      value: -1.9341533
+      value: -2.970413
       objectReference: {fileID: 0}
     - target: {fileID: 61789406867573172, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
         type: 2}
       propertyPath: m_Size.x
-      value: 8.404175
+      value: 6.331656
       objectReference: {fileID: 0}
     - target: {fileID: 114538650595872380, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
         type: 2}
