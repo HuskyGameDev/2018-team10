@@ -44,7 +44,7 @@ public class Torch_Toggle : MonoBehaviour {
         }
     }
 
-    void SetLight(bool state)
+    public void SetLight(bool state)
     {
         toggledLight.gameObject.SetActive(state);
     }
