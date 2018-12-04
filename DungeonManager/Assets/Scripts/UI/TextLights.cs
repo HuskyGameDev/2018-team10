@@ -62,6 +62,7 @@ public class TextLights : MonoBehaviour {
         {
             if (SceneManager.GetActiveScene().name.Equals("end"))
             {
+                EmployeesMenu.complete = true;              // Set true for updated staff only
                 SceneManager.LoadScene(0);
             }
             else

@@ -128,7 +128,7 @@ public class Penguin_Main : MonoBehaviour {
     //Call when penguin dies to relaod scene
     void Die(Collider2D col)
     {
-        StopCoroutine(walkingSound);
+        //StopCoroutine(walkingSound);
         StopAllCoroutines();
 
         if (col.gameObject.transform.parent.ToString().Substring(0,5).Equals("Spike"))
