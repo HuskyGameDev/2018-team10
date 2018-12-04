@@ -5,7 +5,7 @@ using UnityEngine;
 public static class FadeSprite {
 
     // Inspired by https://gamedev.stackexchange.com/questions/142791/how-can-i-fade-a-game-object-in-and-out-over-a-specified-duration
-    //
+    // Used by objects with Rigidbody2D's that you don't want to move while fading
     public static IEnumerator Fade(Rigidbody2D constr, SpriteRenderer sprite, float start, float target, float duration)
     {
         float time = 0;
@@ -33,7 +33,8 @@ public static class FadeSprite {
     }
 
 
-
+    // Inspired by https://gamedev.stackexchange.com/questions/142791/how-can-i-fade-a-game-object-in-and-out-over-a-specified-duration
+    // Used by objects that don't need to be still or don't have a Rigidbody2D
     public static IEnumerator FadeImage(SpriteRenderer sprite, float start, float target, float duration)
     {
         float time = 0;

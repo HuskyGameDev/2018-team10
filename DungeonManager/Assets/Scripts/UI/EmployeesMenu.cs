@@ -11,6 +11,8 @@ public class EmployeesMenu : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
+        // Update positions if completed
         if (complete)
         {
             doug.position = new Vector3(doug.position.x + 90, doug.position.y, doug.position.z);
