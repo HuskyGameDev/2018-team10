@@ -48,7 +48,11 @@ public class Move_Main : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate()
     {
+        //Call jump method
+        Jump();
+        //Check how the player is moving
         PlayerMove();
+        //Check to see if the player is placing an item
         PlaceItem();
     }
 
@@ -62,8 +66,7 @@ public class Move_Main : MonoBehaviour {
         
         animator.SetFloat("Speed", Mathf.Abs(moveX));
 
-        //Jump
-        Jump();
+        
         //player direction
         if (moveX < 0.0f && facingRight == true)
         {
@@ -76,7 +79,7 @@ public class Move_Main : MonoBehaviour {
         //physics
         body.velocity = new Vector2(moveX * playerSpeed, body.velocity.y);
 
-        //Step sound
+        //Step soundd
         if(Mathf.Abs(moveX) > 0.1f){
             Step();
         }
@@ -89,9 +92,9 @@ public class Move_Main : MonoBehaviour {
     void Jump()
     {
         // Jump up
-        if (OnGround() && input.GetButtonDownUnpaused("Jump"))
+        if (OnGround() && Input.GetButton("Jump"))
         {
-            body.velocity += Vector2.up * playerJumpPower;      
+            body.velocity = Vector2.up * playerJumpPower;      
         }
         
         
@@ -101,6 +104,7 @@ public class Move_Main : MonoBehaviour {
         // Taken from YouTube:
         // Board To Games - Better Jumping in Unity with Four Lines of Code
 
+        
         if (body.velocity.y < 0)                                        // Falling down
         {
             body.velocity += Vector2.up * Physics2D.gravity.y * (fallMult - 1) * Time.deltaTime;
@@ -109,6 +113,7 @@ public class Move_Main : MonoBehaviour {
         {
             body.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMult - 1) * Time.deltaTime;
         }
+        
         
     }
 
