@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1092812555	Denis_Sighs			\Default Work Unit\Denis_Sighs	
 	1256134173	Denis_Lights_Torch			\Default Work Unit\Denis_Lights_Torch	
 	1270887217	Penguin_Flipper_Footstep			\Default Work Unit\Penguin_Flipper_Footstep	
+	2279637332	Penguin_Flipper_Footstep_Stop			\Default Work Unit\Penguin_Flipper_Footstep_Stop	
 	2869792536	Dungeon_Background			\Default Work Unit\Dungeon_Background	
 	3694683435	Dungeon_Background_Loop_Off			\Default Work Unit\Dungeon_Background_Loop_Off	
 	3969109100	Spa_Music_Loop_Off			\Default Work Unit\Spa_Music_Loop_Off	

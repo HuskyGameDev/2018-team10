@@ -143,6 +143,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Penguin_Flipper_Footstep_Stop" ID="{D038105D-0547-4D1F-87C5-7C8625331CAD}">
+					<ChildrenList>
+						<Action Name="" ID="{3639B512-476A-4728-B8B2-52B05D71C4DB}" ShortID="321085037">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Penguin_Flipper" ID="{83C2445B-F34D-49CD-AD66-4D5813020E91}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -15,7 +15,7 @@ public class Penguin_Main : MonoBehaviour {
 
     private Animator anim;
     private bool atDoor = false;
-    private Coroutine walkingSound = null;
+    private bool walkingSoundPlaying = false;
 
     private void Start()
     {
@@ -37,20 +37,15 @@ public class Penguin_Main : MonoBehaviour {
         // Lock movement and fade in
         StartCoroutine(FadeSprite.Fade(GetComponent<Rigidbody2D>(), gameObject.GetComponentInChildren<SpriteRenderer>(), 0f, 1f, 2f));
         //gameObject.GetComponentInChildren<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.5f);
-        
-        walkingSound = StartCoroutine(PlayWalkingSoundForever());
     }
 
     void FixedUpdate(){
-        if(Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.y) > 0.01 ){
-            if(walkingSound != null){
-                StopCoroutine(walkingSound);    
-                walkingSound = null;
-            }
-        }else{
-            if(walkingSound == null){
-                walkingSound = StartCoroutine(PlayWalkingSoundForever());
-            }
+        if(Mathf.Abs(gameObject.GetComponent<Rigidbody2D>().velocity.y) > 0.01 && walkingSoundPlaying){
+            walkingSoundPlaying = false;
+            AkSoundEngine.PostEvent("Penguin_Flipper_Footstep_Stop", gameObject);
+        }else if(!walkingSoundPlaying){
+            walkingSoundPlaying = true;
+            AkSoundEngine.PostEvent("Penguin_Flipper_Footstep", gameObject);
         }
     }
 
@@ -128,7 +123,7 @@ public class Penguin_Main : MonoBehaviour {
     //Call when penguin dies to relaod scene
     void Die(Collider2D col)
     {
-        StopCoroutine(walkingSound);
+        AkSoundEngine.PostEvent("Penguin_Flipper_Footstep_Stop", gameObject);
         StopAllCoroutines();
 
         if (col.gameObject.transform.parent.ToString().Substring(0,5).Equals("Spike"))
@@ -143,8 +138,6 @@ public class Penguin_Main : MonoBehaviour {
             anim.SetBool("Die_Dennise", true);
         }
 
-        
-        //XMoveDirection = 0;
         GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
         StartCoroutine(ReloadScene(1f));
     }
@@ -183,21 +176,6 @@ public class Penguin_Main : MonoBehaviour {
         StartCoroutine(FadeSprite.Fade(GetComponent<Rigidbody2D>(), gameObject.GetComponentInChildren<SpriteRenderer>(), 1f, 0f, 2f));
         yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
-
-    //Walking sound
-    private bool playingWalkingSound = false;
-    /*This coroutine plays the walking sound for as long as it's running*/
-    private IEnumerator PlayWalkingSoundForever(){
-        while(true){
-            AkSoundEngine.PostEvent("Penguin_Flipper_Footstep", gameObject, (uint)AkCallbackType.AK_EndOfEvent, WalkingSoundEndCallback, this);
-            playingWalkingSound = true;
-            yield return new WaitWhile(() => playingWalkingSound);
-        }
-    }
-
-    private void WalkingSoundEndCallback(object in_cookie, AkCallbackType in_type, object in_callbackInfo){
-        playingWalkingSound = false;
     }
 
 }
