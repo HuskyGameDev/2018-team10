@@ -15,6 +15,7 @@
 						<ObjectRef Name="Penguin_Flipper_Footstep" ID="{6CDF8323-C6F4-4A23-9CDD-A1012D4E2082}" WorkUnitID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Penguin_Death" ID="{0ED1D7FA-AA04-4B6E-A4AF-FEC2CC3C7D0A}" WorkUnitID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Dungeon_Background_Loop_Off" ID="{DA7C5A9B-FD9E-4CB3-8E11-DB12D69CFEA3}" WorkUnitID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Penguin_Flipper_Footstep_Stop" ID="{D038105D-0547-4D1F-87C5-7C8625331CAD}" WorkUnitID="{9D3AFD7D-486F-4D96-92B0-D045600A021B}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

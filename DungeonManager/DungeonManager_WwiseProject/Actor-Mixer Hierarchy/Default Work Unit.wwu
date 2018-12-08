@@ -190,6 +190,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Guts_Penguin" ID="{2922C79A-D082-4518-BE80-81304C27996A}" ShortID="801583098">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
@@ -286,9 +289,11 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Penguin_Flipper" ID="{83C2445B-F34D-49CD-AD66-4D5813020E91}" ShortID="290150638">
 							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-23</Value>
+										<Value>-13</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -321,6 +326,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Flipper Sound 4" ID="{319879BB-E976-4725-B57A-B1FBFD74B057}" ShortID="825211382">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
