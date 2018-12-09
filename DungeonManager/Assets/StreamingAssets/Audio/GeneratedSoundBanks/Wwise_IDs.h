@@ -29,6 +29,11 @@ namespace AK
         static const AkUniqueID WHIP_CRACK = 3289042876U;
     } // namespace EVENTS
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID MAIN_VOLUME = 2312172015U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

@@ -21,8 +21,8 @@ MonoBehaviour:
   autoPopulateEnabled: 1
   AuxBusWwu:
   - Guid: '{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}'
-    m_lastTimePart2: -1999224378
-    m_lastTimePsrt1: -539738743
+    m_lastTimePart2: -1999217293
+    m_lastTimePsrt1: 1965691003
     ParentPhysicalPath: 
     PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     List: []
@@ -48,8 +48,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{9D3AFD7D-486F-4D96-92B0-D045600A021B}'
-    m_lastTimePart2: -1999217297
-    m_lastTimePsrt1: 1797739335
+    m_lastTimePart2: -1999217293
+    m_lastTimePsrt1: 1088049213
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -185,6 +185,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: ed98c54179cd664fa44744fe9db206cb
+      ID: 1402181228
+      Name: Set_Game_Parameter
+      Path: Default Work Unit\Set_Game_Parameter
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Set_Game_Parameter
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: 0bcec547f5d0e7478ba93b9882d1c2b5
       ID: 103355865
       Name: Spa_Music
@@ -233,11 +245,20 @@ MonoBehaviour:
   preparePoolSize: 0
   RtpcWwu:
   - Guid: '{FC8A0D9D-1A8C-4E50-B18C-8374343B6B48}'
-    m_lastTimePart2: -1999224378
-    m_lastTimePsrt1: -540677972
+    m_lastTimePart2: -1999217293
+    m_lastTimePsrt1: 1087803884
     ParentPhysicalPath: 
     PhysicalPath: Game Parameters\Default Work Unit.wwu
-    List: []
+    List:
+    - Guid: 84c4a72bccac3447afabed01ac70defb
+      ID: -1982795281
+      Name: Main_Volume
+      Path: Default Work Unit\Main_Volume
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main_Volume
+        ObjectType: 13
   StateWwu:
   - Guid: '{DADF20DF-AA50-4DDD-8BC0-2E9D2D369D53}'
     m_lastTimePart2: -1999224378

@@ -4,12 +4,12 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Dungeon_Manager" Hash="3128263452" Timestamp="1544316565"/>
-				<File Name="Init" Hash="2806741908" Timestamp="1541890069"/>
+				<File Name="Init" Hash="2207702319" Timestamp="1544318268"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="965074522" Timestamp="1544316565"/>
+				<File Name="" Hash="965074522" Timestamp="1544318268"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -17,12 +17,12 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Dungeon_Manager" Hash="3128263452" Timestamp="1544316566"/>
-				<File Name="Init" Hash="403170349" Timestamp="1541890069"/>
+				<File Name="Init" Hash="1494808046" Timestamp="1544318268"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2119686669" Timestamp="1544316566"/>
+				<File Name="" Hash="2119686669" Timestamp="1544318268"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -30,12 +30,12 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Dungeon_Manager" Hash="3128263452" Timestamp="1544316566"/>
-				<File Name="Init" Hash="3720209211" Timestamp="1541890069"/>
+				<File Name="Init" Hash="1783608384" Timestamp="1544318268"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2089921695" Timestamp="1544316566"/>
+				<File Name="" Hash="2089921695" Timestamp="1544318268"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

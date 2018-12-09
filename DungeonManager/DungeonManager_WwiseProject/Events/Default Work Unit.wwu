@@ -199,6 +199,16 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Set_Game_Parameter" ID="{41C598ED-CD79-4F66-A447-44FE9DB206CB}">
+					<ChildrenList>
+						<Action Name="" ID="{4945808D-204D-4AD0-98BC-EC2F6755394D}" ShortID="635112409">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
