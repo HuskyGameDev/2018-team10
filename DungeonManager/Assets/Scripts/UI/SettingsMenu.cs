@@ -5,6 +5,6 @@ using UnityEngine;
 public class SettingsMenu : MonoBehaviour {
 
 	public void SetVolume(float volume){
-		Debug.Log(volume); //Debug
+		AkSoundEngine.SetRTPCValue("Main_Volume", volume);
 	}
 }
