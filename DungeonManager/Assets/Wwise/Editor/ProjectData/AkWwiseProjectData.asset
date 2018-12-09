@@ -28,8 +28,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{4397AFDB-20B4-498B-842D-1DF92FD0B006}'
-    m_lastTimePart2: -1999218685
-    m_lastTimePsrt1: -12713043
+    m_lastTimePart2: -1999217297
+    m_lastTimePsrt1: 1797876915
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -48,8 +48,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{9D3AFD7D-486F-4D96-92B0-D045600A021B}'
-    m_lastTimePart2: -1999218685
-    m_lastTimePsrt1: -18160508
+    m_lastTimePart2: -1999217297
+    m_lastTimePsrt1: 1797739335
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -113,6 +113,30 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: c94472f0aeacda4e8223fa391b26f417
+      ID: -895268504
+      Name: Main_Menu_Music
+      Path: Default Work Unit\Main_Menu_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main_Menu_Music
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: f7ebb9cceea1ac4c99d8187f892249bd
+      ID: 1719563054
+      Name: Main_Menu_Music_Off
+      Path: Default Work Unit\Main_Menu_Music_Off
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main_Menu_Music_Off
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: fad7d10e04aa6e4ba4affec2cc3c7d0a
       ID: 895256648
       Name: Penguin_Death
@@ -133,6 +157,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Penguin_Flipper_Footstep
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 5d1038d047051f4d87c57c8625331cad
+      ID: -2015329964
+      Name: Penguin_Flipper_Footstep_Stop
+      Path: Default Work Unit\Penguin_Flipper_Footstep_Stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Penguin_Flipper_Footstep_Stop
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0
@@ -169,6 +205,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Spa_Music_Loop_Off
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 18614b968a8ea44ca9c52d16475d90f9
+      ID: -1005924420
+      Name: Whip_Crack
+      Path: Default Work Unit\Whip_Crack
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Whip_Crack
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0

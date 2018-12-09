@@ -5,8 +5,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	1092812555	Denis_Sighs			\Default Work Unit\Denis_Sighs	
 	1256134173	Denis_Lights_Torch			\Default Work Unit\Denis_Lights_Torch	
 	1270887217	Penguin_Flipper_Footstep			\Default Work Unit\Penguin_Flipper_Footstep	
+	1719563054	Main_Menu_Music_Off			\Default Work Unit\Main_Menu_Music_Off	
 	2279637332	Penguin_Flipper_Footstep_Stop			\Default Work Unit\Penguin_Flipper_Footstep_Stop	
 	2869792536	Dungeon_Background			\Default Work Unit\Dungeon_Background	
+	3289042876	Whip_Crack			\Default Work Unit\Whip_Crack	
+	3399698792	Main_Menu_Music			\Default Work Unit\Main_Menu_Music	
 	3694683435	Dungeon_Background_Loop_Off			\Default Work Unit\Dungeon_Background_Loop_Off	
 	3969109100	Spa_Music_Loop_Off			\Default Work Unit\Spa_Music_Loop_Off	
 	4147243150	Penguin_Meeps			\Default Work Unit\Penguin_Meeps	
@@ -18,6 +21,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	111634054	Flipper Sound 2	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Flipper Sound 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Penguin_Flipper\Flipper Sound 2		70624
 	135698400	Guts Squish 4	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Squish_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Guts_Penguin\Guts Squish 4		617544
 	143180353	Sigh 2	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Sigh 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Denis_Sighs\Sigh 2		397044
+	218639527	MainMenuLoop	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Gymnopedie No 2_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\MainMenuLoop		28053568
 	272220080	Sigh 1	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Sigh 1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Denis_Sighs\Sigh 1		463192
 	272240259	Meep 4	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Meep 4_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Penguin_Meep\Meep 4		88344
 	340389794	Guts Squish 3	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Guts Squish 3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Guts_Penguin\Guts Squish 3		419092
@@ -30,6 +34,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	698686867	Guts Squish 2	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Guts Squish 2_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Guts_Penguin\Guts Squish 2		176544
 	754020562	Meep 3	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Meep 3_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Penguin_Meep\Meep 3		110392
 	770526137	Sigh 5	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Sigh 5_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Denis_Sighs\Sigh 5		132444
+	777762111	Whip-crack-sound-effect	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Whip-crack-sound-effect_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Whip-crack-sound-effect		235072
 	860991440	SpaMusic	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Menu Screen Music_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\SpaMusic		6491664
 	905024809	Guts Squish 1	D:\MoreGitStuff\2018-team10\DungeonManager\DungeonManager_WwiseProject\.cache\Mac\SFX\Guts Squish 1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Penguin\Guts_Penguin\Guts Squish 1		286792
 

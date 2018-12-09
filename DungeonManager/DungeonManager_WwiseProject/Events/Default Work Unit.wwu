@@ -157,6 +157,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Main_Menu_Music" ID="{F07244C9-ACAE-4EDA-8223-FA391B26F417}">
+					<ChildrenList>
+						<Action Name="" ID="{A8DCC498-641A-4215-8AB9-3186302C7EC9}" ShortID="777041948">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenuLoop" ID="{B3738E5E-B49F-4AB9-B206-F5A2BC586998}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Main_Menu_Music_Off" ID="{CCB9EBF7-A1EE-4CAC-99D8-187F892249BD}">
+					<ChildrenList>
+						<Action Name="" ID="{0D34E732-E0B9-48B8-9FD8-D6949A511600}" ShortID="791086095">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MainMenuLoop" ID="{B3738E5E-B49F-4AB9-B206-F5A2BC586998}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Whip_Crack" ID="{964B6118-8E8A-4CA4-A9C5-2D16475D90F9}">
+					<ChildrenList>
+						<Action Name="" ID="{6EA43F55-DD33-4B15-8EFF-413B49F7DFF8}" ShortID="137574882">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Whip-crack-sound-effect" ID="{60106597-E047-42BB-B309-DCB40B98CFEE}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

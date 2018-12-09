@@ -4,6 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement; 
 
 public class MainMenu : MonoBehaviour {
+	void Start(){
+		StartCoroutine(DelayWwiseEvent(1, "Whip_Crack"));
+	}
+
+	private IEnumerator DelayWwiseEvent(float time, string sound){
+        yield return new WaitForSeconds(time);
+        AkSoundEngine.PostEvent(sound, this.gameObject);
+    }
+
 	//loads in scenes  
 	public void PlayGame(){
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
