@@ -545,6 +545,59 @@
 								<ActiveSource Name="Menu Screen Music" ID="{219AC858-F5C9-46E4-891A-8A235A32AE7E}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="MainMenuLoop" ID="{B3738E5E-B49F-4AB9-B206-F5A2BC586998}" ShortID="359085718">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Gymnopedie No 2" ID="{D297A9A2-3A83-4319-B05D-0339DA560A98}" ShortID="218639527">
+									<Language>SFX</Language>
+									<AudioFile>Gymnopedie No 2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Gymnopedie No 2" ID="{D297A9A2-3A83-4319-B05D-0339DA560A98}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Whip-crack-sound-effect" ID="{60106597-E047-42BB-B309-DCB40B98CFEE}" ShortID="426155380">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-23</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{6078B0BD-D726-482E-9174-DDAC5E12EA3B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{DED681A5-7C56-46B7-B7CD-8CF20ED56F09}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Whip-crack-sound-effect" ID="{A19F778B-DB79-45EB-B9B8-DF458F3E99FF}" ShortID="777762111">
+									<Language>SFX</Language>
+									<AudioFile>Whip-crack-sound-effect.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Whip-crack-sound-effect" ID="{A19F778B-DB79-45EB-B9B8-DF458F3E99FF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
