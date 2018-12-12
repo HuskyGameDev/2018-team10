@@ -102,6 +102,7 @@ public class Penguin_Main : MonoBehaviour {
         //Check for door and key then load next level if true
         if(col.gameObject.tag == "Door" && hasKey == true && col.gameObject.GetComponent<Door>().TorchesLit())
         {
+            AkSoundEngine.PostEvent("Penguin_Flipper_Footstep_Stop", gameObject);
             atDoor = true;
             GetComponent<Rigidbody2D>().constraints |= RigidbodyConstraints2D.FreezePositionX;
             StartCoroutine(LoadNextScene(col.gameObject.GetComponent<Animator>()));
