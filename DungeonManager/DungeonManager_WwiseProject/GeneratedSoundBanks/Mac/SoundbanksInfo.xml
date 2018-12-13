@@ -28,10 +28,12 @@
 				<Event Id="3694683435" Name="Dungeon_Background_Loop_Off" ObjectPath="\Events\Default Work Unit\Dungeon_Background_Loop_Off" MaxAttenuation="0.000000"/>
 				<Event Id="3399698792" Name="Main_Menu_Music" ObjectPath="\Events\Default Work Unit\Main_Menu_Music"/>
 				<Event Id="1719563054" Name="Main_Menu_Music_Off" ObjectPath="\Events\Default Work Unit\Main_Menu_Music_Off" MaxAttenuation="0.000000"/>
+				<Event Id="1145009169" Name="Pause_All_SFX" ObjectPath="\Events\Default Work Unit\Pause_All_SFX" MaxAttenuation="0.000000"/>
 				<Event Id="895256648" Name="Penguin_Death" ObjectPath="\Events\Default Work Unit\Penguin_Death"/>
 				<Event Id="1270887217" Name="Penguin_Flipper_Footstep" ObjectPath="\Events\Default Work Unit\Penguin_Flipper_Footstep"/>
 				<Event Id="2279637332" Name="Penguin_Flipper_Footstep_Stop" ObjectPath="\Events\Default Work Unit\Penguin_Flipper_Footstep_Stop" MaxAttenuation="0.000000"/>
 				<Event Id="4147243150" Name="Penguin_Meeps" ObjectPath="\Events\Default Work Unit\Penguin_Meeps"/>
+				<Event Id="694222996" Name="Resume_All_SFX" ObjectPath="\Events\Default Work Unit\Resume_All_SFX" MaxAttenuation="0.000000"/>
 				<Event Id="103355865" Name="Spa_Music" ObjectPath="\Events\Default Work Unit\Spa_Music"/>
 				<Event Id="3969109100" Name="Spa_Music_Loop_Off" ObjectPath="\Events\Default Work Unit\Spa_Music_Loop_Off" MaxAttenuation="0.000000"/>
 				<Event Id="3289042876" Name="Whip_Crack" ObjectPath="\Events\Default Work Unit\Whip_Crack"/>

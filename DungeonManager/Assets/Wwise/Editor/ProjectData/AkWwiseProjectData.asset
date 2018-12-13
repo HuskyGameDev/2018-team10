@@ -28,8 +28,8 @@ MonoBehaviour:
     List: []
   BankWwu:
   - Guid: '{4397AFDB-20B4-498B-842D-1DF92FD0B006}'
-    m_lastTimePart2: -1999217297
-    m_lastTimePsrt1: 1797876915
+    m_lastTimePart2: -1999216320
+    m_lastTimePsrt1: -1268542074
     ParentPhysicalPath: 
     PhysicalPath: SoundBanks\Default Work Unit.wwu
     List:
@@ -48,8 +48,8 @@ MonoBehaviour:
   defaultPoolSize: 4096
   EventWwu:
   - Guid: '{9D3AFD7D-486F-4D96-92B0-D045600A021B}'
-    m_lastTimePart2: -1999217293
-    m_lastTimePsrt1: 1088049213
+    m_lastTimePart2: -1999216320
+    m_lastTimePsrt1: -114938938
     ParentPhysicalPath: 
     PhysicalPath: Events\Default Work Unit.wwu
     List:
@@ -137,6 +137,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - Guid: f75037cf08a7dd48a01e3eb94c9bbe61
+      ID: 1145009169
+      Name: Pause_All_SFX
+      Path: Default Work Unit\Pause_All_SFX
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Pause_All_SFX
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - Guid: fad7d10e04aa6e4ba4affec2cc3c7d0a
       ID: 895256648
       Name: Penguin_Death
@@ -181,6 +193,18 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Penguin_Meeps
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 909e40ac461b0847b76d4727d3fd2c63
+      ID: 694222996
+      Name: Resume_All_SFX
+      Path: Default Work Unit\Resume_All_SFX
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Resume_All_SFX
         ObjectType: 3
       maxAttenuation: 0
       maxDuration: 0

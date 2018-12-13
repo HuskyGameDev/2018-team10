@@ -35,12 +35,14 @@ public class PauseMenu : MonoBehaviour {
 	}
 
 	public void Unpause(){
+		AkSoundEngine.PostEvent("Resume_All_SFX", gameObject);
 		canvasObject.SetActive(false);
 		paused = false;
 		Time.timeScale = 1;
 	}
 
 	public void Pause(){
+		AkSoundEngine.PostEvent("Pause_All_SFX", gameObject);
 		canvasObject.SetActive(true);
 		paused = true;
 		Time.timeScale = 0;

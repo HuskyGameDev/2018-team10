@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	103355865	Spa_Music			\Default Work Unit\Spa_Music	
 	252733814	Denis_Footsteps			\Default Work Unit\Denis_Footsteps	
+	694222996	Resume_All_SFX			\Default Work Unit\Resume_All_SFX	
 	895256648	Penguin_Death			\Default Work Unit\Penguin_Death	
 	1092812555	Denis_Sighs			\Default Work Unit\Denis_Sighs	
+	1145009169	Pause_All_SFX			\Default Work Unit\Pause_All_SFX	
 	1256134173	Denis_Lights_Torch			\Default Work Unit\Denis_Lights_Torch	
 	1270887217	Penguin_Flipper_Footstep			\Default Work Unit\Penguin_Flipper_Footstep	
 	1719563054	Main_Menu_Music_Off			\Default Work Unit\Main_Menu_Music_Off	
