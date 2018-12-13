@@ -3,39 +3,39 @@
 	<Platform GUID="{C8379925-BD9A-416D-9EF1-06CEB5D7736A}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Dungeon_Manager" Hash="3128263452" Timestamp="1544316565"/>
+				<File Name="Dungeon_Manager" Hash="28116628" Timestamp="1544736154"/>
 				<File Name="Init" Hash="2207702319" Timestamp="1544318268"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="965074522" Timestamp="1544318268"/>
+				<File Name="" Hash="3312056007" Timestamp="1544736154"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{A9FE388B-0196-4E5D-B51A-95A7BF84B5C6}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Dungeon_Manager" Hash="3128263452" Timestamp="1544316566"/>
+				<File Name="Dungeon_Manager" Hash="28116628" Timestamp="1544736156"/>
 				<File Name="Init" Hash="1494808046" Timestamp="1544318268"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2119686669" Timestamp="1544318268"/>
+				<File Name="" Hash="571203234" Timestamp="1544736156"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
 	<Platform GUID="{8895A85A-5991-4EAD-A920-A85C6A86AAE3}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Dungeon_Manager" Hash="3128263452" Timestamp="1544316566"/>
+				<File Name="Dungeon_Manager" Hash="28116628" Timestamp="1544736155"/>
 				<File Name="Init" Hash="1783608384" Timestamp="1544318268"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="2089921695" Timestamp="1544318268"/>
+				<File Name="" Hash="3058106968" Timestamp="1544736155"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

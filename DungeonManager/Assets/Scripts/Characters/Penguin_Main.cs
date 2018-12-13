@@ -179,4 +179,9 @@ public class Penguin_Main : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
+    public void OnDestroy()
+    {
+        AkSoundEngine.PostEvent("Penguin_Flipper_Footstep_Stop", gameObject);
+    }
+
 }

@@ -209,6 +209,74 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Pause_All_SFX" ID="{CF3750F7-A708-48DD-A01E-3EB94C9BBE61}">
+					<ChildrenList>
+						<Action Name="" ID="{54380A36-4414-463C-9877-A0691C5AA745}" ShortID="394334592">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="8"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{D7B05563-0207-4E3D-BE63-C6F2DA4683B0}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpaMusic" ID="{406D05A1-4A20-434B-B291-0E213777A600}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+								<EventActionException Name="" ID="{3BFF326D-289C-46C4-ACD7-0A099A40FC23}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dungeon_Background" ID="{F58EC39A-021C-44E0-BC88-DB5336C4D38D}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+								<EventActionException Name="" ID="{CF65D3B2-CFCB-4E47-A54D-EF27CBF33328}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMenuLoop" ID="{B3738E5E-B49F-4AB9-B206-F5A2BC586998}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+							</ChildrenList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Resume_All_SFX" ID="{AC409E90-1B46-4708-B76D-4727D3FD2C63}">
+					<ChildrenList>
+						<Action Name="" ID="{D4CC6070-1EBF-4EA9-ABD9-F086637240B3}" ShortID="701995868">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="10"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{11AA3BDE-1D60-451B-BC83-2C91454DC526}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SpaMusic" ID="{406D05A1-4A20-434B-B291-0E213777A600}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+								<EventActionException Name="" ID="{18E8B36C-4750-4D6D-BE5C-B59ED0E59CFE}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainMenuLoop" ID="{B3738E5E-B49F-4AB9-B206-F5A2BC586998}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+								<EventActionException Name="" ID="{94285206-2C7B-47A9-82E3-1771137D2DF6}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dungeon_Background" ID="{F58EC39A-021C-44E0-BC88-DB5336C4D38D}" WorkUnitID="{FD1E7635-6A9C-46CF-A340-55D417911414}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+							</ChildrenList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
