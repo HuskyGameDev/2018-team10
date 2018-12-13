@@ -20,10 +20,12 @@ namespace AK
         static const AkUniqueID DUNGEON_BACKGROUND_LOOP_OFF = 3694683435U;
         static const AkUniqueID MAIN_MENU_MUSIC = 3399698792U;
         static const AkUniqueID MAIN_MENU_MUSIC_OFF = 1719563054U;
+        static const AkUniqueID PAUSE_ALL_SFX = 1145009169U;
         static const AkUniqueID PENGUIN_DEATH = 895256648U;
         static const AkUniqueID PENGUIN_FLIPPER_FOOTSTEP = 1270887217U;
         static const AkUniqueID PENGUIN_FLIPPER_FOOTSTEP_STOP = 2279637332U;
         static const AkUniqueID PENGUIN_MEEPS = 4147243150U;
+        static const AkUniqueID RESUME_ALL_SFX = 694222996U;
         static const AkUniqueID SPA_MUSIC = 103355865U;
         static const AkUniqueID SPA_MUSIC_LOOP_OFF = 3969109100U;
         static const AkUniqueID WHIP_CRACK = 3289042876U;
