@@ -1,11 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement; 
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour {
-	void Start(){
+	void OnEnable(){
 		StartCoroutine(DelayWwiseEvent(1, "Whip_Crack"));
+        foreach (Button b in gameObject.GetComponentsInChildren<Button>())
+        {
+            b.interactable = false;
+            StartCoroutine(EnableButton(b));
+        }
 	}
 
 	private IEnumerator DelayWwiseEvent(float time, string sound){
@@ -22,4 +28,10 @@ public class MainMenu : MonoBehaviour {
 		Debug.Log("QUIT!");
 		Application.Quit();
 	}
+
+    private IEnumerator EnableButton(Button b)
+    {
+        yield return new WaitUntil(() => gameObject.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("Sway"));
+        b.interactable = true;
+    }
 }

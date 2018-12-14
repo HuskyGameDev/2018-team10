@@ -12,7 +12,7 @@ public class Torch_Toggle : MonoBehaviour {
 
     void Start()
     {
-        SetLight(isLit);
+        toggledLight.gameObject.SetActive(isLit);
         input = GameObject.FindObjectOfType<InputManager>();
     }
 
@@ -20,11 +20,7 @@ public class Torch_Toggle : MonoBehaviour {
     {
         if (playerNear && input.GetButtonDownUnpaused("Light"))
         {
-            isLit = !isLit;
-            SetLight(isLit);
-            if(isLit){
-                AkSoundEngine.PostEvent("Denis_Lights_Torch", this.gameObject);
-            }
+            SetLight(!isLit);
         }
     }
 
@@ -46,6 +42,11 @@ public class Torch_Toggle : MonoBehaviour {
 
     public void SetLight(bool state)
     {
+        isLit = state;
         toggledLight.gameObject.SetActive(state);
+        if (isLit)
+        {
+            AkSoundEngine.PostEvent("Denis_Lights_Torch", this.gameObject);
+        }
     }
 }

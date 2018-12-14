@@ -5,7 +5,7 @@ using UnityEngine;
 public class menuScroll : MonoBehaviour {
 
 	// Use this for initialization
-	void Start () {
+	void OnEnable () {
 		StartCoroutine(FadeSprite.FadeImage(gameObject.GetComponentInChildren<SpriteRenderer>(), 0f, 0f, 0.2f));
 	 	StartCoroutine(waitForAnim());
 

@@ -113,37 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!84 &26325637
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: SpriteLightKit RT
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1769
-  m_Height: 995
-  m_AntiAliasing: 1
-  m_DepthFormat: 2
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 0
-    m_Aniso: 0
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &26364237
 Prefab:
   m_ObjectHideFlags: 0
@@ -192,7 +161,7 @@ Prefab:
         type: 2}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 26325637}
+      objectReference: {fileID: 318220720}
     - target: {fileID: 4653603870011772, guid: 4f3d864b15c7683469b5969875c79e90, type: 2}
       propertyPath: m_LocalPosition.y
       value: 3.415
@@ -500,6 +469,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4697313454291698, guid: 88cc44d56b3f6154289ad5d397169a38,
     type: 2}
   m_PrefabInternal: {fileID: 1301137104}
+--- !u!84 &318220720
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: SpriteLightKit RT
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 977
+  m_Height: 550
+  m_AntiAliasing: 1
+  m_DepthFormat: 2
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 0
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!4 &332196527 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4697313454291698, guid: 88cc44d56b3f6154289ad5d397169a38,
@@ -2199,6 +2199,25 @@ Prefab:
       propertyPath: torch
       value: 
       objectReference: {fileID: 387435758}
+    - target: {fileID: 61789406867573172, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 3.0879989
+      objectReference: {fileID: 0}
+    - target: {fileID: 61789406867573172, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 7.046439
+      objectReference: {fileID: 0}
+    - target: {fileID: 61789406867573172, guid: 8d48a5b7a70d5354a9500aeacd1a2c35,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1420776508315080, guid: 8d48a5b7a70d5354a9500aeacd1a2c35, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d48a5b7a70d5354a9500aeacd1a2c35, type: 2}
   m_IsPrefabAsset: 0

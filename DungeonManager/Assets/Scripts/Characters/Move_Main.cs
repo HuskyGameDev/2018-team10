@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Move_Main : MonoBehaviour {
 
-    public float playerSpeed = 5;
-    public int playerJumpPower = 400;
-    public float fallMult = 2.5f;
-    public float lowJumpMult = 2f;
+    public float playerSpeed;
+    public float playerJumpPower;
+    public float fallMult;
+    public float lowJumpMult;
     [SerializeField] float pickupDelayTime;
     [SerializeField] float stepDelayTime;
 
@@ -109,7 +109,7 @@ public class Move_Main : MonoBehaviour {
         {
             body.velocity += Vector2.up * Physics2D.gravity.y * (fallMult - 1) * Time.deltaTime;
         }
-        else if (body.velocity.y > 0 && !input.GetButtonDownUnpaused("Jump"))       // Going up but not holding jump
+        else if (body.velocity.y > 0 && !Input.GetButton("Jump"))       // Going up but not holding jump
         {
             body.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMult - 1) * Time.deltaTime;
         }
